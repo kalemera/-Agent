@@ -1,0 +1,724 @@
+[
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_EBONDYAZDEG_S2D:8b74e6221a65",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_EBONDYAZDEG_S2D:8b74e6221a65",
+    "title": "Semantic proposal for TP.EBONDYAZDEG.S2D",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.EBONDYAZDEG.S2D",
+    "ticker": "TP.EBONDYAZDEG.S2D",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.2.2.Diğer",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:eurobond-foreign-stock",
+      "derived:eurobond-foreign-share",
+      "derived:hazine-eurobond-foreign-stock",
+      "derived:hazine-eurobond-foreign-share"
+    ],
+    "candidate_formula_hint": "derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "8b74e6221a65f45eb047fc85bdf753e97cf99643",
+    "catalog_record_id": "catalog:evds2:TP.EBONDYAZDEG.S2D",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.EBONDYAZDEG.S2D",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Diğer",
+      "context_title": "Diğer",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [
+        "derived:eurobond-foreign-stock",
+        "derived:eurobond-foreign-share",
+        "derived:hazine-eurobond-foreign-stock",
+        "derived:hazine-eurobond-foreign-share"
+      ],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.EBONDYAZDEG.S2D",
+        "title": "1.2.2.Diğer",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ebondyazdeg",
+        "category": "GENEL YÖNETİM YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.EBONDYAZDEG.S2D', 'TP.YDOSBAYAZDEG.S19', 'TP.YDOSBAYAZDEG.S38', 'TP.YDOSBAYAZDEG.S55',",
+        "df_eurobond[\"Hazine Eurobond Yabancılar\"] = df_eurobond[\"TP_EBONDYAZDEG_S2D\"]"
+      ],
+      "indicator_hints": [
+        "derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.",
+        "derived:hazine-eurobond-foreign-share: evds:TP.EBONDYAZDEG.S2D / evds:TP.EBONDYAZDEG.ST"
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.EBONDYAZDEG.S2D"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_EBONDYAZDEG_ST:28aa792995ef",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_EBONDYAZDEG_ST:28aa792995ef",
+    "title": "Semantic proposal for TP.EBONDYAZDEG.ST",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.EBONDYAZDEG.ST",
+    "ticker": "TP.EBONDYAZDEG.ST",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.Toplam (S.1, S.2)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:eurobond-total-stock",
+      "derived:eurobond-foreign-share",
+      "derived:hazine-eurobond-total",
+      "derived:hazine-eurobond-foreign-share"
+    ],
+    "candidate_formula_hint": "derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "28aa792995ef4d81ac32cff3606875d0137110d3",
+    "catalog_record_id": "catalog:evds2:TP.EBONDYAZDEG.ST",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.EBONDYAZDEG.ST",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Toplam (S.1, S.2)",
+      "context_title": "Toplam (S.1, S.2)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [
+        "derived:eurobond-total-stock",
+        "derived:eurobond-foreign-share",
+        "derived:hazine-eurobond-total",
+        "derived:hazine-eurobond-foreign-share"
+      ],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.EBONDYAZDEG.ST",
+        "title": "1.Toplam (S.1, S.2)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ebondyazdeg",
+        "category": "GENEL YÖNETİM YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.YDOSBAYAZDEG.S76', 'TP.EBONDYAZDEG.ST', 'TP.YDOSBAYAZDEG.S11T', 'TP.YDOSBAYAZDEG.S122T',",
+        "df_eurobond[\"Hazine Eurobond Toplam\"] = df_eurobond[\"TP_EBONDYAZDEG_ST\"]"
+      ],
+      "indicator_hints": [
+        "derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.",
+        "derived:hazine-eurobond-foreign-share: evds:TP.EBONDYAZDEG.S2D / evds:TP.EBONDYAZDEG.ST"
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.EBONDYAZDEG.ST"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S11T:b7b5703751bf",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S11T:b7b5703751bf",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S11T",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S11T",
+    "ticker": "TP.YDOSBAYAZDEG.S11T",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.A.Toplam (S.1, S.2) (Finansal Olmayan Kuruluş İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:eurobond-total-stock",
+      "derived:eurobond-foreign-share",
+      "derived:ozel-sektor-eurobond-total",
+      "derived:ozel-sektor-eurobond-foreign-share"
+    ],
+    "candidate_formula_hint": "derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "b7b5703751bfebdc69c304e36a462e58b742238c",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S11T",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S11T",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Toplam (S.1, S.2) (Finansal Olmayan Kuruluşlarca İhraç Edilen)",
+      "context_title": "Toplam (S.1, S.2) (Finansal Olmayan Kuruluşlarca İhraç Edilen)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [
+        "derived:eurobond-total-stock",
+        "derived:eurobond-foreign-share",
+        "derived:ozel-sektor-eurobond-total",
+        "derived:ozel-sektor-eurobond-foreign-share"
+      ],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S11T",
+        "title": "1.A.Toplam (S.1, S.2) (Finansal Olmayan Kuruluş İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.YDOSBAYAZDEG.S76', 'TP.EBONDYAZDEG.ST', 'TP.YDOSBAYAZDEG.S11T', 'TP.YDOSBAYAZDEG.S122T',",
+        "df_eurobond[\"Özel Sektör Eurobond Toplam\"] = df_eurobond[\"TP_YDOSBAYAZDEG_S11T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S122T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S125T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S126T\"]"
+      ],
+      "indicator_hints": [
+        "derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.",
+        "derived:ozel-sektor-eurobond-foreign-share: evds:TP.YDOSBAYAZDEG.S19 / evds:TP.YDOSBAYAZDEG.S11T"
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S11T"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S122T:73df80b0129c",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S122T:73df80b0129c",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S122T",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S122T",
+    "ticker": "TP.YDOSBAYAZDEG.S122T",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.B.Toplam (S.1, S.2) (Banka İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "73df80b0129c29add859ab649d18acd623e9bca9",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S122T",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S122T",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Toplam (S.1, S.2) (Bankalar Tarafından İhraç Edilen)",
+      "context_title": "Toplam (S.1, S.2) (Bankalar Tarafından İhraç Edilen)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S122T",
+        "title": "1.B.Toplam (S.1, S.2) (Banka İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.YDOSBAYAZDEG.S76', 'TP.EBONDYAZDEG.ST', 'TP.YDOSBAYAZDEG.S11T', 'TP.YDOSBAYAZDEG.S122T',",
+        "df_eurobond[\"Özel Sektör Eurobond Toplam\"] = df_eurobond[\"TP_YDOSBAYAZDEG_S11T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S122T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S125T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S126T\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S122T"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S125T:dff118b1369a",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S125T:dff118b1369a",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S125T",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S125T",
+    "ticker": "TP.YDOSBAYAZDEG.S125T",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.C.Toplam (S.1, S.2) (Diğer Finansal Aracı İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "dff118b1369a7db39bbaba4cb8910728b74f912e",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S125T",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S125T",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Toplam (S.1, S.2) (Diğer Finansal Aracılar Tarafından İhraç Edilen)",
+      "context_title": "Toplam (S.1, S.2) (Diğer Finansal Aracılar Tarafından İhraç Edilen)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S125T",
+        "title": "1.C.Toplam (S.1, S.2) (Diğer Finansal Aracı İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.YDOSBAYAZDEG.S125T', 'TP.YDOSBAYAZDEG.S126T'",
+        "df_eurobond[\"Özel Sektör Eurobond Toplam\"] = df_eurobond[\"TP_YDOSBAYAZDEG_S11T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S122T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S125T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S126T\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S125T"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S126T:332aaae6aa78",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S126T:332aaae6aa78",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S126T",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S126T",
+    "ticker": "TP.YDOSBAYAZDEG.S126T",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.D.Toplam (S.1, S.2) (Finansal Yardımcı İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "332aaae6aa780928900a8c7a764181118b458408",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S126T",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S126T",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Toplam (S.1, S.2) (Finansal Yardımcılar Tarafından İhraç Edilen)",
+      "context_title": "Toplam (S.1, S.2) (Finansal Yardımcılar Tarafından İhraç Edilen)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S126T",
+        "title": "1.D.Toplam (S.1, S.2) (Finansal Yardımcı İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.YDOSBAYAZDEG.S125T', 'TP.YDOSBAYAZDEG.S126T'",
+        "df_eurobond[\"Özel Sektör Eurobond Toplam\"] = df_eurobond[\"TP_YDOSBAYAZDEG_S11T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S122T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S125T\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S126T\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S126T"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S19:0a890ad83953",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S19:0a890ad83953",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S19",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S19",
+    "ticker": "TP.YDOSBAYAZDEG.S19",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.A.2.2.Diğer (Finansal Olmayan Kuruluş İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:eurobond-foreign-stock",
+      "derived:eurobond-foreign-share",
+      "derived:ozel-sektor-eurobond-foreign-stock",
+      "derived:ozel-sektor-eurobond-foreign-share"
+    ],
+    "candidate_formula_hint": "derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "0a890ad83953a6f26c412a97ddd646494722458d",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S19",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S19",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Diğer (Finansal Olmayan Kuruluşlarca İhraç Edilen)",
+      "context_title": "Diğer (Finansal Olmayan Kuruluşlarca İhraç Edilen)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [
+        "derived:eurobond-foreign-stock",
+        "derived:eurobond-foreign-share",
+        "derived:ozel-sektor-eurobond-foreign-stock",
+        "derived:ozel-sektor-eurobond-foreign-share"
+      ],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S19",
+        "title": "1.A.2.2.Diğer (Finansal Olmayan Kuruluş İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.EBONDYAZDEG.S2D', 'TP.YDOSBAYAZDEG.S19', 'TP.YDOSBAYAZDEG.S38', 'TP.YDOSBAYAZDEG.S55',",
+        "df_eurobond[\"Özel Sektör Eurobond Yabancılar\"] = df_eurobond[\"TP_YDOSBAYAZDEG_S19\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S38\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S55\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S76\"]"
+      ],
+      "indicator_hints": [
+        "derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.",
+        "derived:ozel-sektor-eurobond-foreign-share: evds:TP.YDOSBAYAZDEG.S19 / evds:TP.YDOSBAYAZDEG.S11T"
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S19"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S38:52b3eb47f685",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S38:52b3eb47f685",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S38",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S38",
+    "ticker": "TP.YDOSBAYAZDEG.S38",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.B.2.2.Diğer (Banka İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "52b3eb47f6859908b947f427428ef97988c55f61",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S38",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S38",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Diğer (Bankalar Tarafından İhraç Edilen)",
+      "context_title": "Diğer (Bankalar Tarafından İhraç Edilen)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S38",
+        "title": "1.B.2.2.Diğer (Banka İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.EBONDYAZDEG.S2D', 'TP.YDOSBAYAZDEG.S19', 'TP.YDOSBAYAZDEG.S38', 'TP.YDOSBAYAZDEG.S55',",
+        "df_eurobond[\"Özel Sektör Eurobond Yabancılar\"] = df_eurobond[\"TP_YDOSBAYAZDEG_S19\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S38\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S55\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S76\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S38"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S55:246104b5beb3",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S55:246104b5beb3",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S55",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S55",
+    "ticker": "TP.YDOSBAYAZDEG.S55",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.C.2.Dünyanın Geri Kalanı (S.2) (Diğer Finansal Aracı İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "246104b5beb398d9f2bb3487d52261ce79269df7",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S55",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S55",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Dünyanın Geri Kalanı (S.2) (Diğer Finansal Aracılar Tarafından İhraç Edilen)",
+      "context_title": "Dünyanın Geri Kalanı (S.2) (Diğer Finansal Aracılar Tarafından İhraç Edilen)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S55",
+        "title": "1.C.2.Dünyanın Geri Kalanı (S.2) (Diğer Finansal Aracı İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.EBONDYAZDEG.S2D', 'TP.YDOSBAYAZDEG.S19', 'TP.YDOSBAYAZDEG.S38', 'TP.YDOSBAYAZDEG.S55',",
+        "df_eurobond[\"Özel Sektör Eurobond Yabancılar\"] = df_eurobond[\"TP_YDOSBAYAZDEG_S19\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S38\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S55\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S76\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S55"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S76:c720413ddc76",
+    "proposal_id": "proposal:eurobnd-blg-v4:series:TP_YDOSBAYAZDEG_S76:c720413ddc76",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S76",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S76",
+    "ticker": "TP.YDOSBAYAZDEG.S76",
+    "notebook_slug": "eurobnd-blg-v4",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Eurobnd_Blg_V4.ipynb",
+    "candidate_title": "1.D.2.2.Diğer (Finansal Yardımcı İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:eurobond",
+      "theme:external-financing"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "c720413ddc764c9df67d427c021c9994766fc615",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S76",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S76",
+      "notebook_slug": "eurobnd-blg-v4",
+      "official_series_name": "Diğer (Finansal Yardımcılar Tarafından İhraç Edilen)",
+      "context_title": "Diğer (Finansal Yardımcılar Tarafından İhraç Edilen)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:eurobond",
+        "theme:external-financing"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:eurobnd-bbg-upload",
+        "source:eurobnd-tcmb-vade-pdf",
+        "source:eurobnd-hmb-odeme-projeksiyonu"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S76",
+        "title": "1.D.2.2.Diğer (Finansal Yardımcı İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.YDOSBAYAZDEG.S76', 'TP.EBONDYAZDEG.ST', 'TP.YDOSBAYAZDEG.S11T', 'TP.YDOSBAYAZDEG.S122T',",
+        "df_eurobond[\"Özel Sektör Eurobond Yabancılar\"] = df_eurobond[\"TP_YDOSBAYAZDEG_S19\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S38\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S55\"] + df_eurobond[\"TP_YDOSBAYAZDEG_S76\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S76"
+  }
+]

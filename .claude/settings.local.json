@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"/c/Users/bthkr/OneDrive/Masaüstü/İş Kodlama/İş Agentı\"/src/evds_registry/*.py)",
+      "Bash(find \"C:/Users/bthkr/OneDrive/Masaüstü/İş Kodlama/İş Agentı/src\" -name \"*.py\" -exec wc -l {} +)",
+      "Bash(find \"C:/Users/bthkr/OneDrive/Masaüstü/İş Kodlama/İş Agentı/tests\" -name \"*.py\" -exec wc -l {} +)",
+      "Bash(wc:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(find . -name .env* -o -name config*)",
+      "Bash(xargs -I {} cat \"proposals/{}\")",
+      "Bash(grep -l \"review_pending\" proposals/*.md)",
+      "Bash(xargs cat:*)"
+    ]
+  }
+}

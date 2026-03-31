@@ -1,0 +1,3470 @@
+[
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_1:5132bf3288ee",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_1:5132bf3288ee",
+    "title": "Semantic proposal for TP.HPBITABLO2.1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.1",
+    "ticker": "TP.HPBITABLO2.1",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.TOPLAM MEVDUAT",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:dth-share-in-total-deposits",
+      "derived:resident-deposit-share-in-total-deposits"
+    ],
+    "candidate_formula_hint": "derived:dth-share-in-total-deposits: evds:TP.HPBITABLO4.2 / evds:TP.HPBITABLO2.1",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "5132bf3288eef69c316738a21b04c094c87be7c2",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.1",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "A. TOPLAM MEVDUAT (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [
+        "derived:dth-share-in-total-deposits",
+        "derived:resident-deposit-share-in-total-deposits"
+      ],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.1",
+        "title": "1.TOPLAM MEVDUAT",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.1', 'TP.HPBITABLO2.2', 'TP.HPBITABLO2.3', 'TP.HPBITABLO2.3',",
+        "'TP.HPBITABLO2.8', 'TP.HPBITABLO2.10', 'TP.HPBITABLO2.11', 'TP.HPBITABLO2.12',",
+        "'TP.HPBITABLO2.13', 'TP.HPBITABLO2.14', 'TP.HPBITABLO2.15', 'TP.HPBITABLO2.16',",
+        "'TP.HPBITABLO2.17', 'TP.HPBITABLO2.18', 'TP.HPBITABLO2.19', 'TP.HPBITABLO2.20',",
+        "'TP_HPBITABLO2_13': \"\","
+      ],
+      "indicator_hints": [
+        "derived:dth-share-in-total-deposits: evds:TP.HPBITABLO4.2 / evds:TP.HPBITABLO2.1",
+        "derived:resident-deposit-share-in-total-deposits: evds:TP.HPBITABLO2.2 / evds:TP.HPBITABLO2.1"
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_2:b51b314ce43a",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_2:b51b314ce43a",
+    "title": "Semantic proposal for TP.HPBITABLO2.2",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.2",
+    "ticker": "TP.HPBITABLO2.2",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.Yurt İçi Yerleşikler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:dth-share-in-resident-deposits",
+      "derived:resident-deposit-share-in-total-deposits"
+    ],
+    "candidate_formula_hint": "derived:dth-share-in-resident-deposits: evds:TP.HPBITABLO4.2 / evds:TP.HPBITABLO2.2",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "b51b314ce43aacb4d588305725a8d1c1a270ea93",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.2",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.2",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "1. Yurt İçi Yerleşikler (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [
+        "derived:dth-share-in-resident-deposits",
+        "derived:resident-deposit-share-in-total-deposits"
+      ],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.2",
+        "title": "1.1.Yurt İçi Yerleşikler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.1', 'TP.HPBITABLO2.2', 'TP.HPBITABLO2.3', 'TP.HPBITABLO2.3',",
+        "'TP.HPBITABLO2.17', 'TP.HPBITABLO2.18', 'TP.HPBITABLO2.19', 'TP.HPBITABLO2.20',",
+        "'TP.HPBITABLO2.21', 'TP.HPBITABLO2.22', 'TP.HPBITABLO2.23', 'TP.HPBITABLO2.24',",
+        "'TP.HPBITABLO2.28', 'TP.HPBITABLO2.32', 'TP.HPBITABLO2.33', 'TP.HPBITABLO2.34'",
+        "'TP_HPBITABLO2_2': \"\","
+      ],
+      "indicator_hints": [
+        "derived:dth-share-in-resident-deposits: evds:TP.HPBITABLO4.2 / evds:TP.HPBITABLO2.2",
+        "derived:resident-deposit-share-in-total-deposits: evds:TP.HPBITABLO2.2 / evds:TP.HPBITABLO2.1"
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.2"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_3:fd75136710ce",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_3:fd75136710ce",
+    "title": "Semantic proposal for TP.HPBITABLO2.3",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.3",
+    "ticker": "TP.HPBITABLO2.3",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.1.TL",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "fd75136710cec9cd77103fc1807d6cbb31317f2d",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.3",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.3",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. TL (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL) / a. TL (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.3",
+        "title": "1.1.1.TL",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.1', 'TP.HPBITABLO2.2', 'TP.HPBITABLO2.3', 'TP.HPBITABLO2.3',",
+        "'TP.HPBITABLO2.28', 'TP.HPBITABLO2.32', 'TP.HPBITABLO2.33', 'TP.HPBITABLO2.34'",
+        "'TP_HPBITABLO2_32': \"\",",
+        "'TP_HPBITABLO2_33': \"\",",
+        "'TP_HPBITABLO2_34': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.3"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_4:4cdf9bf4f699",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_4:4cdf9bf4f699",
+    "title": "Semantic proposal for TP.HPBITABLO2.4",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.4",
+    "ticker": "TP.HPBITABLO2.4",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.1.a.Gerçek Kişiler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "4cdf9bf4f6994de85cc64b6fb976bc4fed846017",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.4",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.4",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "I. Gerçek Kişiler (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL) / I. Gerçek Kişiler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.4",
+        "title": "1.1.1.a.Gerçek Kişiler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.4', 'TP.HPBITABLO2.5', 'TP.HPBITABLO2.6', 'TP.HPBITABLO2.7',",
+        "'TP_HPBITABLO2_4': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.4"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_5:3183a797a69d",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_5:3183a797a69d",
+    "title": "Semantic proposal for TP.HPBITABLO2.5",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.5",
+    "ticker": "TP.HPBITABLO2.5",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.1.b.Tüzel Kişiler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "3183a797a69d19f40e9a3099bb1ba8e05db15ec7",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.5",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.5",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "II. Tüzel Kişiler (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL) / II. Tüzel Kişiler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.5",
+        "title": "1.1.1.b.Tüzel Kişiler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.4', 'TP.HPBITABLO2.5', 'TP.HPBITABLO2.6', 'TP.HPBITABLO2.7',",
+        "'TP_HPBITABLO2_5': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.5"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_6:32f749783752",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_6:32f749783752",
+    "title": "Semantic proposal for TP.HPBITABLO2.6",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.6",
+    "ticker": "TP.HPBITABLO2.6",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.YP",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "32f749783752699f199ee8f9a36c0567e897b749",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.6",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.6",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. YP (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL) / b. YP (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.6",
+        "title": "1.1.2.YP",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.4', 'TP.HPBITABLO2.5', 'TP.HPBITABLO2.6', 'TP.HPBITABLO2.7',",
+        "\"TP_HPBITABLO2_6\": \"1. Yurtiçinde Yerleşikler\", #1.Yurtiçinde Yerleşikler(Bin TL)-Düzey\"",
+        "df_kredi_mevduat[\"B. YP (1+2+3+4)\"] = df_kredi_mevduat[\"TP_HPBITABLO2_6\"] + df_kredi_mevduat[\"TP_HPBITABLO2_15\"] + df_kredi_mevduat[\"TP_HPBITABLO2_18\"] + df_kredi_mevduat[\"TP_HPBITABLO2_21\"]",
+        "df_kredi_mevduat[\"B.1. Yurtiçinde Yerleşikler\"] = df_kredi_mevduat[\"TP_HPBITABLO2_6\"]",
+        "df_kredi_mevduat[\"DTH'ların Toplam Mevduat İçerisindeki Payı\"] = (df_kredi_mevduat[\"TP_HPBITABLO2_6\"] / df_kredi_mevduat[\"TP_HPBITABLO2_1\"]) * 100 # C"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.6"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_7:623b4ba68235",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_7:623b4ba68235",
+    "title": "Semantic proposal for TP.HPBITABLO2.7",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.7",
+    "ticker": "TP.HPBITABLO2.7",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.a.Gerçek Kişiler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "623b4ba68235efeb8ed6ee23fe3419f46dab88bb",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.7",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.7",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "I. Gerçek Kişiler (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL) / I. Gerçek Kişiler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.7",
+        "title": "1.1.2.a.Gerçek Kişiler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.4', 'TP.HPBITABLO2.5', 'TP.HPBITABLO2.6', 'TP.HPBITABLO2.7',",
+        "'TP_HPBITABLO2_7': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.7"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_8:4da10597ab9c",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_8:4da10597ab9c",
+    "title": "Semantic proposal for TP.HPBITABLO2.8",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.8",
+    "ticker": "TP.HPBITABLO2.8",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.b.Tüzel Kişiler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "4da10597ab9c0914778031eadcfb28c3b076673e",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.8",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.8",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "II. Tüzel Kişiler (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL) / II. Tüzel Kişiler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.8",
+        "title": "1.1.2.b.Tüzel Kişiler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.8', 'TP.HPBITABLO2.10', 'TP.HPBITABLO2.11', 'TP.HPBITABLO2.12',",
+        "'TP_HPBITABLO2_8': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.8"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_10:1d96391207bf",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_10:1d96391207bf",
+    "title": "Semantic proposal for TP.HPBITABLO2.10",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.10",
+    "ticker": "TP.HPBITABLO2.10",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.i. Bilgi İçin: Toplam YP Mevduat (Milyon ABD Doları)",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "1d96391207bf0ee37dafbf97a12c2b49d6801456",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.10",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.10",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "Bilgi İçin: Toplam YP Mevduat (Milyon ABD Doları)",
+      "context_title": "Bilgi İçin: Toplam YP Mevduat (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.10",
+        "title": "1.1.2.i. Bilgi İçin: Toplam YP Mevduat (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.8', 'TP.HPBITABLO2.10', 'TP.HPBITABLO2.11', 'TP.HPBITABLO2.12',",
+        "\"TP_HPBITABLO2_10\": \"C. BİLGİ İÇİN YP (ABD Doları) (1+2+3+4)****\", #BİLGİ İÇİN YP (Milyon ABD Doları)(1+2+3+4)-Düzey",
+        "if col not in [\"TP_HPBITABLO2_10\", \"TP_HPBITABLO2_11\", \"TP_HPBITABLO2_12\", \"DTH STOKU\"]:",
+        "df_kredi_mevduat[\"Bilgi İçin DTH (B.1.) (ABD Doları)****\"] = df_kredi_mevduat[\"TP_HPBITABLO2_10\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.10"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_11:2fbb49ce71b6",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_11:2fbb49ce71b6",
+    "title": "Semantic proposal for TP.HPBITABLO2.11",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.11",
+    "ticker": "TP.HPBITABLO2.11",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.i.a. Bilgi İçin: Gerçek Kişi YP Mevduatı (Milyon ABD Doları)",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "2fbb49ce71b6b6255f87aa272cb716c634f07eb5",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.11",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.11",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "Bilgi İçin: Gerçek Kişi YP Mevduatı (Milyon ABD Doları)",
+      "context_title": "Bilgi İçin: Gerçek Kişi YP Mevduatı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.11",
+        "title": "1.1.2.i.a. Bilgi İçin: Gerçek Kişi YP Mevduatı (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.8', 'TP.HPBITABLO2.10', 'TP.HPBITABLO2.11', 'TP.HPBITABLO2.12',",
+        "\"TP_HPBITABLO2_11\": \"a. Gerçek Kişi****\", #Bilgi İçin: Gerçek Kişi YP Mevduatı (Milyon ABD Doları)",
+        "if col not in [\"TP_HPBITABLO2_10\", \"TP_HPBITABLO2_11\", \"TP_HPBITABLO2_12\", \"DTH STOKU\"]:"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.11"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_12:628744124b95",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_12:628744124b95",
+    "title": "Semantic proposal for TP.HPBITABLO2.12",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.12",
+    "ticker": "TP.HPBITABLO2.12",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.i.b. Bilgi İçin: Tüzel Kişi YP Mevduatı (Milyon ABD Doları)",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "628744124b953d3643cfb8259afe0aa500105bd4",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.12",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.12",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "Bilgi İçin: Tüzel Kişi YP Mevduatı (Milyon ABD Doları)",
+      "context_title": "Bilgi İçin: Tüzel Kişi YP Mevduatı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.12",
+        "title": "1.1.2.i.b. Bilgi İçin: Tüzel Kişi YP Mevduatı (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.8', 'TP.HPBITABLO2.10', 'TP.HPBITABLO2.11', 'TP.HPBITABLO2.12',",
+        "\"TP_HPBITABLO2_12\": \"b. Tüzel Kişi****\", #Bilgi İçin: Tüzel Kişi YP Mevduatı (Milyon ABD Doları)",
+        "if col not in [\"TP_HPBITABLO2_10\", \"TP_HPBITABLO2_11\", \"TP_HPBITABLO2_12\", \"DTH STOKU\"]:"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.12"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_13:6becda9c13f6",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_13:6becda9c13f6",
+    "title": "Semantic proposal for TP.HPBITABLO2.13",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.13",
+    "ticker": "TP.HPBITABLO2.13",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.2.Yurt İçi Yerleşik Bankalar",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "6becda9c13f606f4a154a54756376de4c17c32c2",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.13",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.13",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "2. Yurt İçi Yerleşik Bankalar (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 2. Yurt İçi Yerleşik Bankalar (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.13",
+        "title": "1.2.Yurt İçi Yerleşik Bankalar",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.13', 'TP.HPBITABLO2.14', 'TP.HPBITABLO2.15', 'TP.HPBITABLO2.16',",
+        "'TP_HPBITABLO2_13': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.13"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_14:2f53a0c44610",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_14:2f53a0c44610",
+    "title": "Semantic proposal for TP.HPBITABLO2.14",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.14",
+    "ticker": "TP.HPBITABLO2.14",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.2.1.TL",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "2f53a0c44610dbf9105bcd64a6e9e2f32a1346c3",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.14",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.14",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. TL (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 2. Yurt İçi Yerleşik Bankalar (Bin TL) / a. TL (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.14",
+        "title": "1.2.1.TL",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.13', 'TP.HPBITABLO2.14', 'TP.HPBITABLO2.15', 'TP.HPBITABLO2.16',",
+        "\"TP_HPBITABLO2_14\": \"3. Yurtiçinde Yerleşik Bankalar\", #3. Yurtiçinde Yerleşik Bankalar(Bin TL)-Düzey",
+        "df_kredi_mevduat[\"A. TL (1+2+3+4)\"] = df_kredi_mevduat[\"TP_HPBITABLO2_3\"] + df_kredi_mevduat[\"TP_HPBITABLO2_14\"] + df_kredi_mevduat[\"TP_HPBITABLO2_17\"] + df_kredi_mevduat[\"TP_HPBITABLO2_20\"]",
+        "df_kredi_mevduat[\"A.3. Yurtiçinde Yerleşik Bankalar\"] = df_kredi_mevduat[\"TP_HPBITABLO2_14\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.14"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_15:773f055d25bc",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_15:773f055d25bc",
+    "title": "Semantic proposal for TP.HPBITABLO2.15",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.15",
+    "ticker": "TP.HPBITABLO2.15",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.2.2.YP",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "773f055d25bc8f80f1d53de9f2e1875406688619",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.15",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.15",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. YP (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 2. Yurt İçi Yerleşik Bankalar (Bin TL) / b. YP (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.15",
+        "title": "1.2.2.YP",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.13', 'TP.HPBITABLO2.14', 'TP.HPBITABLO2.15', 'TP.HPBITABLO2.16',",
+        "\"TP_HPBITABLO2_15\": \"3. Yurtiçinde Yerleşik Bankalar\", #3. Yurtiçinde Yerleşik Bankalar(Bin TL)-Düzey\"",
+        "df_kredi_mevduat[\"B. YP (1+2+3+4)\"] = df_kredi_mevduat[\"TP_HPBITABLO2_6\"] + df_kredi_mevduat[\"TP_HPBITABLO2_15\"] + df_kredi_mevduat[\"TP_HPBITABLO2_18\"] + df_kredi_mevduat[\"TP_HPBITABLO2_21\"]",
+        "df_kredi_mevduat[\"B.3. Yurtiçinde Yerleşik Bankalar\"] = df_kredi_mevduat[\"TP_HPBITABLO2_15\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.15"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_16:e782f280addb",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_16:e782f280addb",
+    "title": "Semantic proposal for TP.HPBITABLO2.16",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.16",
+    "ticker": "TP.HPBITABLO2.16",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.Yurt Dışı Yerleşikler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "e782f280addb0f8c56d2ef44dfe5d48ce81731a0",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.16",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.16",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "3. Yurt Dışı Yerleşikler (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 3. Yurt Dışı Yerleşikler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.16",
+        "title": "1.3.Yurt Dışı Yerleşikler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.13', 'TP.HPBITABLO2.14', 'TP.HPBITABLO2.15', 'TP.HPBITABLO2.16',",
+        "'TP_HPBITABLO2_16': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.16"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_17:682cb0a0b046",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_17:682cb0a0b046",
+    "title": "Semantic proposal for TP.HPBITABLO2.17",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.17",
+    "ticker": "TP.HPBITABLO2.17",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.1.TL",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "682cb0a0b0467bc6c5577fef1a0b3111052573fb",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.17",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.17",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. TL (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 3. Yurt Dışı Yerleşikler (Bin TL) / a. TL (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.17",
+        "title": "1.3.1.TL",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.17', 'TP.HPBITABLO2.18', 'TP.HPBITABLO2.19', 'TP.HPBITABLO2.20',",
+        "\"TP_HPBITABLO2_17\": \"2. Yurtdışında Yerleşikler\", #2. Yurtdışında Yerleşikler(Bin TL)-Düzey",
+        "df_kredi_mevduat[\"A. TL (1+2+3+4)\"] = df_kredi_mevduat[\"TP_HPBITABLO2_3\"] + df_kredi_mevduat[\"TP_HPBITABLO2_14\"] + df_kredi_mevduat[\"TP_HPBITABLO2_17\"] + df_kredi_mevduat[\"TP_HPBITABLO2_20\"]",
+        "df_kredi_mevduat[\"A.2. Yurtdışında Yerleşikler\"] = df_kredi_mevduat[\"TP_HPBITABLO2_17\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.17"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_18:ddb0076dd960",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_18:ddb0076dd960",
+    "title": "Semantic proposal for TP.HPBITABLO2.18",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.18",
+    "ticker": "TP.HPBITABLO2.18",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.2.YP",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ddb0076dd960c4580d142d439c7a550d8377f597",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.18",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.18",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. YP (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 3. Yurt Dışı Yerleşikler (Bin TL) / b. YP (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.18",
+        "title": "1.3.2.YP",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.17', 'TP.HPBITABLO2.18', 'TP.HPBITABLO2.19', 'TP.HPBITABLO2.20',",
+        "\"TP_HPBITABLO2_18\": \"2. Yurtdışında Yerleşikler\", #2. Yurtdışında Yerleşikler(Bin TL)-Düzey\"",
+        "df_kredi_mevduat[\"B. YP (1+2+3+4)\"] = df_kredi_mevduat[\"TP_HPBITABLO2_6\"] + df_kredi_mevduat[\"TP_HPBITABLO2_15\"] + df_kredi_mevduat[\"TP_HPBITABLO2_18\"] + df_kredi_mevduat[\"TP_HPBITABLO2_21\"]",
+        "df_kredi_mevduat[\"B.2. Yurtdışında Yerleşikler\"] = df_kredi_mevduat[\"TP_HPBITABLO2_18\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.18"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_19:ecba64c436ba",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_19:ecba64c436ba",
+    "title": "Semantic proposal for TP.HPBITABLO2.19",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.19",
+    "ticker": "TP.HPBITABLO2.19",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.4.Yurt Dışı Yerleşik Bankalar",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ecba64c436badea10c1f3806a86bb5b3373dc863",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.19",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.19",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "4. Yurt Dışı Yerleşik Bankalar (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 4. Yurt Dışı Yerleşik Bankalar (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.19",
+        "title": "1.4.Yurt Dışı Yerleşik Bankalar",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.17', 'TP.HPBITABLO2.18', 'TP.HPBITABLO2.19', 'TP.HPBITABLO2.20',",
+        "'TP_HPBITABLO2_19': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.19"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_20:d9c7d93113d8",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_20:d9c7d93113d8",
+    "title": "Semantic proposal for TP.HPBITABLO2.20",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.20",
+    "ticker": "TP.HPBITABLO2.20",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.4.1.TL",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "d9c7d93113d81b8748ab3686a255c1b368ea0d24",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.20",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.20",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. TL (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 4. Yurt Dışı Yerleşik Bankalar (Bin TL) / a. TL (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.20",
+        "title": "1.4.1.TL",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.17', 'TP.HPBITABLO2.18', 'TP.HPBITABLO2.19', 'TP.HPBITABLO2.20',",
+        "\"TP_HPBITABLO2_20\": \"4. Yurtdışında Yerleşik Bankalar\", #4. Yurtdışında Yerleşik Bankalar(Bin TL)-Düzey",
+        "df_kredi_mevduat[\"A. TL (1+2+3+4)\"] = df_kredi_mevduat[\"TP_HPBITABLO2_3\"] + df_kredi_mevduat[\"TP_HPBITABLO2_14\"] + df_kredi_mevduat[\"TP_HPBITABLO2_17\"] + df_kredi_mevduat[\"TP_HPBITABLO2_20\"]",
+        "df_kredi_mevduat[\"A.4. Yurtdışında Yerleşik Bankalar\"] = df_kredi_mevduat[\"TP_HPBITABLO2_20\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.20"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_21:1545f0c8f6f1",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_21:1545f0c8f6f1",
+    "title": "Semantic proposal for TP.HPBITABLO2.21",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.21",
+    "ticker": "TP.HPBITABLO2.21",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.4.2.YP",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "1545f0c8f6f1df1a50bb56ee638d9af029e4e87c",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.21",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.21",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. YP (Bin TL)",
+      "context_title": "A. TOPLAM MEVDUAT (Bin TL) / 4. Yurt Dışı Yerleşik Bankalar (Bin TL) / b. YP (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.21",
+        "title": "1.4.2.YP",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.21', 'TP.HPBITABLO2.22', 'TP.HPBITABLO2.23', 'TP.HPBITABLO2.24',",
+        "\"TP_HPBITABLO2_21\": \"4. Yurtdışında Yerleşik Bankalar\", #4. Yurtdışında Yerleşik Bankalar(Bin TL)-Düzey",
+        "df_kredi_mevduat[\"B. YP (1+2+3+4)\"] = df_kredi_mevduat[\"TP_HPBITABLO2_6\"] + df_kredi_mevduat[\"TP_HPBITABLO2_15\"] + df_kredi_mevduat[\"TP_HPBITABLO2_18\"] + df_kredi_mevduat[\"TP_HPBITABLO2_21\"]",
+        "df_kredi_mevduat[\"B.4. Yurtdışında Yerleşik Bankalar\"] = df_kredi_mevduat[\"TP_HPBITABLO2_21\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.21"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_22:682be9718ca0",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_22:682be9718ca0",
+    "title": "Semantic proposal for TP.HPBITABLO2.22",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.22",
+    "ticker": "TP.HPBITABLO2.22",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "2.TOPLAM KREDİ",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "682be9718ca0aa56712d2c26950ac755dafa07ff",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.22",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.22",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "B. TOPLAM KREDİ (Bin TL)",
+      "context_title": "B. TOPLAM KREDİ (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.22",
+        "title": "2.TOPLAM KREDİ",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.21', 'TP.HPBITABLO2.22', 'TP.HPBITABLO2.23', 'TP.HPBITABLO2.24',",
+        "\"TP_HPBITABLO2_22\": \"I-KULLANDIRILAN KREDİLER\", #I. KULLANDIRILAN KREDİLER(Bin TL)-Düzey",
+        "df_kredi_mevduat[\"I-KULLANDIRILAN KREDİLER\"] = df_kredi_mevduat[\"TP_HPBITABLO2_22\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.22"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_23:628dbd97d35e",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_23:628dbd97d35e",
+    "title": "Semantic proposal for TP.HPBITABLO2.23",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.23",
+    "ticker": "TP.HPBITABLO2.23",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "2.1.Yurt İçi Yerleşikler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "628dbd97d35e17ce9457ee942a79c0e7a9cabb9a",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.23",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.23",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "1. Yurt İçi Yerleşikler (Bin TL)",
+      "context_title": "B. TOPLAM KREDİ (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.23",
+        "title": "2.1.Yurt İçi Yerleşikler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.21', 'TP.HPBITABLO2.22', 'TP.HPBITABLO2.23', 'TP.HPBITABLO2.24',",
+        "'TP_HPBITABLO2_23': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.23"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_24:864451e173e2",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_24:864451e173e2",
+    "title": "Semantic proposal for TP.HPBITABLO2.24",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.24",
+    "ticker": "TP.HPBITABLO2.24",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "2.1.1.TL",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "864451e173e22820f683a9d32374a1b91f484f82",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.24",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.24",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. TL (Bin TL)",
+      "context_title": "B. TOPLAM KREDİ (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL) / a. TL (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.24",
+        "title": "2.1.1.TL",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.21', 'TP.HPBITABLO2.22', 'TP.HPBITABLO2.23', 'TP.HPBITABLO2.24',",
+        "'TP_HPBITABLO2_24': \"\",",
+        "df_kredi_mevduat[\"A. TL\"] = df_kredi_mevduat[\"TP_HPBITABLO2_24\"] + df_kredi_mevduat[\"TP_HPBITABLO2_33\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.24"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_28:964f11f44098",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_28:964f11f44098",
+    "title": "Semantic proposal for TP.HPBITABLO2.28",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.28",
+    "ticker": "TP.HPBITABLO2.28",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "2.1.2.YP",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "964f11f440987a50a3326818e85247e609c97cb9",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.28",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.28",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. YP (Bin TL)",
+      "context_title": "B. TOPLAM KREDİ (Bin TL) / 1. Yurt İçi Yerleşikler (Bin TL) / b. YP (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.28",
+        "title": "2.1.2.YP",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.28', 'TP.HPBITABLO2.32', 'TP.HPBITABLO2.33', 'TP.HPBITABLO2.34'",
+        "'TP_HPBITABLO2_28': \"\",",
+        "df_kredi_mevduat[\"B. YP\"] = df_kredi_mevduat[\"TP_HPBITABLO2_28\"] + df_kredi_mevduat[\"TP_HPBITABLO2_34\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.28"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_32:1c21d428ebac",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_32:1c21d428ebac",
+    "title": "Semantic proposal for TP.HPBITABLO2.32",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.32",
+    "ticker": "TP.HPBITABLO2.32",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "2.2.Yurt İçi Yerleşik Finansal Kuruluşlar",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "1c21d428ebac307cd5bd61bff6d4ec8950d2396e",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.32",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.32",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "2. Yurt İçi Yerleşik Finansal Kuruluşlar (Bin TL)",
+      "context_title": "B. TOPLAM KREDİ (Bin TL) / 2. Yurt İçi Yerleşik Finansal Kuruluşlar (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.32",
+        "title": "2.2.Yurt İçi Yerleşik Finansal Kuruluşlar",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.28', 'TP.HPBITABLO2.32', 'TP.HPBITABLO2.33', 'TP.HPBITABLO2.34'",
+        "'TP_HPBITABLO2_32': \"\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.32"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_33:e084294442e0",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_33:e084294442e0",
+    "title": "Semantic proposal for TP.HPBITABLO2.33",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.33",
+    "ticker": "TP.HPBITABLO2.33",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "2.2.1.TL",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "e084294442e0290389b15da83deb52a7153f5465",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.33",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.33",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. TL (Bin TL)",
+      "context_title": "B. TOPLAM KREDİ (Bin TL) / 2. Yurt İçi Yerleşik Finansal Kuruluşlar (Bin TL) / a. TL (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.33",
+        "title": "2.2.1.TL",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.28', 'TP.HPBITABLO2.32', 'TP.HPBITABLO2.33', 'TP.HPBITABLO2.34'",
+        "'TP_HPBITABLO2_33': \"\",",
+        "#\"TP_HPBITABLO2_33\": \"A. TL\", #A. TL(Bin TL)-Düzey",
+        "df_kredi_mevduat[\"A. TL\"] = df_kredi_mevduat[\"TP_HPBITABLO2_24\"] + df_kredi_mevduat[\"TP_HPBITABLO2_33\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.33"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_34:8a61de018aac",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO2_34:8a61de018aac",
+    "title": "Semantic proposal for TP.HPBITABLO2.34",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO2.34",
+    "ticker": "TP.HPBITABLO2.34",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "2.2.2.YP",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "8a61de018aac5d208396d1ca01596ffe84f3f57f",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO2.34",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO2.34",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. YP (Bin TL)",
+      "context_title": "B. TOPLAM KREDİ (Bin TL) / 2. Yurt İçi Yerleşik Finansal Kuruluşlar (Bin TL) / b. YP (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO2.34",
+        "title": "2.2.2.YP",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo2",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO2.28', 'TP.HPBITABLO2.32', 'TP.HPBITABLO2.33', 'TP.HPBITABLO2.34'",
+        "'TP_HPBITABLO2_34': \"\",",
+        "#\"TP_HPBITABLO2_34\": \"B. YP\", #B. YP(Bin TL)-Düzey",
+        "df_kredi_mevduat[\"B. YP\"] = df_kredi_mevduat[\"TP_HPBITABLO2_28\"] + df_kredi_mevduat[\"TP_HPBITABLO2_34\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO2.34"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_1:e447f86e8ce8",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_1:e447f86e8ce8",
+    "title": "Semantic proposal for TP.HPBITABLO3.1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO3.1",
+    "ticker": "TP.HPBITABLO3.1",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.TOPLAM TL MEVDUAT",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "dormant_candidate",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "e447f86e8ce84eb7a2549f04fe7466820296d1ca",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO3.1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO3.1",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "TOPLAM TL MEVDUAT (Bin TL)",
+      "context_title": "TOPLAM TL MEVDUAT (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "dormant_candidate",
+      "status": "listed_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO3.1",
+        "title": "1.TOPLAM TL MEVDUAT",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo3",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO3.1', 'TP.HPBITABLO3.2', 'TP.HPBITABLO3.18', 'TP.HPBITABLO3.21',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO3.1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_2:8fa81315674c",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_2:8fa81315674c",
+    "title": "Semantic proposal for TP.HPBITABLO3.2",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO3.2",
+    "ticker": "TP.HPBITABLO3.2",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.Yurt İçi Yerleşikler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "dormant_candidate",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "8fa81315674cf9db95b1be02eb1096c5a77c0132",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO3.2",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO3.2",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "A. Yurt İçi Yerleşikler (Bin TL)",
+      "context_title": "A. Yurt İçi Yerleşikler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "dormant_candidate",
+      "status": "listed_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO3.2",
+        "title": "1.1.Yurt İçi Yerleşikler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo3",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO3.1', 'TP.HPBITABLO3.2', 'TP.HPBITABLO3.18', 'TP.HPBITABLO3.21',",
+        "'TP.HPBITABLO3.24'"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO3.2"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_18:cf1126d9860e",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_18:cf1126d9860e",
+    "title": "Semantic proposal for TP.HPBITABLO3.18",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO3.18",
+    "ticker": "TP.HPBITABLO3.18",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.2.Yurt İçi Yerleşik Bankalar",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "dormant_candidate",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "cf1126d9860ead797a3faf309fb150516e7d2fab",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO3.18",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO3.18",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "B. Yurt İçi Yerleşik Bankalar (Bin TL)",
+      "context_title": "B. Yurt İçi Yerleşik Bankalar (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "dormant_candidate",
+      "status": "listed_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO3.18",
+        "title": "1.2.Yurt İçi Yerleşik Bankalar",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo3",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO3.1', 'TP.HPBITABLO3.2', 'TP.HPBITABLO3.18', 'TP.HPBITABLO3.21',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO3.18"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_21:42fc4c404813",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_21:42fc4c404813",
+    "title": "Semantic proposal for TP.HPBITABLO3.21",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO3.21",
+    "ticker": "TP.HPBITABLO3.21",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.Yurt Dışı Yerleşikler",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "dormant_candidate",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "42fc4c404813de7cfa6695c21889c2ef476435fb",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO3.21",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO3.21",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "C. Yurt Dışı Yerleşikler (Bin TL)",
+      "context_title": "C. Yurt Dışı Yerleşikler (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "dormant_candidate",
+      "status": "listed_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO3.21",
+        "title": "1.3.Yurt Dışı Yerleşikler",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo3",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO3.1', 'TP.HPBITABLO3.2', 'TP.HPBITABLO3.18', 'TP.HPBITABLO3.21',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO3.21"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_24:f92d702cc0b4",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO3_24:f92d702cc0b4",
+    "title": "Semantic proposal for TP.HPBITABLO3.24",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO3.24",
+    "ticker": "TP.HPBITABLO3.24",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.4.Yurt Dışı Yerleşik Bankalar",
+    "candidate_unit": "bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "dormant_candidate",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "f92d702cc0b4fdbb7a4e3c4c8c3f0fde3cc1d3c7",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO3.24",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO3.24",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "D. Yurt Dışı Yerleşik Bankalar (Bin TL)",
+      "context_title": "D. Yurt Dışı Yerleşik Bankalar (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "dormant_candidate",
+      "status": "listed_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO3.24",
+        "title": "1.4.Yurt Dışı Yerleşik Bankalar",
+        "frequency": "weekly",
+        "unit": "bin TL",
+        "data_group": "bie_hpbitablo3",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO3.24'"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO3.24"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_1:d6a52ad9780a",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_1:d6a52ad9780a",
+    "title": "Semantic proposal for TP.HPBITABLO4.1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.1",
+    "ticker": "TP.HPBITABLO4.1",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.TOPLAM YP MEVDUAT",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "d6a52ad9780a1cf700b4563c0bbdc2f7599ba922",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.1",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "TOPLAM YP MEVDUAT (Milyon ABD Doları)",
+      "context_title": "TOPLAM YP MEVDUAT (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "stock_total",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.1",
+        "title": "1.TOPLAM YP MEVDUAT",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.1', 'TP.HPBITABLO4.2', 'TP.HPBITABLO4.3', 'TP.HPBITABLO4.4',",
+        "'TP.HPBITABLO4.9', 'TP.HPBITABLO4.10', 'TP.HPBITABLO4.11', 'TP.HPBITABLO4.12',",
+        "'TP.HPBITABLO4.13', 'TP.HPBITABLO4.14', 'TP.HPBITABLO4.15', 'TP.HPBITABLO4.16',",
+        "'TP.HPBITABLO4.17', 'TP.HPBITABLO4.18', 'TP.HPBITABLO4.19', 'TP.HPBITABLO4.20',",
+        "'TP_HPBITABLO4_1': 'TOPLAM YP MEVDUAT',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_2:020fc292118b",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_2:020fc292118b",
+    "title": "Semantic proposal for TP.HPBITABLO4.2",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.2",
+    "ticker": "TP.HPBITABLO4.2",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.Yurt İçi Yerleşikler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:dth-share-in-total-deposits",
+      "derived:dth-share-in-resident-deposits"
+    ],
+    "candidate_formula_hint": "derived:dth-share-in-total-deposits: evds:TP.HPBITABLO4.2 / evds:TP.HPBITABLO2.1",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "020fc292118b87bc76f084e098cba2129bc61e6a",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.2",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.2",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "A. Yurt İçi Yerleşikler (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [
+        "derived:dth-share-in-total-deposits",
+        "derived:dth-share-in-resident-deposits"
+      ],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.2",
+        "title": "1.1.Yurt İçi Yerleşikler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.1', 'TP.HPBITABLO4.2', 'TP.HPBITABLO4.3', 'TP.HPBITABLO4.4',",
+        "'TP.HPBITABLO4.17', 'TP.HPBITABLO4.18', 'TP.HPBITABLO4.19', 'TP.HPBITABLO4.20',",
+        "'TP.HPBITABLO4.21'",
+        "'TP_HPBITABLO4_2': 'A. Yurt İçi Yerleşikler',",
+        "'TP_HPBITABLO4_20': 'C.d. Kıymetli Maden',"
+      ],
+      "indicator_hints": [
+        "derived:dth-share-in-total-deposits: evds:TP.HPBITABLO4.2 / evds:TP.HPBITABLO2.1",
+        "derived:dth-share-in-resident-deposits: evds:TP.HPBITABLO4.2 / evds:TP.HPBITABLO2.2"
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.2"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_3:f7bb0f2a4b90",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_3:f7bb0f2a4b90",
+    "title": "Semantic proposal for TP.HPBITABLO4.3",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.3",
+    "ticker": "TP.HPBITABLO4.3",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.1.Gerçek Kişiler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "f7bb0f2a4b90cf75e9fdf45bdb673fd009a8dda5",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.3",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.3",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "1. Gerçek Kişiler (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.3",
+        "title": "1.1.1.Gerçek Kişiler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.1', 'TP.HPBITABLO4.2', 'TP.HPBITABLO4.3', 'TP.HPBITABLO4.4',",
+        "'TP_HPBITABLO4_3': 'A.1. Gerçek Kişiler',",
+        "df_mevduat[\"Gerçek Kişiler\"] = df_mevduat[\"TP_HPBITABLO4_3\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.3"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_4:b4f375f31ee9",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_4:b4f375f31ee9",
+    "title": "Semantic proposal for TP.HPBITABLO4.4",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.4",
+    "ticker": "TP.HPBITABLO4.4",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.1.a.ABD Doları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "b4f375f31ee9038705c3f37bcc1c30c6f328f6c3",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.4",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.4",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. ABD Doları (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / a. ABD Doları (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.4",
+        "title": "1.1.1.a.ABD Doları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.1', 'TP.HPBITABLO4.2', 'TP.HPBITABLO4.3', 'TP.HPBITABLO4.4',",
+        "'TP_HPBITABLO4_4': 'A.1.a. ABD Doları',",
+        "df_mevduat[\"Dolar\"] = df_mevduat[\"TP_HPBITABLO4_4\"] + df_mevduat[\"TP_HPBITABLO4_9\"]",
+        "df_mevduat[\"Dolar (Gerçek Kişiler)\"] = df_mevduat[\"TP_HPBITABLO4_4\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.4"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_5:244b7a23133e",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_5:244b7a23133e",
+    "title": "Semantic proposal for TP.HPBITABLO4.5",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.5",
+    "ticker": "TP.HPBITABLO4.5",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.1.b.Euro - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "244b7a23133e2e267b80d7e354e571fc31e30f2f",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.5",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.5",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. Euro - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / b. Euro - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.5",
+        "title": "1.1.1.b.Euro - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.5', 'TP.HPBITABLO4.6', 'TP.HPBITABLO4.7', 'TP.HPBITABLO4.8',",
+        "'TP_HPBITABLO4_5': 'A.1.b. EURO',",
+        "df_mevduat[\"Euro\"] = df_mevduat[\"TP_HPBITABLO4_5\"] + df_mevduat[\"TP_HPBITABLO4_10\"]",
+        "df_mevduat[\"Euro (Gerçek Kişiler)\"] = df_mevduat[\"TP_HPBITABLO4_5\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.5"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_6:50007c1c4f43",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_6:50007c1c4f43",
+    "title": "Semantic proposal for TP.HPBITABLO4.6",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.6",
+    "ticker": "TP.HPBITABLO4.6",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.1.c.Diğer - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "50007c1c4f43febe3716f97bf93b28b731b60c60",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.6",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.6",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "c. Diğer - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / c. Diğer - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.6",
+        "title": "1.1.1.c.Diğer - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.5', 'TP.HPBITABLO4.6', 'TP.HPBITABLO4.7', 'TP.HPBITABLO4.8',",
+        "'TP_HPBITABLO4_6': 'A.1.c. Diğer',",
+        "df_mevduat[\"Diğer\"] = df_mevduat[\"TP_HPBITABLO4_6\"] + df_mevduat[\"TP_HPBITABLO4_11\"]",
+        "df_mevduat[\"Diğer (Gerçek Kişiler)\"] = df_mevduat[\"TP_HPBITABLO4_6\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.6"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_7:a3003a069c69",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_7:a3003a069c69",
+    "title": "Semantic proposal for TP.HPBITABLO4.7",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.7",
+    "ticker": "TP.HPBITABLO4.7",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.1.d.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "a3003a069c691eb24952af09662872c878821291",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.7",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.7",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "d. Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / d. Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.7",
+        "title": "1.1.1.d.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.5', 'TP.HPBITABLO4.6', 'TP.HPBITABLO4.7', 'TP.HPBITABLO4.8',",
+        "'TP_HPBITABLO4_7': 'A.1.d. Kıymetli Maden',",
+        "df_mevduat[\"Altın\"] = df_mevduat[\"TP_HPBITABLO4_7\"] + df_mevduat[\"TP_HPBITABLO4_12\"]",
+        "df_mevduat[\"Altın (Gerçek Kişiler)\"] = df_mevduat[\"TP_HPBITABLO4_7\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.7"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_8:3892178d0f32",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_8:3892178d0f32",
+    "title": "Semantic proposal for TP.HPBITABLO4.8",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.8",
+    "ticker": "TP.HPBITABLO4.8",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.Tüzel Kişiler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "3892178d0f328dc414ef4be52fb183c1dbe1457f",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.8",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.8",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "2. Tüzel Kişiler (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.8",
+        "title": "1.1.2.Tüzel Kişiler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.5', 'TP.HPBITABLO4.6', 'TP.HPBITABLO4.7', 'TP.HPBITABLO4.8',",
+        "'TP_HPBITABLO4_8': 'A.2. Tüzel Kişiler',",
+        "df_mevduat[\"Tüzel Kişiler\"] = df_mevduat[\"TP_HPBITABLO4_8\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.8"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_9:b2880e08f339",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_9:b2880e08f339",
+    "title": "Semantic proposal for TP.HPBITABLO4.9",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.9",
+    "ticker": "TP.HPBITABLO4.9",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.a.ABD Doları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "b2880e08f339b07bb921fc86d01d44df91a70e3f",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.9",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.9",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. ABD Doları (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / a. ABD Doları (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.9",
+        "title": "1.1.2.a.ABD Doları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.9', 'TP.HPBITABLO4.10', 'TP.HPBITABLO4.11', 'TP.HPBITABLO4.12',",
+        "'TP_HPBITABLO4_9': 'A.2.a. ABD Doları',",
+        "df_mevduat[\"Dolar\"] = df_mevduat[\"TP_HPBITABLO4_4\"] + df_mevduat[\"TP_HPBITABLO4_9\"]",
+        "df_mevduat[\"Dolar (Tüzel Kişiler)\"] = df_mevduat[\"TP_HPBITABLO4_9\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.9"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_10:2934e4041d65",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_10:2934e4041d65",
+    "title": "Semantic proposal for TP.HPBITABLO4.10",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.10",
+    "ticker": "TP.HPBITABLO4.10",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.b.Euro - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "2934e4041d654b5963b91f9b7668ee51f0487a3a",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.10",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.10",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. Euro - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / b. Euro - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.10",
+        "title": "1.1.2.b.Euro - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.9', 'TP.HPBITABLO4.10', 'TP.HPBITABLO4.11', 'TP.HPBITABLO4.12',",
+        "'TP_HPBITABLO4_10': 'A.2.b. EURO',",
+        "df_mevduat[\"Euro\"] = df_mevduat[\"TP_HPBITABLO4_5\"] + df_mevduat[\"TP_HPBITABLO4_10\"]",
+        "df_mevduat[\"Euro (Tüzel Kişiler)\"] = df_mevduat[\"TP_HPBITABLO4_10\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.10"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_11:ca5f91266efe",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_11:ca5f91266efe",
+    "title": "Semantic proposal for TP.HPBITABLO4.11",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.11",
+    "ticker": "TP.HPBITABLO4.11",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.c.Diğer - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ca5f91266efe55ae82cb48a770df63632e16131f",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.11",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.11",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "c. Diğer - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / c. Diğer - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.11",
+        "title": "1.1.2.c.Diğer - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.9', 'TP.HPBITABLO4.10', 'TP.HPBITABLO4.11', 'TP.HPBITABLO4.12',",
+        "'TP_HPBITABLO4_11': 'A.2.c. Diğer',",
+        "df_mevduat[\"Diğer\"] = df_mevduat[\"TP_HPBITABLO4_6\"] + df_mevduat[\"TP_HPBITABLO4_11\"]",
+        "df_mevduat[\"Diğer (Tüzel Kişiler)\"] = df_mevduat[\"TP_HPBITABLO4_11\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.11"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_12:a03a58720801",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_12:a03a58720801",
+    "title": "Semantic proposal for TP.HPBITABLO4.12",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.12",
+    "ticker": "TP.HPBITABLO4.12",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.1.2.d.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "a03a58720801bb689157601041578a473fd1cd16",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.12",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.12",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "d. Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "A. Yurt İçi Yerleşikler (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / d. Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.12",
+        "title": "1.1.2.d.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.9', 'TP.HPBITABLO4.10', 'TP.HPBITABLO4.11', 'TP.HPBITABLO4.12',",
+        "'TP_HPBITABLO4_12': 'A.2.d. Kıymetli Maden',",
+        "df_mevduat[\"Altın\"] = df_mevduat[\"TP_HPBITABLO4_7\"] + df_mevduat[\"TP_HPBITABLO4_12\"]",
+        "df_mevduat[\"Altın (Tüzel Kişiler)\"] = df_mevduat[\"TP_HPBITABLO4_12\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.12"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_13:cd2e320718df",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_13:cd2e320718df",
+    "title": "Semantic proposal for TP.HPBITABLO4.13",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.13",
+    "ticker": "TP.HPBITABLO4.13",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.2.Yurt İçi Yerleşik Bankalar",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "cd2e320718df4990c9c0b13b3af50d1c680b695d",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.13",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.13",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "B. Yurt İçi Yerleşik Bankalar (Milyon ABD Doları)",
+      "context_title": "B. Yurt İçi Yerleşik Bankalar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.13",
+        "title": "1.2.Yurt İçi Yerleşik Bankalar",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.13', 'TP.HPBITABLO4.14', 'TP.HPBITABLO4.15', 'TP.HPBITABLO4.16',",
+        "'TP_HPBITABLO4_13': 'B. Yurt İçi Yerleşik Bankalar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.13"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_14:7c33177176c3",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_14:7c33177176c3",
+    "title": "Semantic proposal for TP.HPBITABLO4.14",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.14",
+    "ticker": "TP.HPBITABLO4.14",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "TP.HPBITABLO4.14",
+    "candidate_unit": "",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.25,
+    "source": "heuristic",
+    "evidence_fingerprint": "7c33177176c38edde58a945a3171758a233cff62",
+    "catalog_record_id": "",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.14",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "unresolved_from_notebook",
+      "context_title": "",
+      "frequency": "weekly",
+      "unit": "",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {},
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.13', 'TP.HPBITABLO4.14', 'TP.HPBITABLO4.15', 'TP.HPBITABLO4.16',"
+      ],
+      "indicator_hints": [],
+      "notes": "Notebook icindeki kayitli EVDS seri adinda gorunmedigi icin unresolved_from_notebook olarak isaretlendi."
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Notebook icindeki kayitli EVDS seri adinda gorunmedigi icin unresolved_from_notebook olarak isaretlendi."
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_15:c0f6f77509d4",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_15:c0f6f77509d4",
+    "title": "Semantic proposal for TP.HPBITABLO4.15",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.15",
+    "ticker": "TP.HPBITABLO4.15",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "TP.HPBITABLO4.15",
+    "candidate_unit": "",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.25,
+    "source": "heuristic",
+    "evidence_fingerprint": "c0f6f77509d45c420e044a173c4cf95e1bb061ef",
+    "catalog_record_id": "",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.15",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "unresolved_from_notebook",
+      "context_title": "",
+      "frequency": "weekly",
+      "unit": "",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {},
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.13', 'TP.HPBITABLO4.14', 'TP.HPBITABLO4.15', 'TP.HPBITABLO4.16',"
+      ],
+      "indicator_hints": [],
+      "notes": "Notebook icindeki kayitli EVDS seri adinda gorunmedigi icin unresolved_from_notebook olarak isaretlendi."
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Notebook icindeki kayitli EVDS seri adinda gorunmedigi icin unresolved_from_notebook olarak isaretlendi."
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_16:c8328ffeb46f",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_16:c8328ffeb46f",
+    "title": "Semantic proposal for TP.HPBITABLO4.16",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.16",
+    "ticker": "TP.HPBITABLO4.16",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.Yurt Dışı Yerleşikler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "c8328ffeb46f4706d9a397bedea234cc74099256",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.16",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.16",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "C. Yurt Dışı Yerleşikler (Milyon ABD Doları)",
+      "context_title": "C. Yurt Dışı Yerleşikler (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.16",
+        "title": "1.3.Yurt Dışı Yerleşikler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.13', 'TP.HPBITABLO4.14', 'TP.HPBITABLO4.15', 'TP.HPBITABLO4.16',",
+        "'TP_HPBITABLO4_16': 'C. Yurt Dışı Yerleşikler',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.16"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_17:cbcf6cc9fd21",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_17:cbcf6cc9fd21",
+    "title": "Semantic proposal for TP.HPBITABLO4.17",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.17",
+    "ticker": "TP.HPBITABLO4.17",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.1.ABD Doları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "cbcf6cc9fd21317edef5aae4eb9512c000c7a6ee",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.17",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.17",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "a. ABD Doları (Milyon ABD Doları)",
+      "context_title": "C. Yurt Dışı Yerleşikler (Milyon ABD Doları) / a. ABD Doları (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.17",
+        "title": "1.3.1.ABD Doları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.17', 'TP.HPBITABLO4.18', 'TP.HPBITABLO4.19', 'TP.HPBITABLO4.20',",
+        "'TP_HPBITABLO4_17': 'C.a. ABD Doları',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.17"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_18:53f2d03f3cdf",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_18:53f2d03f3cdf",
+    "title": "Semantic proposal for TP.HPBITABLO4.18",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.18",
+    "ticker": "TP.HPBITABLO4.18",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.2.Euro - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "53f2d03f3cdf982a3d17ae1ef633d692bc318863",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.18",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.18",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "b. Euro - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "C. Yurt Dışı Yerleşikler (Milyon ABD Doları) / b. Euro - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.18",
+        "title": "1.3.2.Euro - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.17', 'TP.HPBITABLO4.18', 'TP.HPBITABLO4.19', 'TP.HPBITABLO4.20',",
+        "'TP_HPBITABLO4_18': 'C.b. EURO',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.18"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_19:000e15435b5f",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_19:000e15435b5f",
+    "title": "Semantic proposal for TP.HPBITABLO4.19",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.19",
+    "ticker": "TP.HPBITABLO4.19",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.3.Diğer - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "000e15435b5fe1015f735d2c8fc2e67da75f25e8",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.19",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.19",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "c. Diğer - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "C. Yurt Dışı Yerleşikler (Milyon ABD Doları) / c. Diğer - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.19",
+        "title": "1.3.3.Diğer - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.17', 'TP.HPBITABLO4.18', 'TP.HPBITABLO4.19', 'TP.HPBITABLO4.20',",
+        "'TP_HPBITABLO4_19': 'C.c. Diğer',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.19"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_20:8b4935cd7668",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_20:8b4935cd7668",
+    "title": "Semantic proposal for TP.HPBITABLO4.20",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.20",
+    "ticker": "TP.HPBITABLO4.20",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.3.4.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "8b4935cd7668d7c22241d889bb1668bc1a9f3ff4",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.20",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.20",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "d. Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "context_title": "C. Yurt Dışı Yerleşikler (Milyon ABD Doları) / d. Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.20",
+        "title": "1.3.4.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.17', 'TP.HPBITABLO4.18', 'TP.HPBITABLO4.19', 'TP.HPBITABLO4.20',",
+        "'TP_HPBITABLO4_20': 'C.d. Kıymetli Maden',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.20"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_21:80c4a873548f",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO4_21:80c4a873548f",
+    "title": "Semantic proposal for TP.HPBITABLO4.21",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.21",
+    "ticker": "TP.HPBITABLO4.21",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "1.4.Yurt Dışı Yerleşik Bankalar",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "80c4a873548f3b22dd8fd98340604fa59df92a45",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.21",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.21",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "D. Yurt Dışı Yerleşik Bankalar (Milyon ABD Doları)",
+      "context_title": "D. Yurt Dışı Yerleşik Bankalar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "fetched_only",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.21",
+        "title": "1.4.Yurt Dışı Yerleşik Bankalar",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO4.21'",
+        "'TP_HPBITABLO4_21': 'D. Yurt Dışı Yerleşik Bankalar'"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.21"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:dth-blg-v7:series:TP_HPBITABLO5_12:30fc288bad0f",
+    "proposal_id": "proposal:dth-blg-v7:series:TP_HPBITABLO5_12:30fc288bad0f",
+    "title": "Semantic proposal for TP.HPBITABLO5.12",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.12",
+    "ticker": "TP.HPBITABLO5.12",
+    "notebook_slug": "dth-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\DTH_Blg_V7.ipynb",
+    "candidate_title": "2.Parite Etkisi (Yurt İçi Yerleşikler)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "parity_effect_input",
+    "candidate_theme_ids": [
+      "theme:dth"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "30fc288bad0f7fb5dfa874961263597ff92f2ef6",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.12",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.12",
+      "notebook_slug": "dth-blg-v7",
+      "official_series_name": "Yabanci para mevduatta haftalik degisim ve parite etkisi",
+      "context_title": "Yabanci para mevduatta haftalik degisim ve parite etkisi",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "parity_effect_input",
+      "status": "reported_output",
+      "theme_ids": [
+        "theme:dth"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:dth-old-series-excel"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.12",
+        "title": "2.Parite Etkisi (Yurt İçi Yerleşikler)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "[\"TP.HPBITABLO5.12\"],",
+        "dth_parite_etkisi.rename(columns={'TP_HPBITABLO5_12': 'B. Parite Etkisi (Yurt İçi Yerleşikler)'}, inplace=True)"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.12"
+  }
+]

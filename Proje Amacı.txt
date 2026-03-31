@@ -1,0 +1,4 @@
+Projenin amacı: Proje benim bir ekonomist olarak kullandığım veri setlerini benim yerime toplayabilecek bir agent oluşturmak üzerine 
+
+Bu agenta yavaş yavaş benim hangi veri setlerini nerden aldığımı, hangi verilerden neleri türettiğimi ve çıkarım yaptığımı anlatacağım  da burdan beslenecek.
+

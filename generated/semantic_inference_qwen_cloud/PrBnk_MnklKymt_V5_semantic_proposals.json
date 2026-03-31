@@ -1,0 +1,3954 @@
+[
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_1:b9f7f8c1c5c7",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_1:b9f7f8c1c5c7",
+    "title": "Semantic proposal for TP.HPBITABLO5.1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.1",
+    "ticker": "TP.HPBITABLO5.1",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "b9f7f8c1c5c761490a19f6f4d85e62304686d0f5",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.1",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.1",
+        "title": "1.Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.1', 'TP.HPBITABLO5.2', 'TP.HPBITABLO5.3', 'TP.HPBITABLO5.4',",
+        "'TP.HPBITABLO5.9', 'TP.HPBITABLO5.10', 'TP.HPBITABLO5.11', 'TP.HPBITABLO5.12',",
+        "'TP.HPBITABLO5.13', 'TP.HPBITABLO5.14', 'TP.HPBITABLO5.15', 'TP.HPBITABLO5.16',",
+        "'TP.HPBITABLO5.17', 'TP.HPBITABLO5.18', 'TP.HPBITABLO5.19', 'TP.HPBITABLO5.20',",
+        "'TP_HPBITABLO5_1': 'A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler)',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_2:308711ac201c",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_2:308711ac201c",
+    "title": "Semantic proposal for TP.HPBITABLO5.2",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.2",
+    "ticker": "TP.HPBITABLO5.2",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.1.Gerçek Kişiler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "308711ac201c8279d154b1dabc80cea4c328d9f0",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.2",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.2",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "1. Gerçek Kişiler (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.2",
+        "title": "1.1.Gerçek Kişiler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.1', 'TP.HPBITABLO5.2', 'TP.HPBITABLO5.3', 'TP.HPBITABLO5.4',",
+        "'TP.HPBITABLO5.17', 'TP.HPBITABLO5.18', 'TP.HPBITABLO5.19', 'TP.HPBITABLO5.20',",
+        "'TP.HPBITABLO5.21', 'TP.HPBITABLO5.22'",
+        "'TP_HPBITABLO5_2': 'A1. Gerçek Kişiler',",
+        "'TP_HPBITABLO5_20': 'B2b. Euro Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.2"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_3:ddcbda527d1d",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_3:ddcbda527d1d",
+    "title": "Semantic proposal for TP.HPBITABLO5.3",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.3",
+    "ticker": "TP.HPBITABLO5.3",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.1.1.ABD Doları Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ddcbda527d1d98bc0e58fd129eef99da55fab66b",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.3",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.3",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "a. ABD Doları Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / a. ABD Doları Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.3",
+        "title": "1.1.1.ABD Doları Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.1', 'TP.HPBITABLO5.2', 'TP.HPBITABLO5.3', 'TP.HPBITABLO5.4',",
+        "'TP_HPBITABLO5_3': 'A1a. ABD Doları Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.3"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_4:7a6f53cf429d",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_4:7a6f53cf429d",
+    "title": "Semantic proposal for TP.HPBITABLO5.4",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.4",
+    "ticker": "TP.HPBITABLO5.4",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.1.2.Euro Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "7a6f53cf429d19694182a9dbe8d9c4e8b102398e",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.4",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.4",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "b. Euro Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / b. Euro Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.4",
+        "title": "1.1.2.Euro Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.1', 'TP.HPBITABLO5.2', 'TP.HPBITABLO5.3', 'TP.HPBITABLO5.4',",
+        "'TP_HPBITABLO5_4': 'A1b. Euro Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.4"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_5:26077ee6ba3b",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_5:26077ee6ba3b",
+    "title": "Semantic proposal for TP.HPBITABLO5.5",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.5",
+    "ticker": "TP.HPBITABLO5.5",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.1.3.Diğer Para Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "26077ee6ba3b9573213187f4ab774ddbdeaeea3b",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.5",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.5",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "c. Diğer Para Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / c. Diğer Para Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.5",
+        "title": "1.1.3.Diğer Para Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.5', 'TP.HPBITABLO5.6', 'TP.HPBITABLO5.7', 'TP.HPBITABLO5.8',",
+        "'TP_HPBITABLO5_5': 'A1c. Diğer Para Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.5"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_6:3144533dd78b",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_6:3144533dd78b",
+    "title": "Semantic proposal for TP.HPBITABLO5.6",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.6",
+    "ticker": "TP.HPBITABLO5.6",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.1.4.Kıymetli Maden Depo Hesapları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "3144533dd78b773af6b0c21039e72bbeadb760d8",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.6",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.6",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "d. Kıymetli Maden Depo Hesapları (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / d. Kıymetli Maden Depo Hesapları (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.6",
+        "title": "1.1.4.Kıymetli Maden Depo Hesapları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.5', 'TP.HPBITABLO5.6', 'TP.HPBITABLO5.7', 'TP.HPBITABLO5.8',",
+        "'TP_HPBITABLO5_6': 'A1d. Kıymetli Maden Depo Hesapları',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.6"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_7:e0018590c4bf",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_7:e0018590c4bf",
+    "title": "Semantic proposal for TP.HPBITABLO5.7",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.7",
+    "ticker": "TP.HPBITABLO5.7",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.2.Tüzel Kişiler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "e0018590c4bf7bab764df195462126ea8691e282",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.7",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.7",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2. Tüzel Kişiler (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.7",
+        "title": "1.2.Tüzel Kişiler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.5', 'TP.HPBITABLO5.6', 'TP.HPBITABLO5.7', 'TP.HPBITABLO5.8',",
+        "'TP_HPBITABLO5_7': 'A2. Tüzel Kişiler',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.7"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_8:f8c066cb8066",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_8:f8c066cb8066",
+    "title": "Semantic proposal for TP.HPBITABLO5.8",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.8",
+    "ticker": "TP.HPBITABLO5.8",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.2.1.ABD Doları Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "f8c066cb80661ce806f3fe2798f753fa1e8666fc",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.8",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.8",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "a. ABD Doları Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / a. ABD Doları Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.8",
+        "title": "1.2.1.ABD Doları Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.5', 'TP.HPBITABLO5.6', 'TP.HPBITABLO5.7', 'TP.HPBITABLO5.8',",
+        "'TP_HPBITABLO5_8': 'A2a. ABD Doları Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.8"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_9:3ac3825c2e9b",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_9:3ac3825c2e9b",
+    "title": "Semantic proposal for TP.HPBITABLO5.9",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.9",
+    "ticker": "TP.HPBITABLO5.9",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.2.2.Euro Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "3ac3825c2e9bd6a66087159f594815ce5b2946d2",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.9",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.9",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "b. Euro Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / b. Euro Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.9",
+        "title": "1.2.2.Euro Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.9', 'TP.HPBITABLO5.10', 'TP.HPBITABLO5.11', 'TP.HPBITABLO5.12',",
+        "'TP_HPBITABLO5_9': 'A2b. Euro Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.9"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_10:759a3e31fe18",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_10:759a3e31fe18",
+    "title": "Semantic proposal for TP.HPBITABLO5.10",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.10",
+    "ticker": "TP.HPBITABLO5.10",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.2.3.Diğer Para Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "759a3e31fe18f929f1b96d4ec16a5607922c7dc2",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.10",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.10",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "c. Diğer Para Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / c. Diğer Para Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.10",
+        "title": "1.2.3.Diğer Para Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.9', 'TP.HPBITABLO5.10', 'TP.HPBITABLO5.11', 'TP.HPBITABLO5.12',",
+        "'TP_HPBITABLO5_10': 'A2c. Diğer Para Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.10"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_11:793178dedf26",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_11:793178dedf26",
+    "title": "Semantic proposal for TP.HPBITABLO5.11",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.11",
+    "ticker": "TP.HPBITABLO5.11",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.2.4.Kıymetli Maden Depo Hesapları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "793178dedf263a76d39cf26f5b4399d650e5f71d",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.11",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.11",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "d. Kıymetli Maden Depo Hesapları (Milyon ABD Doları)",
+      "context_title": "A. Parite Etkisinden Arındırılmış Değişim (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / d. Kıymetli Maden Depo Hesapları (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.11",
+        "title": "1.2.4.Kıymetli Maden Depo Hesapları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.9', 'TP.HPBITABLO5.10', 'TP.HPBITABLO5.11', 'TP.HPBITABLO5.12',",
+        "'TP_HPBITABLO5_11': 'A2d. Kıymetli Maden Depo Hesapları',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.11"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_12:dd87383be797",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_12:dd87383be797",
+    "title": "Semantic proposal for TP.HPBITABLO5.12",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.12",
+    "ticker": "TP.HPBITABLO5.12",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.Parite Etkisi (Yurt İçi Yerleşikler)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "parity_effect_input",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "dd87383be79736b9cc7c2fb05d67b9849c18797c",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.12",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.12",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "parity_effect_input",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.12",
+        "title": "2.Parite Etkisi (Yurt İçi Yerleşikler)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.9', 'TP.HPBITABLO5.10', 'TP.HPBITABLO5.11', 'TP.HPBITABLO5.12',",
+        "'TP_HPBITABLO5_12': 'B. Parite Etkisi (Yurt İçi Yerleşikler)',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.12"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_13:d2f4c50d6975",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_13:d2f4c50d6975",
+    "title": "Semantic proposal for TP.HPBITABLO5.13",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.13",
+    "ticker": "TP.HPBITABLO5.13",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1.Gerçek Kişiler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "d2f4c50d6975d3c232d2c50a1d64a480b1c093e9",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.13",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.13",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "1. Gerçek Kişiler (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.13",
+        "title": "2.1.Gerçek Kişiler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.13', 'TP.HPBITABLO5.14', 'TP.HPBITABLO5.15', 'TP.HPBITABLO5.16',",
+        "'TP_HPBITABLO5_13': 'B1. Gerçek Kişiler',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.13"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_14:031630f7f7b1",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_14:031630f7f7b1",
+    "title": "Semantic proposal for TP.HPBITABLO5.14",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.14",
+    "ticker": "TP.HPBITABLO5.14",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1.1.ABD Doları Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "031630f7f7b1a545046e649354673edefe8982b7",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.14",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.14",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "a. ABD Doları Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / a. ABD Doları Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.14",
+        "title": "2.1.1.ABD Doları Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.13', 'TP.HPBITABLO5.14', 'TP.HPBITABLO5.15', 'TP.HPBITABLO5.16',",
+        "'TP_HPBITABLO5_14': 'B1a. ABD Doları Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.14"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_15:1ef384e768a1",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_15:1ef384e768a1",
+    "title": "Semantic proposal for TP.HPBITABLO5.15",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.15",
+    "ticker": "TP.HPBITABLO5.15",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1.2.Euro Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "1ef384e768a1ab5619dd461538eb8e9b4ff7f976",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.15",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.15",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "b. Euro Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / b. Euro Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.15",
+        "title": "2.1.2.Euro Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.13', 'TP.HPBITABLO5.14', 'TP.HPBITABLO5.15', 'TP.HPBITABLO5.16',",
+        "'TP_HPBITABLO5_15': 'B1b. Euro Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.15"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_16:4cc0678948a1",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_16:4cc0678948a1",
+    "title": "Semantic proposal for TP.HPBITABLO5.16",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.16",
+    "ticker": "TP.HPBITABLO5.16",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1.3.Diğer Para Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "4cc0678948a198730784c8fe4f94015a0775659d",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.16",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.16",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "c. Diğer Para Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / c. Diğer Para Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.16",
+        "title": "2.1.3.Diğer Para Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.13', 'TP.HPBITABLO5.14', 'TP.HPBITABLO5.15', 'TP.HPBITABLO5.16',",
+        "'TP_HPBITABLO5_16': 'B1c. Diğer Para Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.16"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_17:ec9161202191",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_17:ec9161202191",
+    "title": "Semantic proposal for TP.HPBITABLO5.17",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.17",
+    "ticker": "TP.HPBITABLO5.17",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1.4.Kıymetli Maden Depo Hesapları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ec916120219126d42931d27fd7b89cbf2e760030",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.17",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.17",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "d. Kıymetli Maden Depo Hesapları (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 1. Gerçek Kişiler (Milyon ABD Doları) / d. Kıymetli Maden Depo Hesapları (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.17",
+        "title": "2.1.4.Kıymetli Maden Depo Hesapları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.17', 'TP.HPBITABLO5.18', 'TP.HPBITABLO5.19', 'TP.HPBITABLO5.20',",
+        "'TP_HPBITABLO5_17': 'B1d. Kıymetli Maden Depo Hesapları',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.17"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_18:65613b0cd0e9",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_18:65613b0cd0e9",
+    "title": "Semantic proposal for TP.HPBITABLO5.18",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.18",
+    "ticker": "TP.HPBITABLO5.18",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.Tüzel Kişiler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "owner_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "65613b0cd0e97b693b9fbcd2be339b0c0a1e9dff",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.18",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.18",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2. Tüzel Kişiler (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "owner_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.18",
+        "title": "2.2.Tüzel Kişiler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.17', 'TP.HPBITABLO5.18', 'TP.HPBITABLO5.19', 'TP.HPBITABLO5.20',",
+        "'TP_HPBITABLO5_18': 'B2. Tüzel Kişiler',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.18"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_19:82457105c9be",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_19:82457105c9be",
+    "title": "Semantic proposal for TP.HPBITABLO5.19",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.19",
+    "ticker": "TP.HPBITABLO5.19",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.1.ABD Doları Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "82457105c9be141a385ac305b540e45e779d400f",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.19",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.19",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "a. ABD Doları Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / a. ABD Doları Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.19",
+        "title": "2.2.1.ABD Doları Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.17', 'TP.HPBITABLO5.18', 'TP.HPBITABLO5.19', 'TP.HPBITABLO5.20',",
+        "'TP_HPBITABLO5_19': 'B2a. ABD Doları Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.19"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_20:647c637c86bf",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_20:647c637c86bf",
+    "title": "Semantic proposal for TP.HPBITABLO5.20",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.20",
+    "ticker": "TP.HPBITABLO5.20",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.2.Euro Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "647c637c86bf71743d95197b8969df6c348ba9e8",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.20",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.20",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "b. Euro Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / b. Euro Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.20",
+        "title": "2.2.2.Euro Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.17', 'TP.HPBITABLO5.18', 'TP.HPBITABLO5.19', 'TP.HPBITABLO5.20',",
+        "'TP_HPBITABLO5_20': 'B2b. Euro Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.20"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_21:5aa1952fa9fe",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_21:5aa1952fa9fe",
+    "title": "Semantic proposal for TP.HPBITABLO5.21",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.21",
+    "ticker": "TP.HPBITABLO5.21",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.3.Diğer Para Cinsi Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "5aa1952fa9fe54c71be4bacae23056e8bd45b2f4",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.21",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.21",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "c. Diğer Para Cinsi Mevduatlar (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / c. Diğer Para Cinsi Mevduatlar (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.21",
+        "title": "2.2.3.Diğer Para Cinsi Mevduat",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.21', 'TP.HPBITABLO5.22'",
+        "'TP_HPBITABLO5_21': 'B2c. Diğer Para Cinsi Mevduatlar',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.21"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_22:3501681de6b3",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_HPBITABLO5_22:3501681de6b3",
+    "title": "Semantic proposal for TP.HPBITABLO5.22",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO5.22",
+    "ticker": "TP.HPBITABLO5.22",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.4.Kıymetli Maden Depo Hesapları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "currency_split_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "3501681de6b3548c5cb2520ad6f9960f67e2552f",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO5.22",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO5.22",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "d. Kıymetli Maden Depo Hesapları (Milyon ABD Doları)",
+      "context_title": "B. Parite Etkisi (Yurt İçi Yerleşikler) (Milyon ABD Doları) / 2. Tüzel Kişiler (Milyon ABD Doları) / d. Kıymetli Maden Depo Hesapları (Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "currency_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO5.22",
+        "title": "2.2.4.Kıymetli Maden Depo Hesapları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo5",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.HPBITABLO5.21', 'TP.HPBITABLO5.22'",
+        "'TP_HPBITABLO5_22': 'B2d. Kıymetli Maden Depo Hesapları'"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO5.22"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A01:b83a7e6fb130",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A01:b83a7e6fb130",
+    "title": "Semantic proposal for TP.AB.A01",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A01",
+    "ticker": "TP.AB.A01",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "A.AKTİF",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:swap-stock"
+    ],
+    "candidate_formula_hint": "derived:swap-stock: Swap PDF ve analitik bilanco destek serilerinden uretilir.",
+    "confidence": 0.85,
+    "source": "hybrid",
+    "evidence_fingerprint": "b83a7e6fb130e8bcf973c8027ca679b8fa595160",
+    "catalog_record_id": "catalog:evds2:TP.AB.A01",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A01",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "A.AKTİF(Bin TL)",
+      "context_title": "A.AKTİF(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [
+        "derived:swap-stock"
+      ],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A01",
+        "title": "A.AKTİF",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A01\": [1, \"AKTİF\"],"
+      ],
+      "indicator_hints": [
+        "derived:swap-stock: Swap PDF ve analitik bilanco destek serilerinden uretilir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A01"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A02:13bdcfd8f809",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A02:13bdcfd8f809",
+    "title": "Semantic proposal for TP.AB.A02",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A02",
+    "ticker": "TP.AB.A02",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "A.1 DIŞ VARLIKLAR",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "hybrid",
+    "evidence_fingerprint": "13bdcfd8f809c165bf91f6bc7184d60638b554e8",
+    "catalog_record_id": "catalog:evds2:TP.AB.A02",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A02",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "A.1_DIŞ VARLIKLAR(Bin TL)",
+      "context_title": "A.1_DIŞ VARLIKLAR(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A02",
+        "title": "A.1 DIŞ VARLIKLAR",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A02\": [2, \"I-Dış Varlıklar\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A02"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A03:3161fdd52289",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A03:3161fdd52289",
+    "title": "Semantic proposal for TP.AB.A03",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A03",
+    "ticker": "TP.AB.A03",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "A.2 İÇ VARLIKLAR",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "hybrid",
+    "evidence_fingerprint": "3161fdd5228945701549865d79aecac1b87eec0f",
+    "catalog_record_id": "catalog:evds2:TP.AB.A03",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A03",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "A.2_İÇ VARLIKLAR(Bin TL)",
+      "context_title": "A.2_İÇ VARLIKLAR(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A03",
+        "title": "A.2 İÇ VARLIKLAR",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A03\": [2, \"II-İç Varlıklar\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A03"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A08:607a2880ece0",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A08:607a2880ece0",
+    "title": "Semantic proposal for TP.AB.A08",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A08",
+    "ticker": "TP.AB.A08",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "A.3 DEĞERLEME HESABI",
+    "candidate_unit": "BİN TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "heuristic",
+    "evidence_fingerprint": "607a2880ece0e6bf6ef32675da5ea77f07a433ef",
+    "catalog_record_id": "catalog:evds2:TP.AB.A08",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A08",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "A.3_DEĞERLEME HESABI(BİN TL)",
+      "context_title": "A.3_DEĞERLEME HESABI(BİN TL)",
+      "frequency": "weekly",
+      "unit": "BİN TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A08",
+        "title": "A.3 DEĞERLEME HESABI",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A08\": [2, \"III-Değerleme Hesabı\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A08"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A09:5167abcf6b1f",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A09:5167abcf6b1f",
+    "title": "Semantic proposal for TP.AB.A09",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A09",
+    "ticker": "TP.AB.A09",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "P.PASİF",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.95,
+    "source": "hybrid",
+    "evidence_fingerprint": "5167abcf6b1f51af97b68951511dbd6eea2e1ac9",
+    "catalog_record_id": "catalog:evds2:TP.AB.A09",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A09",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "P.PASİF(Bin TL)",
+      "context_title": "P.PASİF(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A09",
+        "title": "P.PASİF",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A09\": [1, \"PASİF\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A09"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A11:d40cfcd38728",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A11:d40cfcd38728",
+    "title": "Semantic proposal for TP.AB.A11",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A11",
+    "ticker": "TP.AB.A11",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "P.1a Dış Yükümlülükler",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "hybrid",
+    "evidence_fingerprint": "d40cfcd387287da87f55c8b5d1d0d8cc4006eaeb",
+    "catalog_record_id": "catalog:evds2:TP.AB.A11",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A11",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "P.1a_Dış Yükümlülükler(Bin TL)",
+      "context_title": "P.1a_Dış Yükümlülükler(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A11",
+        "title": "P.1a Dış Yükümlülükler",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A11\": [2, \"I-Dış Yükümlülükler\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A11"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A12:b0182285f404",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A12:b0182285f404",
+    "title": "Semantic proposal for TP.AB.A12",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A12",
+    "ticker": "TP.AB.A12",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "P.1b İç Yükümlülükler",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "hybrid",
+    "evidence_fingerprint": "b0182285f404cbffccd963d602f68535dda8b34d",
+    "catalog_record_id": "catalog:evds2:TP.AB.A12",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A12",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "P.1b_İç Yükümlülükler(Bin TL)",
+      "context_title": "P.1b_İç Yükümlülükler(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A12",
+        "title": "P.1b İç Yükümlülükler",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A12\": [2, \"II-İç Yükümlülükler\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A12"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A15:00d34d076f8d",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A15:00d34d076f8d",
+    "title": "Semantic proposal for TP.AB.A15",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A15",
+    "ticker": "TP.AB.A15",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "P.2 MERKEZ BANKASI PARASI",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "heuristic",
+    "evidence_fingerprint": "00d34d076f8d36d3b7069f445f7ce389d48abb64",
+    "catalog_record_id": "catalog:evds2:TP.AB.A15",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A15",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "P.2_MERKEZ BANKASI PARASI(Bin TL)",
+      "context_title": "P.2_MERKEZ BANKASI PARASI(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A15",
+        "title": "P.2 MERKEZ BANKASI PARASI",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A15\": [2, \"III-Merkez Bankası Parası\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A15"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A16:3db3130af634",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A16:3db3130af634",
+    "title": "Semantic proposal for TP.AB.A16",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A16",
+    "ticker": "TP.AB.A16",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "P.2A Rezerv Para",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "hybrid",
+    "evidence_fingerprint": "3db3130af63470ae9c9ae436326d9f258e3dc1c6",
+    "catalog_record_id": "catalog:evds2:TP.AB.A16",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A16",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "P.2A_Rezerv Para(Bin TL)",
+      "context_title": "P.2A_Rezerv Para(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A16",
+        "title": "P.2A Rezerv Para",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A16\": [3, \"A-Rezerv Para\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A16"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A17:0b44bb956a4c",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A17:0b44bb956a4c",
+    "title": "Semantic proposal for TP.AB.A17",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A17",
+    "ticker": "TP.AB.A17",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "P.2Aa Emisyon",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "hybrid",
+    "evidence_fingerprint": "0b44bb956a4c7cbc1bd608e9c63de78e03c330bb",
+    "catalog_record_id": "catalog:evds2:TP.AB.A17",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A17",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "P.2Aa_Emisyon(Bin TL)",
+      "context_title": "P.2Aa_Emisyon(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A17",
+        "title": "P.2Aa Emisyon",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A17\": [4, \"Bilgi için; Emisyon\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A17"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A18:086f3180e092",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A18:086f3180e092",
+    "title": "Semantic proposal for TP.AB.A18",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A18",
+    "ticker": "TP.AB.A18",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "P.2Ab Bankalar Mevduatı",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.95,
+    "source": "hybrid",
+    "evidence_fingerprint": "086f3180e0922d022b4f46497e3d2a9d8a9a8b26",
+    "catalog_record_id": "catalog:evds2:TP.AB.A18",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A18",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "P.2Ab_Bankalar Mevduatı(Bin TL)",
+      "context_title": "P.2Ab_Bankalar Mevduatı(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A18",
+        "title": "P.2Ab Bankalar Mevduatı",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A18\": [4, \"Bilgi için; Bankalar Mevduatı\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A18"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A23:0925eb5cf678",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_A23:0925eb5cf678",
+    "title": "Semantic proposal for TP.AB.A23",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A23",
+    "ticker": "TP.AB.A23",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "P.2B Diğer Merkez Bankası Parası",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "hybrid",
+    "evidence_fingerprint": "0925eb5cf6781098c2e8f30a8a07d53e71ed5828",
+    "catalog_record_id": "catalog:evds2:TP.AB.A23",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A23",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "P.2B_Diğer Merkez Bankası Parası(Bin TL)",
+      "context_title": "P.2B_Diğer Merkez Bankası Parası(Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A23",
+        "title": "P.2B Diğer Merkez Bankası Parası",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.A01\", \"TP.AB.A02\", \"TP.AB.A03\", \"TP.AB.A08\", \"TP.AB.A09\", \"TP.AB.A11\", \"TP.AB.A12\", \"TP.AB.A15\", \"TP.AB.A16\", \"TP.AB.A17\", \"TP.AB.A18\", \"TP.AB.A23\",",
+        "\"TP_AB_A23\": [3, \"B-Diğer Merkez Bankası Parası\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A23"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_C1:19fa609fa0e0",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_C1:19fa609fa0e0",
+    "title": "Semantic proposal for TP.AB.C1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.C1",
+    "ticker": "TP.AB.C1",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "Altın (Milyon ABD Doları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "19fa609fa0e0666edb6809e98cec586b67007e7a",
+    "catalog_record_id": "catalog:evds2:TP.AB.C1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.C1",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "I-Altın",
+      "context_title": "I-Altın",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.C1",
+        "title": "Altın (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_abres2",
+        "category": "ULUSLARARASI REZERVLER (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.TOPLAM\", \"TP.AB.C1\", \"TP.AB.C2\"",
+        "altin_rezerv_s0 = df_analitik_bilanco_com.loc[df_analitik_bilanco_com.index[0], \"TP_AB_C1\"].astype(float)",
+        "altin_rezerv_s1 = df_analitik_bilanco_com.loc[df_analitik_bilanco_com.index[1], \"TP_AB_C1\"].astype(float)",
+        "\"TP_AB_C1\": [2, \"I-Altın\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.C1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_C2:c327c1273a0c",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_C2:c327c1273a0c",
+    "title": "Semantic proposal for TP.AB.C2",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.C2",
+    "ticker": "TP.AB.C2",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "Döviz (Milyon ABD Doları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "c327c1273a0ce1821f7acc1d6b633337f2e0a58c",
+    "catalog_record_id": "catalog:evds2:TP.AB.C2",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.C2",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "II-Döviz",
+      "context_title": "II-Döviz",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.C2",
+        "title": "Döviz (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_abres2",
+        "category": "ULUSLARARASI REZERVLER (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.TOPLAM\", \"TP.AB.C1\", \"TP.AB.C2\"",
+        "doviz_rezerv_s0 = df_analitik_bilanco_com.loc[df_analitik_bilanco_com.index[0], \"TP_AB_C2\"].astype(float)",
+        "doviz_rezerv_s1 = df_analitik_bilanco_com.loc[df_analitik_bilanco_com.index[1], \"TP_AB_C2\"].astype(float)",
+        "\"TP_AB_C2\": [2, \"II-Döviz\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.C2"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_TOPLAM:51e5ae17e487",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_AB_TOPLAM:51e5ae17e487",
+    "title": "Semantic proposal for TP.AB.TOPLAM",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.TOPLAM",
+    "ticker": "TP.AB.TOPLAM",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "Toplam (Milyon ABD Doları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "51e5ae17e4871e7079755912913adf6a05a0d23f",
+    "catalog_record_id": "catalog:evds2:TP.AB.TOPLAM",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.TOPLAM",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "MERKEZ BANKASI REZERVLERİ (Milyon usd) (**)",
+      "context_title": "MERKEZ BANKASI REZERVLERİ (Milyon usd) (**)",
+      "frequency": "weekly",
+      "unit": "Milyon usd",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.TOPLAM",
+        "title": "Toplam (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_abres2",
+        "category": "ULUSLARARASI REZERVLER (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.TOPLAM\", \"TP.AB.C1\", \"TP.AB.C2\"",
+        "brut_rezerv_s0 = df_analitik_bilanco_com.loc[df_analitik_bilanco_com.index[0], \"TP_AB_TOPLAM\"].astype(float)",
+        "brut_rezerv_s1 = df_analitik_bilanco_com.loc[df_analitik_bilanco_com.index[1], \"TP_AB_TOPLAM\"].astype(float)",
+        "\"TP_AB_TOPLAM\": [1, \"MERKEZ BANKASI REZERVLERİ (Milyon usd) (**)\"],",
+        "if pd.isna(df_analitik_bilanco_t.at[\"TP_AB_TOPLAM\", col1]) or df_analitik_bilanco_t.at[\"TP_AB_TOPLAM\", col1] is None:"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.TOPLAM"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_DIBSPIYDEG_ST:da6840f9caca",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_DIBSPIYDEG_ST:da6840f9caca",
+    "title": "Semantic proposal for TP.DIBSPIYDEG.ST",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DIBSPIYDEG.ST",
+    "ticker": "TP.DIBSPIYDEG.ST",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.Toplam (S.1, S.2)",
+    "candidate_unit": "milyon TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:dibs-stock",
+      "derived:dibs-foreign-share",
+      "derived:equity-plus-dibs-flow"
+    ],
+    "candidate_formula_hint": "derived:dibs-foreign-share: DIBS stok ve haftalik ZIP tablosundan turetilen yabanci pay.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "da6840f9caca18664463562a64bf86b128a82a8f",
+    "catalog_record_id": "catalog:evds2:TP.DIBSPIYDEG.ST",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DIBSPIYDEG.ST",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "DİBS (Tüm Stok, Piyasa Değeri)",
+      "context_title": "DİBS (Tüm Stok, Piyasa Değeri)",
+      "frequency": "weekly",
+      "unit": "milyon TL",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [
+        "derived:dibs-stock",
+        "derived:dibs-foreign-share",
+        "derived:equity-plus-dibs-flow"
+      ],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DIBSPIYDEG.ST",
+        "title": "1.Toplam (S.1, S.2)",
+        "frequency": "weekly",
+        "unit": "milyon TL",
+        "data_group": "bie_dibspiydeg",
+        "category": "DEVLET İÇ BORÇLANMA SENETLERİ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DIBSPIYDEG.ST\": [3, \"DİBS (Tüm Stok, Piyasa Değeri)\"],",
+        "df_menkul_kiymet_apko_[\"DİBS (Tüm Stok, USD)\"] = df_menkul_kiymet_apko_[\"TP_DIBSPIYDEG_ST\"] / df_menkul_kiymet_apko_[\"TP_DK_USD_A_YTL\"]",
+        "\"TP_MKNETHAR_M9\", \"TP_MKNETHAR_M10\", \"TP_MKNETHAR_M11\", \"TP_DIBSPIYDEG_ST\", \"TP_DK_USD_A_YTL\""
+      ],
+      "indicator_hints": [
+        "derived:dibs-foreign-share: DIBS stok ve haftalik ZIP tablosundan turetilen yabanci pay.",
+        "derived:equity-plus-dibs-flow: Hisse ve DIBS akimlarinin birlestirilmis net degisimi."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DIBSPIYDEG.ST"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_DK_USD_A_YTL:efe9bae13718",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_DK_USD_A_YTL:efe9bae13718",
+    "title": "Semantic proposal for TP.DK.USD.A.YTL",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DK.USD.A.YTL",
+    "ticker": "TP.DK.USD.A.YTL",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "(USD)  ABD  Doları  (Döviz  Alış)",
+    "candidate_unit": "Türk lirası",
+    "candidate_frequency": "daily",
+    "candidate_role": "ratio_input",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "efe9bae1371859a9c4c108343ef326a1e9631dac",
+    "catalog_record_id": "catalog:evds2:TP.DK.USD.A.YTL",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DK.USD.A.YTL",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "USD/TL (Alış Kuru)",
+      "context_title": "USD/TL (Alış Kuru)",
+      "frequency": "weekly",
+      "unit": "Türk lirası",
+      "role": "ratio_input",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DK.USD.A.YTL",
+        "title": "(USD)  ABD  Doları  (Döviz  Alış)",
+        "frequency": "daily",
+        "unit": "Türk lirası",
+        "data_group": "bie_dkdovytl",
+        "category": "TCMB DÖVİZ KURLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DK.USD.A.YTL\": [3, \"USD/TL (Alış Kuru)\"],",
+        "df_menkul_kiymet_apko_[\"DİBS (Tüm Stok, USD)\"] = df_menkul_kiymet_apko_[\"TP_DIBSPIYDEG_ST\"] / df_menkul_kiymet_apko_[\"TP_DK_USD_A_YTL\"]",
+        "\"TP_MKNETHAR_M9\", \"TP_MKNETHAR_M10\", \"TP_MKNETHAR_M11\", \"TP_DIBSPIYDEG_ST\", \"TP_DK_USD_A_YTL\""
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DK.USD.A.YTL"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M1:638520ddd3c7",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M1:638520ddd3c7",
+    "title": "Semantic proposal for TP.MKNETHAR.M1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M1",
+    "ticker": "TP.MKNETHAR.M1",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.1.1. Hisse Senedi",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:equity-stock",
+      "derived:equity-foreign-share"
+    ],
+    "candidate_formula_hint": "derived:equity-foreign-share: Hisse stogu ve haftalik ZIP tablosundan turetilen yabanci pay.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "638520ddd3c74ddfe529fc0b44c6ee9079d0e746",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M1",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "1.1.1. Hisse Senedi, Stok",
+      "context_title": "1.1.1. Hisse Senedi, Stok",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [
+        "derived:equity-stock",
+        "derived:equity-foreign-share"
+      ],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M1",
+        "title": "1.1.1. Hisse Senedi",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M10\": [3, \"DİBS (Teminat)\"],",
+        "\"TP.MKNETHAR.M11\": [3, \"DİBS (Ödünç)\"],",
+        "\"TP.MKNETHAR.M12\": [3, \"Genel Yönetim Dışındaki Sektör İhraçları (***)\"],",
+        "\"TP.MKNETHAR.M1\": [3, \"Hisse Senedi\"],",
+        "\"TP.MKNETHAR.M10\": [3, \"DİBS (Teminat Alım) - Net Değişim\"],"
+      ],
+      "indicator_hints": [
+        "derived:equity-foreign-share: Hisse stogu ve haftalik ZIP tablosundan turetilen yabanci pay."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M10:24e8c4cc7a0a",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M10:24e8c4cc7a0a",
+    "title": "Semantic proposal for TP.MKNETHAR.M10",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M10",
+    "ticker": "TP.MKNETHAR.M10",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "4.2. DİBS (Teminat Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "24e8c4cc7a0abcdcfd915db2a54a80f8da99ba96",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M10",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M10",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.1.4. DİBS (Teminat Alım), Net Değişim",
+      "context_title": "2.1.4. DİBS (Teminat Alım), Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M10",
+        "title": "4.2. DİBS (Teminat Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M10\": [3, \"DİBS (Teminat)\"],",
+        "\"TP.MKNETHAR.M10\": [3, \"DİBS (Teminat Alım) - Net Değişim\"],",
+        "df_menkul_kiymet_apko_[\"DİBS - Net Değişim\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M8\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M9\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M10\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M11\"]",
+        "\"TP_MKNETHAR_M9\", \"TP_MKNETHAR_M10\", \"TP_MKNETHAR_M11\", \"TP_DIBSPIYDEG_ST\", \"TP_DK_USD_A_YTL\""
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M10"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M11:bc4c7e015687",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M11:bc4c7e015687",
+    "title": "Semantic proposal for TP.MKNETHAR.M11",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M11",
+    "ticker": "TP.MKNETHAR.M11",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "4.3. DİBS (Ödünç Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "bc4c7e01568759aa30e2793f626723e3312429b4",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M11",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M11",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.1.5. DİBS (Ödünç Alım), Net Değişim",
+      "context_title": "2.1.5. DİBS (Ödünç Alım), Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M11",
+        "title": "4.3. DİBS (Ödünç Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M11\": [3, \"DİBS (Ödünç)\"],",
+        "\"TP.MKNETHAR.M11\": [3, \"DİBS (Ödünç Alım) - Net Değişim\"],",
+        "df_menkul_kiymet_apko_[\"DİBS - Net Değişim\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M8\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M9\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M10\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M11\"]",
+        "\"TP_MKNETHAR_M9\", \"TP_MKNETHAR_M10\", \"TP_MKNETHAR_M11\", \"TP_DIBSPIYDEG_ST\", \"TP_DK_USD_A_YTL\""
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M11"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M12:8a7fb8038c7f",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M12:8a7fb8038c7f",
+    "title": "Semantic proposal for TP.MKNETHAR.M12",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M12",
+    "ticker": "TP.MKNETHAR.M12",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1.3. Genel Yönetim Dışındaki Sektörlerce İhraç Edilen Borçlanma Senetleri",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "8a7fb8038c7f2560d141cbe96b952700a67e7e88",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M12",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M12",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.1.6. Genel Yönetim Dışındaki Sektörlerce İhraç Edilen Borçlanma Senetleri, Net Değişim",
+      "context_title": "2.1.6. Genel Yönetim Dışındaki Sektörlerce İhraç Edilen Borçlanma Senetleri, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M12",
+        "title": "2.1.3. Genel Yönetim Dışındaki Sektörlerce İhraç Edilen Borçlanma Senetleri",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M12\": [3, \"Genel Yönetim Dışındaki Sektör İhraçları (***)\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M12"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M2:4bbc49370faa",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M2:4bbc49370faa",
+    "title": "Semantic proposal for TP.MKNETHAR.M2",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M2",
+    "ticker": "TP.MKNETHAR.M2",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "1.1.2. DİBS (Kesin Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:equity-stock"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "4bbc49370faa34704e2073c4a07c7768ef854250",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M2",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M2",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "1.1.2. DİBS (Kesin Alım), Stok",
+      "context_title": "1.1.2. DİBS (Kesin Alım), Stok",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [
+        "derived:equity-stock"
+      ],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M2",
+        "title": "1.1.2. DİBS (Kesin Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M20\": [1, \"NET DEĞİŞİM GENEL TOPLAM (**)\"],",
+        "\"TP.MKNETHAR.M21\": [2, \"B.1. Yurt İçi Piyasa Toplam (**)\"],",
+        "\"TP.MKNETHAR.M22\": [2, \"B.2. Yurt Dışı Piyasa Toplam\"],",
+        "\"TP.MKNETHAR.M23\": [3, \"Genel Yönetim İhraçları\"],",
+        "\"TP.MKNETHAR.M24\": [3, \"Finansal Olmayan Kuruluş İhraçları\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M2"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M20:72b5d53f0cef",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M20:72b5d53f0cef",
+    "title": "Semantic proposal for TP.MKNETHAR.M20",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M20",
+    "ticker": "TP.MKNETHAR.M20",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2. Net Değişim Genel Toplam",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:equity-plus-dibs-flow",
+      "derived:portfolio-flow-total"
+    ],
+    "candidate_formula_hint": "derived:equity-plus-dibs-flow: Hisse ve DIBS akimlarinin birlestirilmis net degisimi.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "72b5d53f0cef0d4120c65ac8f0bd458192b16296",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M20",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M20",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2. Net Değişim Genel Toplam, Net Değişim",
+      "context_title": "2. Net Değişim Genel Toplam, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [
+        "derived:equity-plus-dibs-flow",
+        "derived:portfolio-flow-total"
+      ],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M20",
+        "title": "2. Net Değişim Genel Toplam",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M20\": [1, \"NET DEĞİŞİM GENEL TOPLAM (**)\"],",
+        "tl_yp_menkul_kiymet_f = df_menkul_kiymet_com.loc[df_menkul_kiymet_com.index[0], \"TP_MKNETHAR_M20\"].astype(float)"
+      ],
+      "indicator_hints": [
+        "derived:equity-plus-dibs-flow: Hisse ve DIBS akimlarinin birlestirilmis net degisimi.",
+        "derived:portfolio-flow-total: Hisse, DIBS ve ilgili destek tablolarindan portfoy akis toplami uretilir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M20"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M21:b0c198e8350d",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M21:b0c198e8350d",
+    "title": "Semantic proposal for TP.MKNETHAR.M21",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M21",
+    "ticker": "TP.MKNETHAR.M21",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1. Yurt İçi Piyasa Toplam",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:portfolio-flow-total"
+    ],
+    "candidate_formula_hint": "derived:portfolio-flow-total: Hisse, DIBS ve ilgili destek tablolarindan portfoy akis toplami uretilir.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "b0c198e8350d6c44082fb96fdb647fb5c78c9158",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M21",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M21",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.1. Yurt İçi Piyasa Toplam, Net Değişim",
+      "context_title": "2.1. Yurt İçi Piyasa Toplam, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [
+        "derived:portfolio-flow-total"
+      ],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M21",
+        "title": "2.1. Yurt İçi Piyasa Toplam",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M21\": [2, \"B.1. Yurt İçi Piyasa Toplam (**)\"],",
+        "tl_menkul_kiymet_f = df_menkul_kiymet_com.loc[df_menkul_kiymet_com.index[0], \"TP_MKNETHAR_M21\"].astype(float)"
+      ],
+      "indicator_hints": [
+        "derived:portfolio-flow-total: Hisse, DIBS ve ilgili destek tablolarindan portfoy akis toplami uretilir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M21"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M22:5f5663fef3eb",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M22:5f5663fef3eb",
+    "title": "Semantic proposal for TP.MKNETHAR.M22",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M22",
+    "ticker": "TP.MKNETHAR.M22",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2. Yurt Dışı Piyasa Toplam",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "5f5663fef3eb607efe9d55982bec325a3dfefffb",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M22",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M22",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.2. Yurt Dışı Piyasa Toplam, Net Değişim",
+      "context_title": "2.2. Yurt Dışı Piyasa Toplam, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M22",
+        "title": "2.2. Yurt Dışı Piyasa Toplam",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M22\": [2, \"B.2. Yurt Dışı Piyasa Toplam\"],",
+        "yp_menkul_kiymet_f = df_menkul_kiymet_com.loc[df_menkul_kiymet_com.index[0], \"TP_MKNETHAR_M22\"].astype(float)"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M22"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M23:d6d55a4a1896",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M23:d6d55a4a1896",
+    "title": "Semantic proposal for TP.MKNETHAR.M23",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M23",
+    "ticker": "TP.MKNETHAR.M23",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.1. Genel Yönetim İhraçları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "d6d55a4a18965b0bc556b930b4ae7394b0249417",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M23",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M23",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.2.1. Genel Yönetim İhraçları, Net Değişim",
+      "context_title": "2.2.1. Genel Yönetim İhraçları, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M23",
+        "title": "2.2.1. Genel Yönetim İhraçları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M23\": [3, \"Genel Yönetim İhraçları\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M23"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M24:5c1a57c279f4",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M24:5c1a57c279f4",
+    "title": "Semantic proposal for TP.MKNETHAR.M24",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M24",
+    "ticker": "TP.MKNETHAR.M24",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.2. Finansal Olmayan Kuruluş İhraçları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "5c1a57c279f4cfe437262eba7d20e40fcf6b086d",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M24",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M24",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.2.2. Finansal Olmayan Kuruluş İhraçları, Net Değişim",
+      "context_title": "2.2.2. Finansal Olmayan Kuruluş İhraçları, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M24",
+        "title": "2.2.2. Finansal Olmayan Kuruluş İhraçları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M24\": [3, \"Finansal Olmayan Kuruluş İhraçları\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M24"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M25:937c88100b51",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M25:937c88100b51",
+    "title": "Semantic proposal for TP.MKNETHAR.M25",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M25",
+    "ticker": "TP.MKNETHAR.M25",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.3. Banka İhraçları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "937c88100b51bc20ecdc01233111d58f8f39c0aa",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M25",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M25",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.2.3. Banka İhraçları, Net Değişim",
+      "context_title": "2.2.3. Banka İhraçları, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M25",
+        "title": "2.2.3. Banka İhraçları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M25\": [3, \"Banka İhraçları\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M25"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M26:79394f02e5f2",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M26:79394f02e5f2",
+    "title": "Semantic proposal for TP.MKNETHAR.M26",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M26",
+    "ticker": "TP.MKNETHAR.M26",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.2.4. Diğer Finansal Kuruluş İhraçları",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "79394f02e5f28679f40038faf94075582396e6ef",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M26",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M26",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.2.4. Diğer Finansal Kuruluş İhraçları, Net Değişim",
+      "context_title": "2.2.4. Diğer Finansal Kuruluş İhraçları, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M26",
+        "title": "2.2.4. Diğer Finansal Kuruluş İhraçları",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M26\": [3, \"Diğer Finansal Kuruluş İhraçları\"]"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M26"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M3:beee712dcf98",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M3:beee712dcf98",
+    "title": "Semantic proposal for TP.MKNETHAR.M3",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M3",
+    "ticker": "TP.MKNETHAR.M3",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "3.1. DİBS (Ters Repo)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "beee712dcf9835ab1690f2cbffb5fe41f75ab71e",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M3",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M3",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "1.1.3. DİBS (Ters Repo), Stok",
+      "context_title": "1.1.3. DİBS (Ters Repo), Stok",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M3",
+        "title": "3.1. DİBS (Ters Repo)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M3\": [3, \"DİBS (Ters Repo)\"],",
+        "df_menkul_kiymet_apko_[\"DİBS\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M2\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M3\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M4\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M5\"]",
+        "df_menkul_kiymet_apko_[\"DİBS (Repo ve Teminat)\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M3\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M4\"]",
+        "\"TP_MKNETHAR_M2\", \"TP_MKNETHAR_M3\", \"TP_MKNETHAR_M4\", \"TP_MKNETHAR_M5\", \"TP_MKNETHAR_M8\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M3"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M4:b7d30ec16507",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M4:b7d30ec16507",
+    "title": "Semantic proposal for TP.MKNETHAR.M4",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M4",
+    "ticker": "TP.MKNETHAR.M4",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "3.2. DİBS (Teminat Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "b7d30ec16507d7ede3ee7f3dedf1659584c773ef",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M4",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M4",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "1.1.4. DİBS (Teminat Alım), Stok",
+      "context_title": "1.1.4. DİBS (Teminat Alım), Stok",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M4",
+        "title": "3.2. DİBS (Teminat Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M4\": [3, \"DİBS (Teminat Alım)\"],",
+        "df_menkul_kiymet_apko_[\"DİBS\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M2\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M3\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M4\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M5\"]",
+        "df_menkul_kiymet_apko_[\"DİBS (Repo ve Teminat)\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M3\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M4\"]",
+        "\"TP_MKNETHAR_M2\", \"TP_MKNETHAR_M3\", \"TP_MKNETHAR_M4\", \"TP_MKNETHAR_M5\", \"TP_MKNETHAR_M8\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M4"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M5:46bea1b21f9f",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M5:46bea1b21f9f",
+    "title": "Semantic proposal for TP.MKNETHAR.M5",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M5",
+    "ticker": "TP.MKNETHAR.M5",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "3.3. DİBS (Ödünç Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "46bea1b21f9fa9a15273d7120fe167d4a9e9a02b",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M5",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M5",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "1.1.5. DİBS (Ödünç Alım), Stok",
+      "context_title": "1.1.5. DİBS (Ödünç Alım), Stok",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M5",
+        "title": "3.3. DİBS (Ödünç Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M5\": [3, \"DİBS (Ödünç Alım)\"],",
+        "df_menkul_kiymet_apko_[\"DİBS\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M2\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M3\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M4\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M5\"]",
+        "\"TP_MKNETHAR_M2\", \"TP_MKNETHAR_M3\", \"TP_MKNETHAR_M4\", \"TP_MKNETHAR_M5\", \"TP_MKNETHAR_M8\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M5"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M7:ba22cae54f22",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M7:ba22cae54f22",
+    "title": "Semantic proposal for TP.MKNETHAR.M7",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M7",
+    "ticker": "TP.MKNETHAR.M7",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1.1. Hisse Senedi",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ba22cae54f2276dffc186f6dcceae699f5b5e0bf",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M7",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M7",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.1.1. Hisse Senedi, Net Değişim",
+      "context_title": "2.1.1. Hisse Senedi, Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M7",
+        "title": "2.1.1. Hisse Senedi",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M7\": [3, \"Hisse Senetleri\"],",
+        "tl_hisse_senedi_f = df_menkul_kiymet_com.loc[df_menkul_kiymet_com.index[0], \"TP_MKNETHAR_M7\"].astype(float)",
+        "\"TP.MKNETHAR.M7\": [3, \"Hisse Senedi - Net Değişim\"],",
+        "df_menkul_kiymet_apko_.rename(columns={\"TP_MKNETHAR_M7\": \"Hisse Senedi - Net Değişim\"}, inplace=True)"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M7"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M8:16e3b106c204",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M8:16e3b106c204",
+    "title": "Semantic proposal for TP.MKNETHAR.M8",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M8",
+    "ticker": "TP.MKNETHAR.M8",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "2.1.2. DİBS (Kesin Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "16e3b106c204e49f921a6102c51bb07464216aa2",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M8",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M8",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.1.2. DİBS (Kesin Alım), Net Değişim",
+      "context_title": "2.1.2. DİBS (Kesin Alım), Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M8",
+        "title": "2.1.2. DİBS (Kesin Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M8\": [3, \"DİBS (Kesin Alım)\"],",
+        "tl_dibs_kesin_alim_f = df_menkul_kiymet_com.loc[df_menkul_kiymet_com.index[0], \"TP_MKNETHAR_M8\"].astype(float)",
+        "\"TP.MKNETHAR.M8\": [3, \"DİBS (Kesin Alım) - Net Değişim\"],",
+        "df_menkul_kiymet_apko_[\"DİBS - Net Değişim\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M8\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M9\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M10\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M11\"]",
+        "\"TP_MKNETHAR_M2\", \"TP_MKNETHAR_M3\", \"TP_MKNETHAR_M4\", \"TP_MKNETHAR_M5\", \"TP_MKNETHAR_M8\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M8"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M9:d107f50b4a0b",
+    "proposal_id": "proposal:prbnk-mnklkymt-v5:series:TP_MKNETHAR_M9:d107f50b4a0b",
+    "title": "Semantic proposal for TP.MKNETHAR.M9",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M9",
+    "ticker": "TP.MKNETHAR.M9",
+    "notebook_slug": "prbnk-mnklkymt-v5",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\PrBnk_MnklKymt_V5.ipynb",
+    "candidate_title": "4.1. DİBS (Ters Repo)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:portfolio-flows",
+      "theme:foreign-ownership",
+      "theme:swap-and-securities"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "d107f50b4a0bc3f132b3b20f42ec2086a9bcb579",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M9",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M9",
+      "notebook_slug": "prbnk-mnklkymt-v5",
+      "official_series_name": "2.1.3. DİBS (Ters Repo), Net Değişim",
+      "context_title": "2.1.3. DİBS (Ters Repo), Net Değişim",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:portfolio-flows",
+        "theme:foreign-ownership",
+        "theme:swap-and-securities"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:prbnk-weekly-zip",
+        "source:prbnk-swap-pdf"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M9",
+        "title": "4.1. DİBS (Ters Repo)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M9\": [3, \"DİBS (Ters Repo)\"],",
+        "\"TP.MKNETHAR.M9\": [3, \"DİBS (Ters Repo) - Net Değişim\"],",
+        "df_menkul_kiymet_apko_[\"DİBS - Net Değişim\"] = df_menkul_kiymet_apko_[\"TP_MKNETHAR_M8\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M9\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M10\"] + df_menkul_kiymet_apko_[\"TP_MKNETHAR_M11\"]",
+        "\"TP_MKNETHAR_M9\", \"TP_MKNETHAR_M10\", \"TP_MKNETHAR_M11\", \"TP_DIBSPIYDEG_ST\", \"TP_DK_USD_A_YTL\""
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M9"
+  }
+]

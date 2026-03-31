@@ -1,0 +1,2906 @@
+[
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_HPBITABLO4_1:feabc1aa86b9",
+    "proposal_id": "proposal:tbl-apko:series:TP_HPBITABLO4_1:feabc1aa86b9",
+    "title": "Semantic proposal for TP.HPBITABLO4.1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.1",
+    "ticker": "TP.HPBITABLO4.1",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.TOPLAM YP MEVDUAT",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "feabc1aa86b97870ea81005ed1e63ea5d1358ad5",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.1",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar YP Mevduat Stoku",
+      "context_title": "Bankalar YP Mevduat Stoku",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.1",
+        "title": "1.TOPLAM YP MEVDUAT",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.HPBITABLO4.1\": \"Bankalar YP Mevduat Stoku\",",
+        "\"TP.HPBITABLO4.16\": \"Bankalar YP Mevduat Stoku (Yurtdışı Yerleşikler)\",",
+        "\"TP.HPBITABLO4.12\": \"Bankalar YP Mevduat Stoku (Yurtiçi Yerleşikler, Tüzel Kişi, Kıymetli Maden)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_HPBITABLO4_7:4e5fa7a3b896",
+    "proposal_id": "proposal:tbl-apko:series:TP_HPBITABLO4_7:4e5fa7a3b896",
+    "title": "Semantic proposal for TP.HPBITABLO4.7",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.7",
+    "ticker": "TP.HPBITABLO4.7",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.1.1.d.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:bank-fx-deposit-precious-metals"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "4e5fa7a3b8968db2bcd4038b4384071d5c1cc4a2",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.7",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.7",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar YP Mevduat Stoku (Yurtiçi Yerleşikler, Gerçek Kişi, Kıymetli Maden)",
+      "context_title": "Bankalar YP Mevduat Stoku (Yurtiçi Yerleşikler, Gerçek Kişi, Kıymetli Maden)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:bank-fx-deposit-precious-metals"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.7",
+        "title": "1.1.1.d.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.HPBITABLO4.7\": \"Bankalar YP Mevduat Stoku (Yurtiçi Yerleşikler, Gerçek Kişi, Kıymetli Maden)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.7"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_HPBITABLO4_12:2dc431f8393b",
+    "proposal_id": "proposal:tbl-apko:series:TP_HPBITABLO4_12:2dc431f8393b",
+    "title": "Semantic proposal for TP.HPBITABLO4.12",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.12",
+    "ticker": "TP.HPBITABLO4.12",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.1.2.d.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "2dc431f8393b56332a8269fca6e50d6ac8b19766",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.12",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.12",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar YP Mevduat Stoku (Yurtiçi Yerleşikler, Tüzel Kişi, Kıymetli Maden)",
+      "context_title": "Bankalar YP Mevduat Stoku (Yurtiçi Yerleşikler, Tüzel Kişi, Kıymetli Maden)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.12",
+        "title": "1.1.2.d.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.HPBITABLO4.12\": \"Bankalar YP Mevduat Stoku (Yurtiçi Yerleşikler, Tüzel Kişi, Kıymetli Maden)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.12"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_HPBITABLO4_16:468c3d13e778",
+    "proposal_id": "proposal:tbl-apko:series:TP_HPBITABLO4_16:468c3d13e778",
+    "title": "Semantic proposal for TP.HPBITABLO4.16",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.16",
+    "ticker": "TP.HPBITABLO4.16",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.3.Yurt Dışı Yerleşikler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "468c3d13e778f6bc074af774c5647f9bed67e2ee",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.16",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.16",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar YP Mevduat Stoku (Yurtdışı Yerleşikler)",
+      "context_title": "Bankalar YP Mevduat Stoku (Yurtdışı Yerleşikler)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.16",
+        "title": "1.3.Yurt Dışı Yerleşikler",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.HPBITABLO4.16\": \"Bankalar YP Mevduat Stoku (Yurtdışı Yerleşikler)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.16"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_HPBITABLO4_20:a3cb72e05614",
+    "proposal_id": "proposal:tbl-apko:series:TP_HPBITABLO4_20:a3cb72e05614",
+    "title": "Semantic proposal for TP.HPBITABLO4.20",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.20",
+    "ticker": "TP.HPBITABLO4.20",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.3.4.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:bank-fx-deposit-precious-metals"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "a3cb72e05614c4a48cf84afb6dd9007fb7ffda0b",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.20",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.20",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar YP Mevduat Stoku (Yurtdışı Yerleşikler, Kıymetli Maden)",
+      "context_title": "Bankalar YP Mevduat Stoku (Yurtdışı Yerleşikler, Kıymetli Maden)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:bank-fx-deposit-precious-metals"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.20",
+        "title": "1.3.4.Kıymetli Maden Depo Hesapları - ABD Doları Karşılığı",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.HPBITABLO4.20\": \"Bankalar YP Mevduat Stoku (Yurtdışı Yerleşikler, Kıymetli Maden)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.20"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_HPBITABLO4_21:ec44cefe4ce4",
+    "proposal_id": "proposal:tbl-apko:series:TP_HPBITABLO4_21:ec44cefe4ce4",
+    "title": "Semantic proposal for TP.HPBITABLO4.21",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.HPBITABLO4.21",
+    "ticker": "TP.HPBITABLO4.21",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.4.Yurt Dışı Yerleşik Bankalar",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ec44cefe4ce4317857a2dff1219e3e22971ac7e3",
+    "catalog_record_id": "catalog:evds2:TP.HPBITABLO4.21",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.HPBITABLO4.21",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar YP Mevduat Stoku (Yurtdışı Yerleşik Bankalar)",
+      "context_title": "Bankalar YP Mevduat Stoku (Yurtdışı Yerleşik Bankalar)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.HPBITABLO4.21",
+        "title": "1.4.Yurt Dışı Yerleşik Bankalar",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_hpbitablo4",
+        "category": "PARA VE BANKA İSTATİSTİKLERİ (HAFTALIK) (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.HPBITABLO4.21\": \"Bankalar YP Mevduat Stoku (Yurtdışı Yerleşik Bankalar)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.HPBITABLO4.21"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_AB_N06:86e48689d93b",
+    "proposal_id": "proposal:tbl-apko:series:TP_AB_N06:86e48689d93b",
+    "title": "Semantic proposal for TP.AB.N06",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.N06",
+    "ticker": "TP.AB.N06",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "2A Net Uluslararası Rezervler (1+2+3)",
+    "candidate_unit": "TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:tcmb-net-reserves"
+    ],
+    "candidate_formula_hint": "derived:tcmb-net-reserves: Net rezerv ve swap duzeltme bloklarindan uretilir.",
+    "confidence": 0.85,
+    "source": "heuristic",
+    "evidence_fingerprint": "86e48689d93b3e6b2726affab6657d9b350aff7f",
+    "catalog_record_id": "catalog:evds2:TP.AB.N06",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.N06",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "TCMB Uluslararası Net Rezervler (TL)",
+      "context_title": "TCMB Uluslararası Net Rezervler (TL)",
+      "frequency": "weekly",
+      "unit": "TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:tcmb-net-reserves"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.N06",
+        "title": "2A Net Uluslararası Rezervler (1+2+3)",
+        "frequency": "weekly",
+        "unit": "unknown",
+        "data_group": "bie_abstc2",
+        "category": "MERKEZ BANKASI HAFTALIK VAZİYET"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.N06\": \"TCMB Uluslararası Net Rezervler (TL)\","
+      ],
+      "indicator_hints": [
+        "derived:tcmb-net-reserves: Net rezerv ve swap duzeltme bloklarindan uretilir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.N06"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_AB_TOPLAM:6662b21a4a0c",
+    "proposal_id": "proposal:tbl-apko:series:TP_AB_TOPLAM:6662b21a4a0c",
+    "title": "Semantic proposal for TP.AB.TOPLAM",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.TOPLAM",
+    "ticker": "TP.AB.TOPLAM",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "Toplam (Milyon ABD Doları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:tcmb-gross-reserves"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "6662b21a4a0c16d1defd7404d0572feb6705aeeb",
+    "catalog_record_id": "catalog:evds2:TP.AB.TOPLAM",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.TOPLAM",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "TCMB Uluslararası Brüt Rezervler",
+      "context_title": "TCMB Uluslararası Brüt Rezervler",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:tcmb-gross-reserves"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.TOPLAM",
+        "title": "Toplam (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_abres2",
+        "category": "ULUSLARARASI REZERVLER (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.AB.TOPLAM\": \"TCMB Uluslararası Brüt Rezervler\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.TOPLAM"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B01:f43b4104ea92",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B01:f43b4104ea92",
+    "title": "Semantic proposal for TP.DB.B01",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B01",
+    "ticker": "TP.DB.B01",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.Türkiye Brüt Dış Borç Stoku",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:bank-tl-loans"
+    ],
+    "candidate_formula_hint": "derived:bank-tl-loans: BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "f43b4104ea92bba47541f11e099c904d8dfc6c0d",
+    "catalog_record_id": "catalog:evds2:TP.DB.B01",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B01",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Toplam Brüt Dış Borç Stoku",
+      "context_title": "Toplam Brüt Dış Borç Stoku",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:bank-tl-loans"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B01",
+        "title": "1.Türkiye Brüt Dış Borç Stoku",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B01\": \"Toplam Brüt Dış Borç Stoku\","
+      ],
+      "indicator_hints": [
+        "derived:bank-tl-loans: BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B01"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B02:eb098066007e",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B02:eb098066007e",
+    "title": "Semantic proposal for TP.DB.B02",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B02",
+    "ticker": "TP.DB.B02",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "2.Kısa Vadelİ Borçlar (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:bank-fx-loans"
+    ],
+    "candidate_formula_hint": "derived:bank-fx-loans: BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "eb098066007e6b6033b01d213254cda995932659",
+    "catalog_record_id": "catalog:evds2:TP.DB.B02",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B02",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Toplam Brüt Dış Borç Stoku (Kısa Vade)",
+      "context_title": "Toplam Brüt Dış Borç Stoku (Kısa Vade)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:bank-fx-loans"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B02",
+        "title": "2.Kısa Vadelİ Borçlar (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B02\": \"Toplam Brüt Dış Borç Stoku (Kısa Vade)\","
+      ],
+      "indicator_hints": [
+        "derived:bank-fx-loans: BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B02"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B03:99409c4ebe32",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B03:99409c4ebe32",
+    "title": "Semantic proposal for TP.DB.B03",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B03",
+    "ticker": "TP.DB.B03",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "2.1.Kamu (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "99409c4ebe326e9b6aa6cb41ee6a4ca0973fe8a3",
+    "catalog_record_id": "catalog:evds2:TP.DB.B03",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B03",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Kamu Brüt Dış Borç Stoku (Kısa Vade)",
+      "context_title": "Kamu Brüt Dış Borç Stoku (Kısa Vade)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B03",
+        "title": "2.1.Kamu (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B03\": \"Kamu Brüt Dış Borç Stoku (Kısa Vade)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B03"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B09:ee6ffe1b249a",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B09:ee6ffe1b249a",
+    "title": "Semantic proposal for TP.DB.B09",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B09",
+    "ticker": "TP.DB.B09",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "2.1.2.1.Bankalar",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ee6ffe1b249a74c99284cfabb3db4a720cebee59",
+    "catalog_record_id": "catalog:evds2:TP.DB.B09",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B09",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar Brüt Dış Borç Stoku (1)",
+      "context_title": "Bankalar Brüt Dış Borç Stoku (1)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B09",
+        "title": "2.1.2.1.Bankalar",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B09\": \"Bankalar Brüt Dış Borç Stoku (1)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B09"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B11:4f96c96c2673",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B11:4f96c96c2673",
+    "title": "Semantic proposal for TP.DB.B11",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B11",
+    "ticker": "TP.DB.B11",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "2.1.3.Finansal Olmayan Kuruluşlar (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "4f96c96c26736743f90ce9ca377db586ff6c2ed2",
+    "catalog_record_id": "catalog:evds2:TP.DB.B11",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B11",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Reel Sektör Brüt Dış Borç Stoku (1)",
+      "context_title": "Reel Sektör Brüt Dış Borç Stoku (1)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B11",
+        "title": "2.1.3.Finansal Olmayan Kuruluşlar (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B11\": \"Reel Sektör Brüt Dış Borç Stoku (1)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B11"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B14:8a34aa277856",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B14:8a34aa277856",
+    "title": "Semantic proposal for TP.DB.B14",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B14",
+    "ticker": "TP.DB.B14",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "2.2.TCMB (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "8a34aa277856e5ab9f310d2c232a01f66ee79543",
+    "catalog_record_id": "catalog:evds2:TP.DB.B14",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B14",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "TCMB Brüt Dış Borç Stoku (Kısa Vade)",
+      "context_title": "TCMB Brüt Dış Borç Stoku (Kısa Vade)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B14",
+        "title": "2.2.TCMB (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B14\": \"TCMB Brüt Dış Borç Stoku (Kısa Vade)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B14"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B17:a671b9b7decc",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B17:a671b9b7decc",
+    "title": "Semantic proposal for TP.DB.B17",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B17",
+    "ticker": "TP.DB.B17",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "2.3.1.1.Bankalar (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "a671b9b7decc8e8ce72d002c9a2819786d322d8a",
+    "catalog_record_id": "catalog:evds2:TP.DB.B17",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B17",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar Brüt Dış Borç Stoku (3)",
+      "context_title": "Bankalar Brüt Dış Borç Stoku (3)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B17",
+        "title": "2.3.1.1.Bankalar (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B17\": \"Bankalar Brüt Dış Borç Stoku (3)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B17"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B19:58f403df3436",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B19:58f403df3436",
+    "title": "Semantic proposal for TP.DB.B19",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B19",
+    "ticker": "TP.DB.B19",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "2.3.2.Finansal Olmayan Kuruluşlar(Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "58f403df343675f45e0fd0b0f73004c9c2d00b15",
+    "catalog_record_id": "catalog:evds2:TP.DB.B19",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B19",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Reel Sektör Brüt Dış Borç Stoku (2)",
+      "context_title": "Reel Sektör Brüt Dış Borç Stoku (2)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B19",
+        "title": "2.3.2.Finansal Olmayan Kuruluşlar(Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B19\": \"Reel Sektör Brüt Dış Borç Stoku (2)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B19"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B20:ce3f7615d97f",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B20:ce3f7615d97f",
+    "title": "Semantic proposal for TP.DB.B20",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B20",
+    "ticker": "TP.DB.B20",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.Uzun Vadelİ Borçlar (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ce3f7615d97f30cc42f9949f4d1bbd3013fc7b63",
+    "catalog_record_id": "catalog:evds2:TP.DB.B20",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B20",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Toplam Brüt Dış Borç Stoku (Uzun Vade)",
+      "context_title": "Toplam Brüt Dış Borç Stoku (Uzun Vade)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B20",
+        "title": "3.Uzun Vadelİ Borçlar (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B20\": \"Toplam Brüt Dış Borç Stoku (Uzun Vade)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B20"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B21:1afbb90b2a33",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B21:1afbb90b2a33",
+    "title": "Semantic proposal for TP.DB.B21",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B21",
+    "ticker": "TP.DB.B21",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.1.Kamu (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "1afbb90b2a33da4a31c99c2223f57b33cc783e18",
+    "catalog_record_id": "catalog:evds2:TP.DB.B21",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B21",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Kamu Brüt Dış Borç Stoku (Uzun Vade)",
+      "context_title": "Kamu Brüt Dış Borç Stoku (Uzun Vade)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B21",
+        "title": "3.1.Kamu (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B21\": \"Kamu Brüt Dış Borç Stoku (Uzun Vade)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B21"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B27:6845ca06e324",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B27:6845ca06e324",
+    "title": "Semantic proposal for TP.DB.B27",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B27",
+    "ticker": "TP.DB.B27",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.1.2.1.Bankalar",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "6845ca06e3243c8fd98e981afe2f6d6fdcb57b08",
+    "catalog_record_id": "catalog:evds2:TP.DB.B27",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B27",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar Brüt Dış Borç Stoku (2)",
+      "context_title": "Bankalar Brüt Dış Borç Stoku (2)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B27",
+        "title": "3.1.2.1.Bankalar",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B27\": \"Bankalar Brüt Dış Borç Stoku (2)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B27"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B29:6cd872995b65",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B29:6cd872995b65",
+    "title": "Semantic proposal for TP.DB.B29",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B29",
+    "ticker": "TP.DB.B29",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.1.3.Finansal Olmayan Kuruluşlar (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "6cd872995b6503ac2ca20e7ecbcf947d20499752",
+    "catalog_record_id": "catalog:evds2:TP.DB.B29",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B29",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Reel Sektör Brüt Dış Borç Stoku (3)",
+      "context_title": "Reel Sektör Brüt Dış Borç Stoku (3)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B29",
+        "title": "3.1.3.Finansal Olmayan Kuruluşlar (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B29\": \"Reel Sektör Brüt Dış Borç Stoku (3)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B29"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B32:fe5512b50dac",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B32:fe5512b50dac",
+    "title": "Semantic proposal for TP.DB.B32",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B32",
+    "ticker": "TP.DB.B32",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.2.TCMB (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "fe5512b50dac64982e887c497d5a8fec9f30f604",
+    "catalog_record_id": "catalog:evds2:TP.DB.B32",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B32",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "TCMB Brüt Dış Borç Stoku (Uzun Vade)",
+      "context_title": "TCMB Brüt Dış Borç Stoku (Uzun Vade)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B32",
+        "title": "3.2.TCMB (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B32\": \"TCMB Brüt Dış Borç Stoku (Uzun Vade)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B32"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B35:f1063fb398b7",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B35:f1063fb398b7",
+    "title": "Semantic proposal for TP.DB.B35",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B35",
+    "ticker": "TP.DB.B35",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.3.1.1.Bankalar (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "f1063fb398b7faf4fc0de093f6f0109f5729bf3a",
+    "catalog_record_id": "catalog:evds2:TP.DB.B35",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B35",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar Brüt Dış Borç Stoku (4)",
+      "context_title": "Bankalar Brüt Dış Borç Stoku (4)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B35",
+        "title": "3.3.1.1.Bankalar (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B35\": \"Bankalar Brüt Dış Borç Stoku (4)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B35"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DB_B37:719bca4ccf1f",
+    "proposal_id": "proposal:tbl-apko:series:TP_DB_B37:719bca4ccf1f",
+    "title": "Semantic proposal for TP.DB.B37",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DB.B37",
+    "ticker": "TP.DB.B37",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.3.2.Finansal Olmayan Kuruluşlar (Borçluya Göre)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:gross-external-debt-to-gdp"
+    ],
+    "candidate_formula_hint": "derived:gross-external-debt-to-gdp: Dis borc stoku ve GSYH yardimci serisinden uretilir.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "719bca4ccf1fda00e92e7843bb77d872e93a0983",
+    "catalog_record_id": "catalog:evds2:TP.DB.B37",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DB.B37",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Reel Sektör Brüt Dış Borç Stoku (4)",
+      "context_title": "Reel Sektör Brüt Dış Borç Stoku (4)",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:gross-external-debt-to-gdp"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DB.B37",
+        "title": "3.3.2.Finansal Olmayan Kuruluşlar (Borçluya Göre)",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_dbdborc",
+        "category": "TÜRKİYE BRÜT DIŞ BORÇ STOKU (HMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DB.B37\": \"Reel Sektör Brüt Dış Borç Stoku (4)\","
+      ],
+      "indicator_hints": [
+        "derived:gross-external-debt-to-gdp: Dis borc stoku ve GSYH yardimci serisinden uretilir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DB.B37"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DIBSPIYDEG_ST:f8a772a62a46",
+    "proposal_id": "proposal:tbl-apko:series:TP_DIBSPIYDEG_ST:f8a772a62a46",
+    "title": "Semantic proposal for TP.DIBSPIYDEG.ST",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DIBSPIYDEG.ST",
+    "ticker": "TP.DIBSPIYDEG.ST",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.Toplam (S.1, S.2)",
+    "candidate_unit": "milyon TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:foreign-dibs-stock-all-in"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "f8a772a62a46dbce641df728c4d4e1dc8b044c95",
+    "catalog_record_id": "catalog:evds2:TP.DIBSPIYDEG.ST",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DIBSPIYDEG.ST",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Hazine DİBS Stoku (TL)",
+      "context_title": "Hazine DİBS Stoku (TL)",
+      "frequency": "weekly",
+      "unit": "TL",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:foreign-dibs-stock-all-in"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DIBSPIYDEG.ST",
+        "title": "1.Toplam (S.1, S.2)",
+        "frequency": "weekly",
+        "unit": "milyon TL",
+        "data_group": "bie_dibspiydeg",
+        "category": "DEVLET İÇ BORÇLANMA SENETLERİ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DIBSPIYDEG.ST\": \"Hazine DİBS Stoku (TL)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DIBSPIYDEG.ST"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_DK_USD_A_YTL:f47ce47a50be",
+    "proposal_id": "proposal:tbl-apko:series:TP_DK_USD_A_YTL:f47ce47a50be",
+    "title": "Semantic proposal for TP.DK.USD.A.YTL",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DK.USD.A.YTL",
+    "ticker": "TP.DK.USD.A.YTL",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "(USD)  ABD  Doları  (Döviz  Alış)",
+    "candidate_unit": "Türk lirası",
+    "candidate_frequency": "daily",
+    "candidate_role": "ratio_input",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:usdtry-buy-rate"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "f47ce47a50be3d360d6e65a45646c48cc0e7f199",
+    "catalog_record_id": "catalog:evds2:TP.DK.USD.A.YTL",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DK.USD.A.YTL",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "USD/TL (Alış Kuru)",
+      "context_title": "USD/TL (Alış Kuru)",
+      "frequency": "daily",
+      "unit": "Türk lirası",
+      "role": "ratio_input",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:usdtry-buy-rate"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DK.USD.A.YTL",
+        "title": "(USD)  ABD  Doları  (Döviz  Alış)",
+        "frequency": "daily",
+        "unit": "Türk lirası",
+        "data_group": "bie_dkdovytl",
+        "category": "TCMB DÖVİZ KURLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.DK.USD.A.YTL\": [3, \"USD/TL (Alış Kuru)\"],"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DK.USD.A.YTL"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_EBONDPIYDEG_ST:307ae106dda4",
+    "proposal_id": "proposal:tbl-apko:series:TP_EBONDPIYDEG_ST:307ae106dda4",
+    "title": "Semantic proposal for TP.EBONDPIYDEG.ST",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.EBONDPIYDEG.ST",
+    "ticker": "TP.EBONDPIYDEG.ST",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.Toplam (S.1, S.2)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "307ae106dda48756f5d025d57d375011e1a37721",
+    "catalog_record_id": "catalog:evds2:TP.EBONDPIYDEG.ST",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.EBONDPIYDEG.ST",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Kamu Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)",
+      "context_title": "Kamu Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)",
+      "frequency": "weekly",
+      "unit": "Eurobond - Yaşayan Stok",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.EBONDPIYDEG.ST",
+        "title": "1.Toplam (S.1, S.2)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ebondpiydeg",
+        "category": "GENEL YÖNETİM YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.EBONDPIYDEG.ST\": \"Kamu Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.EBONDPIYDEG.ST"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_FDVY37:eae6ed4d83f7",
+    "proposal_id": "proposal:tbl-apko:series:TP_FDVY37:eae6ed4d83f7",
+    "title": "Semantic proposal for TP.FDVY37",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.FDVY37",
+    "ticker": "TP.FDVY37",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "C.Net Döviz Pozisyonu",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "ratio_input",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:gross-external-debt-to-gdp"
+    ],
+    "candidate_formula_hint": "derived:gross-external-debt-to-gdp: Dis borc stoku ve GSYH yardimci serisinden uretilir.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "eae6ed4d83f7e8fb80ba9344d6ae43a94a94bdb6",
+    "catalog_record_id": "catalog:evds2:TP.FDVY37",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.FDVY37",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Reel Sektör Net Döviz Pozisyonu",
+      "context_title": "Reel Sektör Net Döviz Pozisyonu",
+      "frequency": "quarterly",
+      "unit": "milyon ABD doları",
+      "role": "ratio_input",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:gross-external-debt-to-gdp"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.FDVY37",
+        "title": "C.Net Döviz Pozisyonu",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_fdvy",
+        "category": "FİNANSAL KESİM DIŞINDAKİ FİRMALARIN DÖVİZ VARLIK VE YÜKÜMLÜLÜKLERİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.FDVY37\": \"Reel Sektör Net Döviz Pozisyonu\","
+      ],
+      "indicator_hints": [
+        "derived:gross-external-debt-to-gdp: Dis borc stoku ve GSYH yardimci serisinden uretilir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.FDVY37"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_KALANVADE_K13:1ae7c6c8cccf",
+    "proposal_id": "proposal:tbl-apko:series:TP_KALANVADE_K13:1ae7c6c8cccf",
+    "title": "Semantic proposal for TP.KALANVADE.K13",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.KALANVADE.K13",
+    "ticker": "TP.KALANVADE.K13",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "4.1.Ticari Krediler",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "term_split_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "1ae7c6c8cccf936012731136a78e18bd065f33bd",
+    "catalog_record_id": "catalog:evds2:TP.KALANVADE.K13",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.KALANVADE.K13",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Vadesine 1 Yıldan Az Kalan Dış Borç (Ticari Krediler)",
+      "context_title": "Vadesine 1 Yıldan Az Kalan Dış Borç (Ticari Krediler)",
+      "frequency": "monthly",
+      "unit": "milyon ABD doları",
+      "role": "term_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.KALANVADE.K13",
+        "title": "4.1.Ticari Krediler",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_kalanvade",
+        "category": "KISA VADELİ DIŞ BORÇ İSTATİSTİKLERİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.KALANVADE.K13\": \"Vadesine 1 Yıldan Az Kalan Dış Borç (Ticari Krediler)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.KALANVADE.K13"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_KALANVADE_K20:ad484dd68dd6",
+    "proposal_id": "proposal:tbl-apko:series:TP_KALANVADE_K20:ad484dd68dd6",
+    "title": "Semantic proposal for TP.KALANVADE.K20",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.KALANVADE.K20",
+    "ticker": "TP.KALANVADE.K20",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "5.Toplam",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "term_split_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ad484dd68dd604bd24eda62f5e45fa6b8147b0c8",
+    "catalog_record_id": "catalog:evds2:TP.KALANVADE.K20",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.KALANVADE.K20",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Vadesine 1 Yıldan Az Kalan Dış Borç",
+      "context_title": "Vadesine 1 Yıldan Az Kalan Dış Borç",
+      "frequency": "monthly",
+      "unit": "milyon ABD doları",
+      "role": "term_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.KALANVADE.K20",
+        "title": "5.Toplam",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_kalanvade",
+        "category": "KISA VADELİ DIŞ BORÇ İSTATİSTİKLERİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.KALANVADE.K20\": \"Vadesine 1 Yıldan Az Kalan Dış Borç\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.KALANVADE.K20"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_KALANVADE_K3:234ff81c92d8",
+    "proposal_id": "proposal:tbl-apko:series:TP_KALANVADE_K3:234ff81c92d8",
+    "title": "Semantic proposal for TP.KALANVADE.K3",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.KALANVADE.K3",
+    "ticker": "TP.KALANVADE.K3",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.2.Mevduat",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "term_split_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:foreign-resident-deposits-short-term"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "234ff81c92d80f64c00858482b45d845ffcccfcf",
+    "catalog_record_id": "catalog:evds2:TP.KALANVADE.K3",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.KALANVADE.K3",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, DTH)",
+      "context_title": "Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, DTH)",
+      "frequency": "monthly",
+      "unit": "milyon ABD doları",
+      "role": "term_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:foreign-resident-deposits-short-term"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.KALANVADE.K3",
+        "title": "1.2.Mevduat",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_kalanvade",
+        "category": "KISA VADELİ DIŞ BORÇ İSTATİSTİKLERİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.KALANVADE.K3\": \"Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, DTH)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.KALANVADE.K3"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_KALANVADE_K7:568e41e0a594",
+    "proposal_id": "proposal:tbl-apko:series:TP_KALANVADE_K7:568e41e0a594",
+    "title": "Semantic proposal for TP.KALANVADE.K7",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.KALANVADE.K7",
+    "ticker": "TP.KALANVADE.K7",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.2.Döviz Tevdiat Hesabı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "term_split_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:foreign-resident-deposits-short-term"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "568e41e0a5941d5e9c2e0d9246eda846655ebfb4",
+    "catalog_record_id": "catalog:evds2:TP.KALANVADE.K7",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.KALANVADE.K7",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, Banka Mevduatı)",
+      "context_title": "Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, Banka Mevduatı)",
+      "frequency": "monthly",
+      "unit": "milyon ABD doları",
+      "role": "term_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:foreign-resident-deposits-short-term"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.KALANVADE.K7",
+        "title": "3.2.Döviz Tevdiat Hesabı",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_kalanvade",
+        "category": "KISA VADELİ DIŞ BORÇ İSTATİSTİKLERİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.KALANVADE.K7\": \"Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, Banka Mevduatı)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.KALANVADE.K7"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_KALANVADE_K8:154abc3ae36f",
+    "proposal_id": "proposal:tbl-apko:series:TP_KALANVADE_K8:154abc3ae36f",
+    "title": "Semantic proposal for TP.KALANVADE.K8",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.KALANVADE.K8",
+    "ticker": "TP.KALANVADE.K8",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.3.Banka Mevduatı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "term_split_line",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "154abc3ae36f4179433db7d91e6caf4682f09870",
+    "catalog_record_id": "catalog:evds2:TP.KALANVADE.K8",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.KALANVADE.K8",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, TL Mevduat)",
+      "context_title": "Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, TL Mevduat)",
+      "frequency": "monthly",
+      "unit": "milyon ABD doları",
+      "role": "term_split_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.KALANVADE.K8",
+        "title": "3.3.Banka Mevduatı",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_kalanvade",
+        "category": "KISA VADELİ DIŞ BORÇ İSTATİSTİKLERİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.KALANVADE.K8\": \"Vadesine 1 Yıldan Az Kalan Dış Borç (Yurtdışı Yerleşikler, TL Mevduat)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.KALANVADE.K8"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_MKNETHAR_M1:307d40d4f9c0",
+    "proposal_id": "proposal:tbl-apko:series:TP_MKNETHAR_M1:307d40d4f9c0",
+    "title": "Semantic proposal for TP.MKNETHAR.M1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M1",
+    "ticker": "TP.MKNETHAR.M1",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.1.1. Hisse Senedi",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "307d40d4f9c0bfabb0c04c020773781860614b7f",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M1",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Yurtdışı Yerleşikler Hisse Senedi Stoku",
+      "context_title": "Yurtdışı Yerleşikler Hisse Senedi Stoku",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M1",
+        "title": "1.1.1. Hisse Senedi",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M1\": \"Yurtdışı Yerleşikler Hisse Senedi Stoku\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_MKNETHAR_M2:1b7c885140af",
+    "proposal_id": "proposal:tbl-apko:series:TP_MKNETHAR_M2:1b7c885140af",
+    "title": "Semantic proposal for TP.MKNETHAR.M2",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M2",
+    "ticker": "TP.MKNETHAR.M2",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.1.2. DİBS (Kesin Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "1b7c885140af44df2b03b7d24cd249c56ab5f328",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M2",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M2",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Yurtdışı Yerleşikler DİBS Stoku (Kesin Alım)",
+      "context_title": "Yurtdışı Yerleşikler DİBS Stoku (Kesin Alım)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M2",
+        "title": "1.1.2. DİBS (Kesin Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M2\": \"Yurtdışı Yerleşikler DİBS Stoku (Kesin Alım)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M2"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_MKNETHAR_M3:ebf7199bf337",
+    "proposal_id": "proposal:tbl-apko:series:TP_MKNETHAR_M3:ebf7199bf337",
+    "title": "Semantic proposal for TP.MKNETHAR.M3",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M3",
+    "ticker": "TP.MKNETHAR.M3",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.1. DİBS (Ters Repo)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ebf7199bf337ec11f8001dd7d644cca186577fd0",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M3",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M3",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Yurtdışı Yerleşikler DİBS Stoku (Ters Repo)",
+      "context_title": "Yurtdışı Yerleşikler DİBS Stoku (Ters Repo)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M3",
+        "title": "3.1. DİBS (Ters Repo)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M3\": \"Yurtdışı Yerleşikler DİBS Stoku (Ters Repo)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M3"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_MKNETHAR_M4:22aed2983ec4",
+    "proposal_id": "proposal:tbl-apko:series:TP_MKNETHAR_M4:22aed2983ec4",
+    "title": "Semantic proposal for TP.MKNETHAR.M4",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M4",
+    "ticker": "TP.MKNETHAR.M4",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.2. DİBS (Teminat Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "22aed2983ec405e79496c76960fe3bc0ee88c888",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M4",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M4",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Yurtdışı Yerleşikler DİBS Stoku (Teminat Alım)",
+      "context_title": "Yurtdışı Yerleşikler DİBS Stoku (Teminat Alım)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M4",
+        "title": "3.2. DİBS (Teminat Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M4\": \"Yurtdışı Yerleşikler DİBS Stoku (Teminat Alım)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M4"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_MKNETHAR_M5:a03154c67b1e",
+    "proposal_id": "proposal:tbl-apko:series:TP_MKNETHAR_M5:a03154c67b1e",
+    "title": "Semantic proposal for TP.MKNETHAR.M5",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.MKNETHAR.M5",
+    "ticker": "TP.MKNETHAR.M5",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "3.3. DİBS (Ödünç Alım)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "a03154c67b1edf6136393060349d880b3102af37",
+    "catalog_record_id": "catalog:evds2:TP.MKNETHAR.M5",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.MKNETHAR.M5",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Yurtdışı Yerleşikler DİBS Stoku (Ödünç Alım)",
+      "context_title": "Yurtdışı Yerleşikler DİBS Stoku (Ödünç Alım)",
+      "frequency": "weekly",
+      "unit": "milyon ABD doları",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.MKNETHAR.M5",
+        "title": "3.3. DİBS (Ödünç Alım)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_mknethar",
+        "category": "YURT DIŞI YERLEŞİKLER MENKUL KIYMET PORTFÖYÜ"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.MKNETHAR.M5\": \"Yurtdışı Yerleşikler DİBS Stoku (Ödünç Alım)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.MKNETHAR.M5"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_ODANA6_Q01:eec4ec7569c8",
+    "proposal_id": "proposal:tbl-apko:series:TP_ODANA6_Q01:eec4ec7569c8",
+    "title": "Semantic proposal for TP.ODANA6.Q01",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.ODANA6.Q01",
+    "ticker": "TP.ODANA6.Q01",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.Cari İşlemler Hesabı",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:12m-cumulative-current-account"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "eec4ec7569c81f9cdcfbcc15ac147109a6b328b8",
+    "catalog_record_id": "catalog:evds2:TP.ODANA6.Q01",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.ODANA6.Q01",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Cari Denge",
+      "context_title": "Cari Denge",
+      "frequency": "monthly",
+      "unit": "milyon ABD doları",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [
+        "derived:12m-cumulative-current-account"
+      ],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.ODANA6.Q01",
+        "title": "1.Cari İşlemler Hesabı",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_odana6",
+        "category": "ÖDEMELER DENGESİ İSTATİSTİKLERİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.ODANA6.Q01\": \"Cari Denge\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.ODANA6.Q01"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_YDOSBAYAZDEG_S11T:11a7f15653d9",
+    "proposal_id": "proposal:tbl-apko:series:TP_YDOSBAYAZDEG_S11T:11a7f15653d9",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S11T",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S11T",
+    "ticker": "TP.YDOSBAYAZDEG.S11T",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.A.Toplam (S.1, S.2) (Finansal Olmayan Kuruluş İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "11a7f15653d9f13fcd2f7f08335e62240158f2d3",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S11T",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S11T",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Reel Sektör Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)",
+      "context_title": "Reel Sektör Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)",
+      "frequency": "weekly",
+      "unit": "Eurobond - Yaşayan Stok",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S11T",
+        "title": "1.A.Toplam (S.1, S.2) (Finansal Olmayan Kuruluş İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.YDOSBAYAZDEG.S11T\": \"Reel Sektör Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S11T"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:tbl-apko:series:TP_YDOSBAYAZDEG_S122T:c8db2cadd082",
+    "proposal_id": "proposal:tbl-apko:series:TP_YDOSBAYAZDEG_S122T:c8db2cadd082",
+    "title": "Semantic proposal for TP.YDOSBAYAZDEG.S122T",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.YDOSBAYAZDEG.S122T",
+    "ticker": "TP.YDOSBAYAZDEG.S122T",
+    "notebook_slug": "tbl-apko",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Tbl_Apko.ipynb",
+    "candidate_title": "1.B.Toplam (S.1, S.2) (Banka İhraçları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "stock_component",
+    "candidate_theme_ids": [
+      "theme:apko-summary",
+      "theme:external-financing",
+      "theme:banking-balance-sheet",
+      "theme:reserves-and-liquidity"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "c8db2cadd082c3f497bf1edc745bb03d48f22b0e",
+    "catalog_record_id": "catalog:evds2:TP.YDOSBAYAZDEG.S122T",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.YDOSBAYAZDEG.S122T",
+      "notebook_slug": "tbl-apko",
+      "official_series_name": "Bankalar Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)",
+      "context_title": "Bankalar Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)",
+      "frequency": "weekly",
+      "unit": "Eurobond - Yaşayan Stok",
+      "role": "stock_component",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:apko-summary",
+        "theme:external-financing",
+        "theme:banking-balance-sheet",
+        "theme:reserves-and-liquidity"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:tblapko-bbg-upload",
+        "source:tblapko-hmb-ab-borc-xls",
+        "source:tblapko-swap-pdf",
+        "source:tblapko-bddk-weekly-bulletin"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.YDOSBAYAZDEG.S122T",
+        "title": "1.B.Toplam (S.1, S.2) (Banka İhraçları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ydosbayazdeg",
+        "category": "GENEL YÖNETİM DIŞI SEKTÖRLERİN YURT DIŞI BORÇLANMA SENEDİ İHRAÇLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "\"TP.YDOSBAYAZDEG.S122T\": \"Bankalar Brüt Dış Borç Stoku (Eurobond - Yaşayan Stok)\","
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.YDOSBAYAZDEG.S122T"
+  }
+]

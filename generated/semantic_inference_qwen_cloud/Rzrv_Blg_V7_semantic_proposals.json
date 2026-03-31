@@ -1,0 +1,743 @@
+[
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_AB_A02:3ca0eabe1d8e",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_AB_A02:3ca0eabe1d8e",
+    "title": "Semantic proposal for TP.AB.A02",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A02",
+    "ticker": "TP.AB.A02",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "A.1 DIŞ VARLIKLAR",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:estimated-net-reserve"
+    ],
+    "candidate_formula_hint": "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.",
+    "confidence": 0.95,
+    "source": "hybrid",
+    "evidence_fingerprint": "3ca0eabe1d8e4698c6970ed4d3255ef87bf1e7df",
+    "catalog_record_id": "catalog:evds2:TP.AB.A02",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A02",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "A.1_DIŞ VARLIKLAR(Bin TL)",
+      "context_title": "A.1_DIŞ VARLIKLAR(Bin TL)",
+      "frequency": "daily",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:estimated-net-reserve"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A02",
+        "title": "A.1 DIŞ VARLIKLAR",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "[\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL'],",
+        "reserve_data_df.dropna(subset=\"TP_AB_A02\", ignore_index=True, inplace=True)",
+        "reserve_data_df[\"Dış Varlık\"] = (reserve_data_df[\"TP_AB_A02\"]/1000) / reserve_data_df[\"TP_DK_USD_A_YTL\"] # pdf verisi milyon dolar, evds verisi bin tl",
+        "reserve_data = reserve_data_df.drop(columns=[\"TP_AB_A02\", 'TP_AB_A10', 'TP_AB_A11', 'TP_AB_A14', 'TP_AB_A13', 'TP_DK_USD_A_YTL'])"
+      ],
+      "indicator_hints": [
+        "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A02"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_AB_A10:1b2892d67956",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_AB_A10:1b2892d67956",
+    "title": "Semantic proposal for TP.AB.A10",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A10",
+    "ticker": "TP.AB.A10",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "P.1 TOPLAM DÖVİZ YÜKÜMLÜLÜKLERİ",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "stock_total",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:estimated-net-reserve"
+    ],
+    "candidate_formula_hint": "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.",
+    "confidence": 0.85,
+    "source": "heuristic",
+    "evidence_fingerprint": "1b2892d67956f70afcf166e409031bb73e30fb6c",
+    "catalog_record_id": "catalog:evds2:TP.AB.A10",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A10",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "P.1_TOPLAM DÖVİZ YÜKÜMLÜLÜKLERİ(Bin TL)",
+      "context_title": "P.1_TOPLAM DÖVİZ YÜKÜMLÜLÜKLERİ(Bin TL)",
+      "frequency": "daily",
+      "unit": "Bin TL",
+      "role": "stock_total",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:estimated-net-reserve"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A10",
+        "title": "P.1 TOPLAM DÖVİZ YÜKÜMLÜLÜKLERİ",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "[\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL'],",
+        "reserve_data_df[\"Toplam Döviz Yükümlülük\"] = (reserve_data_df[\"TP_AB_A10\"]/1000) / reserve_data_df[\"TP_DK_USD_A_YTL\"] # pdf verisi milyon dolar, evds verisi bin tl",
+        "reserve_data = reserve_data_df.drop(columns=[\"TP_AB_A02\", 'TP_AB_A10', 'TP_AB_A11', 'TP_AB_A14', 'TP_AB_A13', 'TP_DK_USD_A_YTL'])"
+      ],
+      "indicator_hints": [
+        "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A10"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_AB_A11:711c5203fa8c",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_AB_A11:711c5203fa8c",
+    "title": "Semantic proposal for TP.AB.A11",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A11",
+    "ticker": "TP.AB.A11",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "P.1a Dış Yükümlülükler",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:estimated-net-reserve"
+    ],
+    "candidate_formula_hint": "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.",
+    "confidence": 0.85,
+    "source": "hybrid",
+    "evidence_fingerprint": "711c5203fa8c9e691d2d435262f100129f8f94f7",
+    "catalog_record_id": "catalog:evds2:TP.AB.A11",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A11",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "P.1a_Dış Yükümlülükler(Bin TL)",
+      "context_title": "P.1a_Dış Yükümlülükler(Bin TL)",
+      "frequency": "daily",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:estimated-net-reserve"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A11",
+        "title": "P.1a Dış Yükümlülükler",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "[\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL'],",
+        "reserve_data_df[\"Dış Yükümlülük\"] = (reserve_data_df[\"TP_AB_A11\"]/1000) / reserve_data_df[\"TP_DK_USD_A_YTL\"] # pdf verisi milyon dolar, evds verisi bin tl",
+        "reserve_data = reserve_data_df.drop(columns=[\"TP_AB_A02\", 'TP_AB_A10', 'TP_AB_A11', 'TP_AB_A14', 'TP_AB_A13', 'TP_DK_USD_A_YTL'])"
+      ],
+      "indicator_hints": [
+        "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A11"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_AB_A13:778a7896b748",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_AB_A13:778a7896b748",
+    "title": "Semantic proposal for TP.AB.A13",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A13",
+    "ticker": "TP.AB.A13",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "P.1ba Kamu ve Diğer Döviz Mevduatı",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:estimated-net-reserve"
+    ],
+    "candidate_formula_hint": "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.",
+    "confidence": 0.85,
+    "source": "hybrid",
+    "evidence_fingerprint": "778a7896b748a3a4adcc97b2f8217856b3f3a176",
+    "catalog_record_id": "catalog:evds2:TP.AB.A13",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A13",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "P.1ba_Kamu ve Diğer Döviz Mevduatı(Bin TL)",
+      "context_title": "P.1ba_Kamu ve Diğer Döviz Mevduatı(Bin TL)",
+      "frequency": "daily",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:estimated-net-reserve"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A13",
+        "title": "P.1ba Kamu ve Diğer Döviz Mevduatı",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "[\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL'],",
+        "reserve_data_df[\"Kamu Mevduat\"] = (reserve_data_df[\"TP_AB_A13\"]/1000) / reserve_data_df[\"TP_DK_USD_A_YTL\"] # pdf verisi milyon dolar, evds verisi bin tl",
+        "reserve_data = reserve_data_df.drop(columns=[\"TP_AB_A02\", 'TP_AB_A10', 'TP_AB_A11', 'TP_AB_A14', 'TP_AB_A13', 'TP_DK_USD_A_YTL'])"
+      ],
+      "indicator_hints": [
+        "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A13"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_AB_A14:06dcb7ae2b0e",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_AB_A14:06dcb7ae2b0e",
+    "title": "Semantic proposal for TP.AB.A14",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.A14",
+    "ticker": "TP.AB.A14",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "P.1bb Bankalar Döviz Mevduatı",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "i̇ş günü",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:estimated-net-reserve"
+    ],
+    "candidate_formula_hint": "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.",
+    "confidence": 0.95,
+    "source": "hybrid",
+    "evidence_fingerprint": "06dcb7ae2b0e9719e6c8e230d15628da183101a8",
+    "catalog_record_id": "catalog:evds2:TP.AB.A14",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.A14",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "P.1bb_Bankalar Döviz Mevduatı(Bin TL)",
+      "context_title": "P.1bb_Bankalar Döviz Mevduatı(Bin TL)",
+      "frequency": "daily",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:estimated-net-reserve"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.A14",
+        "title": "P.1bb Bankalar Döviz Mevduatı",
+        "frequency": "i̇ş günü",
+        "unit": "unknown",
+        "data_group": "bie_abanlbil",
+        "category": "MERKEZ BANKASI ANALİTİK BİLANÇOSU"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "[\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL'],",
+        "reserve_data_df[\"Bankalar Mevduat\"] = (reserve_data_df[\"TP_AB_A14\"]/1000) / reserve_data_df[\"TP_DK_USD_A_YTL\"] # pdf verisi milyon dolar, evds verisi bin tl",
+        "reserve_data = reserve_data_df.drop(columns=[\"TP_AB_A02\", 'TP_AB_A10', 'TP_AB_A11', 'TP_AB_A14', 'TP_AB_A13', 'TP_DK_USD_A_YTL'])"
+      ],
+      "indicator_hints": [
+        "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.A14"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_AB_C1:68724d52f75a",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_AB_C1:68724d52f75a",
+    "title": "Semantic proposal for TP.AB.C1",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.C1",
+    "ticker": "TP.AB.C1",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "Altın (Milyon ABD Doları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:reserve-total",
+      "derived:reserve-gold",
+      "derived:gold-share-in-reserves"
+    ],
+    "candidate_formula_hint": "derived:reserve-total: Rezerv altin ve rezerv doviz toplamindan uretilir.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "68724d52f75a11316d09e27a187541a8edabaf29",
+    "catalog_record_id": "catalog:evds2:TP.AB.C1",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.C1",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "Altın(Milyon ABD Doları)",
+      "context_title": "Altın(Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:reserve-total",
+        "derived:reserve-gold",
+        "derived:gold-share-in-reserves"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.C1",
+        "title": "Altın (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_abres2",
+        "category": "ULUSLARARASI REZERVLER (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "['TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06', \"TP_DK_USD_A_YTL\"],"
+      ],
+      "indicator_hints": [
+        "derived:reserve-total: Rezerv altin ve rezerv doviz toplamindan uretilir.",
+        "derived:gold-share-in-reserves: Altin rezervinin toplam rezerv icindeki payi."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.C1"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_AB_C2:4cddbd0c4703",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_AB_C2:4cddbd0c4703",
+    "title": "Semantic proposal for TP.AB.C2",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.C2",
+    "ticker": "TP.AB.C2",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "Döviz (Milyon ABD Doları)",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:reserve-total",
+      "derived:reserve-fx",
+      "derived:gold-share-in-reserves"
+    ],
+    "candidate_formula_hint": "derived:reserve-total: Rezerv altin ve rezerv doviz toplamindan uretilir.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "4cddbd0c4703350fa1a61d61dfec208773f07294",
+    "catalog_record_id": "catalog:evds2:TP.AB.C2",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.C2",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "Döviz(Milyon ABD Doları)",
+      "context_title": "Döviz(Milyon ABD Doları)",
+      "frequency": "weekly",
+      "unit": "Milyon ABD Doları",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:reserve-total",
+        "derived:reserve-fx",
+        "derived:gold-share-in-reserves"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.C2",
+        "title": "Döviz (Milyon ABD Doları)",
+        "frequency": "weekly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_abres2",
+        "category": "ULUSLARARASI REZERVLER (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "['TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06', \"TP_DK_USD_A_YTL\"],"
+      ],
+      "indicator_hints": [
+        "derived:reserve-total: Rezerv altin ve rezerv doviz toplamindan uretilir.",
+        "derived:gold-share-in-reserves: Altin rezervinin toplam rezerv icindeki payi."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.C2"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_AB_N06:2ba23d758fcd",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_AB_N06:2ba23d758fcd",
+    "title": "Semantic proposal for TP.AB.N06",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.AB.N06",
+    "ticker": "TP.AB.N06",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "2A Net Uluslararası Rezervler (1+2+3)",
+    "candidate_unit": "Bin TL",
+    "candidate_frequency": "weekly",
+    "candidate_role": "balance_sheet_line",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:net-reserve-standby"
+    ],
+    "candidate_formula_hint": "derived:net-reserve-standby: Net rezerv TL serisinin USD cinsine cevrilmis stand-by tanimi.",
+    "confidence": 0.95,
+    "source": "hybrid",
+    "evidence_fingerprint": "2ba23d758fcdd4a966df7771c72ec84ccd0e0c10",
+    "catalog_record_id": "catalog:evds2:TP.AB.N06",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.AB.N06",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "Net Rezerv TL (Bin TL)",
+      "context_title": "Net Rezerv TL (Bin TL)",
+      "frequency": "weekly",
+      "unit": "Bin TL",
+      "role": "balance_sheet_line",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:net-reserve-standby"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.AB.N06",
+        "title": "2A Net Uluslararası Rezervler (1+2+3)",
+        "frequency": "weekly",
+        "unit": "unknown",
+        "data_group": "bie_abstc2",
+        "category": "MERKEZ BANKASI HAFTALIK VAZİYET"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "['TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06', \"TP_DK_USD_A_YTL\"],"
+      ],
+      "indicator_hints": [
+        "derived:net-reserve-standby: Net rezerv TL serisinin USD cinsine cevrilmis stand-by tanimi."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "ollama_cloud",
+    "llm_model": "qwen3.5:397b-cloud",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.AB.N06"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_DK_USD_A_YTL:5f9d99846e51",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_DK_USD_A_YTL:5f9d99846e51",
+    "title": "Semantic proposal for TP.DK.USD.A.YTL",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DK.USD.A.YTL",
+    "ticker": "TP.DK.USD.A.YTL",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "(USD)  ABD  Doları  (Döviz  Alış)",
+    "candidate_unit": "Türk lirası",
+    "candidate_frequency": "daily",
+    "candidate_role": "ratio_input",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:net-reserve-standby",
+      "derived:estimated-net-reserve"
+    ],
+    "candidate_formula_hint": "derived:net-reserve-standby: Net rezerv TL serisinin USD cinsine cevrilmis stand-by tanimi.",
+    "confidence": 0.95,
+    "source": "heuristic",
+    "evidence_fingerprint": "5f9d99846e518c919a79118c2834ceb99b07a301",
+    "catalog_record_id": "catalog:evds2:TP.DK.USD.A.YTL",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DK.USD.A.YTL",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "(USD) ABD Doları (Döviz Alış)",
+      "context_title": "(USD) ABD Doları (Döviz Alış)",
+      "frequency": "daily",
+      "unit": "USD",
+      "role": "ratio_input",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [
+        "derived:net-reserve-standby",
+        "derived:estimated-net-reserve"
+      ],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DK.USD.A.YTL",
+        "title": "(USD)  ABD  Doları  (Döviz  Alış)",
+        "frequency": "daily",
+        "unit": "Türk lirası",
+        "data_group": "bie_dkdovytl",
+        "category": "TCMB DÖVİZ KURLARI"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "print(tcmb_analitik_bilanco_bilgi_detay[tcmb_analitik_bilanco_bilgi_detay[\"SERIE_CODE\"].isin([\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL', 'TP.AB.C1', 'TP.AB.C2', 'TP.AB.N06'])])",
+        "[\"TP.AB.A02\", 'TP.AB.A10', 'TP.AB.A11', 'TP.AB.A14', 'TP.AB.A13', 'TP.DK.USD.A.YTL'],",
+        "reserve_data_df[\"Dış Varlık\"] = (reserve_data_df[\"TP_AB_A02\"]/1000) / reserve_data_df[\"TP_DK_USD_A_YTL\"] # pdf verisi milyon dolar, evds verisi bin tl",
+        "reserve_data_df[\"Toplam Döviz Yükümlülük\"] = (reserve_data_df[\"TP_AB_A10\"]/1000) / reserve_data_df[\"TP_DK_USD_A_YTL\"] # pdf verisi milyon dolar, evds verisi bin tl",
+        "reserve_data_df[\"Dış Yükümlülük\"] = (reserve_data_df[\"TP_AB_A11\"]/1000) / reserve_data_df[\"TP_DK_USD_A_YTL\"] # pdf verisi milyon dolar, evds verisi bin tl"
+      ],
+      "indicator_hints": [
+        "derived:net-reserve-standby: Net rezerv TL serisinin USD cinsine cevrilmis stand-by tanimi.",
+        "derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir."
+      ],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DK.USD.A.YTL"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:rzrv-blg-v7:series:TP_DOVVARNC_K18:5dbdad7df819",
+    "proposal_id": "proposal:rzrv-blg-v7:series:TP_DOVVARNC_K18:5dbdad7df819",
+    "title": "Semantic proposal for TP.DOVVARNC.K18",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.DOVVARNC.K18",
+    "ticker": "TP.DOVVARNC.K18",
+    "notebook_slug": "rzrv-blg-v7",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Rzrv_Blg_V7.ipynb",
+    "candidate_title": "2.2.1.3.Dört Ay Bir Yıl Arası",
+    "candidate_unit": "milyon ABD doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "dormant_candidate",
+    "candidate_theme_ids": [
+      "theme:reserves",
+      "theme:net-reserve-estimate"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "5dbdad7df8194b58dcf717a48e44e5e74fbbc291",
+    "catalog_record_id": "catalog:evds2:TP.DOVVARNC.K18",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.DOVVARNC.K18",
+      "notebook_slug": "rzrv-blg-v7",
+      "official_series_name": "Swap (Aylik, MB)",
+      "context_title": "Swap (Aylik, MB)",
+      "frequency": "monthly",
+      "unit": "Aylik, MB",
+      "role": "dormant_candidate",
+      "status": "listed_only",
+      "theme_ids": [
+        "theme:reserves",
+        "theme:net-reserve-estimate"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [
+        "source:rzrv-swap-pdf",
+        "source:rzrv-manual-swap-ledger"
+      ],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.DOVVARNC.K18",
+        "title": "2.2.1.3.Dört Ay Bir Yıl Arası",
+        "frequency": "monthly",
+        "unit": "milyon ABD doları",
+        "data_group": "bie_ulusdovlkd",
+        "category": "ULUSLARARASI REZERVLER (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "['TP.DOVVARNC.K18'],",
+        "swap_data_df_2.rename(columns={'TP_DOVVARNC_K18': 'Swap (Aylık, MB)'}, inplace=True)"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.DOVVARNC.K18"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "notebook": "DTH_Blg_V7.ipynb",
+    "proposals": 54,
+    "hybrid": 1,
+    "unresolved_after": [
+      "TP.HPBITABLO4.14",
+      "TP.HPBITABLO4.15"
+    ]
+  },
+  {
+    "notebook": "Eurobnd_Blg_V4.ipynb",
+    "proposals": 10,
+    "hybrid": 0,
+    "unresolved_after": []
+  },
+  {
+    "notebook": "PrBnk_MnklKymt_V5.ipynb",
+    "proposals": 57,
+    "hybrid": 10,
+    "unresolved_after": []
+  },
+  {
+    "notebook": "Pys_Ktlmclr_V2.ipynb",
+    "proposals": 14,
+    "hybrid": 2,
+    "unresolved_after": []
+  },
+  {
+    "notebook": "Rzrv_Blg_V7.ipynb",
+    "proposals": 10,
+    "hybrid": 5,
+    "unresolved_after": []
+  },
+  {
+    "notebook": "Tbl_Apko.ipynb",
+    "proposals": 40,
+    "hybrid": 1,
+    "unresolved_after": []
+  },
+  {
+    "notebook": "Yi_Yrlsk_Fnsl_Vrlk_V1.ipynb",
+    "proposals": 84,
+    "hybrid": 0,
+    "unresolved_after": []
+  }
+]

@@ -1,0 +1,8 @@
+record_type,id,title,ticker,source_version,frequency,unit,description,usage,official_url,theme_ids,indicator_ids,input_ids,formula_expression,formula_description,output_frequency,output_unit,economic_meaning,validation_note,series_ids,source_dependency_ids,questions,source_kind,requiredness,source_uri,local_hint
+series,,TUFE,TP.FE.OKG01,evds2,monthly,index,TUFE endeksi,Enflasyon izlemede kullanilir,https://example.com,theme:inflation,derived:cpi-yoy,,,,,,,,,,,,
+indicator,derived:cpi-yoy,TUFE yillik degisim,,,,,,,theme:inflation,,evds:TP.FE.OKG01,(x_t / x_t-12 - 1) * 100,12 aylik karsilastirma,monthly,pct,Enflasyon trendini izler,Girdi serisi eksik olmamali,,,,,,
+source_dependency,source:legacy-xlsx,Legacy XLSX,,,,,Eski seri backfill dosyasi,Tarihi seriyi zenginlestirir,,,,,,,,,,,excel_local,required_input,https://example.com/legacy.xlsx,data/legacy.xlsx
+theme,theme:inflation,Enflasyon,,,,,,Enflasyon temasi,,,,,,,,,evds:TP.FE.OKG01|evds:TP.FE.OKG02,source:legacy-xlsx,TUFE ve turevleri ne soyluyor?,,,,
+catalog,catalog:evds2:TP.FE.OKG01,TUFE,TP.FE.OKG01,evds2,monthly,index,,,,https://example.com,,,,,,,,,,,,,,,
+memory_rule,memory:global-tp-fe-okg01,Memory rule TP.FE.OKG01,,,,,,,,,,,,,,,,,,,,,,,,,
+proposal,proposal:demo:series:tp-fe-okg01,Semantic proposal for TP.FE.OKG01,TP.FE.OKG01,,,,,,,,,,,,,,,,,,,,,,,,,

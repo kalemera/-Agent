@@ -1,0 +1,874 @@
+[
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S01_D_U:1c97d0f52fe3",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S01_D_U:1c97d0f52fe3",
+    "title": "Semantic proposal for TP.BEK.S01.D.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S01.D.U",
+    "ticker": "TP.BEK.S01.D.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "1D. (Uygun Ortalama) Cari Yıl Sonu Yıllık TÜFE Beklentisi (% Değişim)",
+    "candidate_unit": "% Değişim",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:policy-rate-expectation-current"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "1c97d0f52fe3718ab7817bc93bfad9228b7cb9fd",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S01.D.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S01.D.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "1D.(Uygun Ortalama) Cari Yıl Sonu Yıllık TÜFE Beklentisi (%)",
+      "context_title": "1D.(Uygun Ortalama) Cari Yıl Sonu Yıllık TÜFE Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [
+        "derived:policy-rate-expectation-current"
+      ],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S01.D.U",
+        "title": "1D. (Uygun Ortalama) Cari Yıl Sonu Yıllık TÜFE Beklentisi (% Değişim)",
+        "frequency": "monthly",
+        "unit": "% Değişim",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S01.D.U', 'TP.BEK.S01.E.U', 'TP.BEK.S01.F.U', 'TP.BEK.S04.A.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S01.D.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S01_E_U:7bb73e14a910",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S01_E_U:7bb73e14a910",
+    "title": "Semantic proposal for TP.BEK.S01.E.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S01.E.U",
+    "ticker": "TP.BEK.S01.E.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "1E. (Uygun Ortalama) 12 Ay Sonrasının Yıllık TÜFE Beklentisi (% Değişim)",
+    "candidate_unit": "% Değişim",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:policy-rate-expectation-3m"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "7bb73e14a910f9db293bfb02cff6c8dcaf845f2a",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S01.E.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S01.E.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "1E.(Uygun Ortalama) 12 Ay Sonrasının Yıllık TÜFE Beklentisi (%)",
+      "context_title": "1E.(Uygun Ortalama) 12 Ay Sonrasının Yıllık TÜFE Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [
+        "derived:policy-rate-expectation-3m"
+      ],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S01.E.U",
+        "title": "1E. (Uygun Ortalama) 12 Ay Sonrasının Yıllık TÜFE Beklentisi (% Değişim)",
+        "frequency": "monthly",
+        "unit": "% Değişim",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S01.D.U', 'TP.BEK.S01.E.U', 'TP.BEK.S01.F.U', 'TP.BEK.S04.A.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S01.E.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S01_F_U:ff08c0263e40",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S01_F_U:ff08c0263e40",
+    "title": "Semantic proposal for TP.BEK.S01.F.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S01.F.U",
+    "ticker": "TP.BEK.S01.F.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "1F. (Uygun Ortalama) 24 Ay Sonrasının Yıllık TÜFE Beklentisi (% Değişim)",
+    "candidate_unit": "% Değişim",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:policy-rate-expectation-12m"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ff08c0263e4092246d3c0fbdc15ccd6e0a1aad8b",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S01.F.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S01.F.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "1F.(Uygun Ortalama) 24 Ay Sonrasının Yıllık TÜFE Beklentisi (%)",
+      "context_title": "1F.(Uygun Ortalama) 24 Ay Sonrasının Yıllık TÜFE Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [
+        "derived:policy-rate-expectation-12m"
+      ],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S01.F.U",
+        "title": "1F. (Uygun Ortalama) 24 Ay Sonrasının Yıllık TÜFE Beklentisi (% Değişim)",
+        "frequency": "monthly",
+        "unit": "% Değişim",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S01.D.U', 'TP.BEK.S01.E.U', 'TP.BEK.S01.F.U', 'TP.BEK.S04.A.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S01.F.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S01_I_U:959cca05fffd",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S01_I_U:959cca05fffd",
+    "title": "Semantic proposal for TP.BEK.S01.I.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S01.I.U",
+    "ticker": "TP.BEK.S01.I.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "1I. (Uygun Ortalama) Gelecek Yıl Sonu Yıllık TÜFE Beklentisi (% Değişim)",
+    "candidate_unit": "% Değişim",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "959cca05fffda32c86655591ee365d66ce83e723",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S01.I.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S01.I.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "1I.(Uygun Ortalama) Gelecek Yıl Sonu Yıllık TÜFE Beklentisi (%)",
+      "context_title": "1I.(Uygun Ortalama) Gelecek Yıl Sonu Yıllık TÜFE Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S01.I.U",
+        "title": "1I. (Uygun Ortalama) Gelecek Yıl Sonu Yıllık TÜFE Beklentisi (% Değişim)",
+        "frequency": "monthly",
+        "unit": "% Değişim",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S05.C.U', 'TP.BEK.S01.I.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S01.I.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S04_A_U:9fc361de6011",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S04_A_U:9fc361de6011",
+    "title": "Semantic proposal for TP.BEK.S04.A.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S04.A.U",
+    "ticker": "TP.BEK.S04.A.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "4A. (Uygun Ortalama) Cari Ay Sonu TCMB Bir Hafta Vadeli Repo İhale Faiz Oranı Beklentisi (%)",
+    "candidate_unit": "%",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:inflation-expectation-12m"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "9fc361de60118cc2333b1261b4c8b2ec94b2bde1",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S04.A.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S04.A.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "4A.(Uygun Ortalama) Cari Ay Sonu TCMB Bir Hafta Vadeli Repo İhale Faiz Oranı Beklentisi (%)",
+      "context_title": "4A.(Uygun Ortalama) Cari Ay Sonu TCMB Bir Hafta Vadeli Repo İhale Faiz Oranı Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [
+        "derived:inflation-expectation-12m"
+      ],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S04.A.U",
+        "title": "4A. (Uygun Ortalama) Cari Ay Sonu TCMB Bir Hafta Vadeli Repo İhale Faiz Oranı Beklentisi (%)",
+        "frequency": "monthly",
+        "unit": "%",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S01.D.U', 'TP.BEK.S01.E.U', 'TP.BEK.S01.F.U', 'TP.BEK.S04.A.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S04.A.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S04_B_U:d381b87eaf39",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S04_B_U:d381b87eaf39",
+    "title": "Semantic proposal for TP.BEK.S04.B.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S04.B.U",
+    "ticker": "TP.BEK.S04.B.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "4B. (Uygun Ortalama) 3 Ay Sonrasının TCMB Bir Hafta Vadeli Repo İhale Faiz Oranı Beklentisi (%)",
+    "candidate_unit": "%",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:inflation-expectation-24m"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "d381b87eaf3990082d8b835671da65b69bea791f",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S04.B.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S04.B.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "4B.(Uygun Ortalama) 3 Ay Sonrasının TCMB Bir Hafta Vadeli Repo İhale Faiz Oranı Beklentisi (%)",
+      "context_title": "4B.(Uygun Ortalama) 3 Ay Sonrasının TCMB Bir Hafta Vadeli Repo İhale Faiz Oranı Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [
+        "derived:inflation-expectation-24m"
+      ],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S04.B.U",
+        "title": "4B. (Uygun Ortalama) 3 Ay Sonrasının TCMB Bir Hafta Vadeli Repo İhale Faiz Oranı Beklentisi (%)",
+        "frequency": "monthly",
+        "unit": "%",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S04.B.U', 'TP.BEK.S04.D.U', 'TP.BEK.S04.E.U', 'TP.BEK.S06.A.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S04.B.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S04_D_U:ddbe50221757",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S04_D_U:ddbe50221757",
+    "title": "Semantic proposal for TP.BEK.S04.D.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S04.D.U",
+    "ticker": "TP.BEK.S04.D.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "4D. (Uygun Ortalama) 12 Ay Sonrası TCMB Politika Faiz Oranı Beklentisi (%)",
+    "candidate_unit": "%",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "ddbe50221757d6198fddd600bd4784034b22e12c",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S04.D.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S04.D.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "4D.(Uygun Ortalama) 12 Ay Sonrası TCMB Politika Faiz Oranı Beklentisi (%)",
+      "context_title": "4D.(Uygun Ortalama) 12 Ay Sonrası TCMB Politika Faiz Oranı Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S04.D.U",
+        "title": "4D. (Uygun Ortalama) 12 Ay Sonrası TCMB Politika Faiz Oranı Beklentisi (%)",
+        "frequency": "monthly",
+        "unit": "%",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S04.B.U', 'TP.BEK.S04.D.U', 'TP.BEK.S04.E.U', 'TP.BEK.S06.A.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S04.D.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S04_E_U:65d00e070ff5",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S04_E_U:65d00e070ff5",
+    "title": "Semantic proposal for TP.BEK.S04.E.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S04.E.U",
+    "ticker": "TP.BEK.S04.E.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "4E. (Uygun Ortalama) 24 Ay Sonrası TCMB Politika Faiz Oranı Beklentisi (%)",
+    "candidate_unit": "%",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "65d00e070ff5e93c954bf89d7d149619d67a9b3c",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S04.E.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S04.E.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "4E.(Uygun Ortalama) 24 Ay Sonrası TCMB Politika Faiz Oranı Beklentisi (%)",
+      "context_title": "4E.(Uygun Ortalama) 24 Ay Sonrası TCMB Politika Faiz Oranı Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S04.E.U",
+        "title": "4E. (Uygun Ortalama) 24 Ay Sonrası TCMB Politika Faiz Oranı Beklentisi (%)",
+        "frequency": "monthly",
+        "unit": "%",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S04.B.U', 'TP.BEK.S04.D.U', 'TP.BEK.S04.E.U', 'TP.BEK.S06.A.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S04.E.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S05_B_U:8650cf48f18c",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S05_B_U:8650cf48f18c",
+    "title": "Semantic proposal for TP.BEK.S05.B.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S05.B.U",
+    "ticker": "TP.BEK.S05.B.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "5B. (Uygun Ortalama) Cari Yıl Sonu Bankalararası Döviz Piyasası ABD Dolar Kuru Beklentisi (TL)",
+    "candidate_unit": "TL",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:growth-expectation"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "8650cf48f18c33b1df012bab66dab09b8f7c6e94",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S05.B.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S05.B.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "5B.(Uygun Ortalama) Cari Yıl Sonu Bankalararası Döviz Piyasası ABD Dolar Kuru Beklentisi (TL)",
+      "context_title": "5B.(Uygun Ortalama) Cari Yıl Sonu Bankalararası Döviz Piyasası ABD Dolar Kuru Beklentisi (TL)",
+      "frequency": "monthly",
+      "unit": "TL",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [
+        "derived:growth-expectation"
+      ],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S05.B.U",
+        "title": "5B. (Uygun Ortalama) Cari Yıl Sonu Bankalararası Döviz Piyasası ABD Dolar Kuru Beklentisi (TL)",
+        "frequency": "monthly",
+        "unit": "TL",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S06.B.U', 'TP.BEK.S07.A.U', 'TP.BEK.S07.B.U', 'TP.BEK.S05.B.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S05.B.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S05_C_U:4ffac6fe757e",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S05_C_U:4ffac6fe757e",
+    "title": "Semantic proposal for TP.BEK.S05.C.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S05.C.U",
+    "ticker": "TP.BEK.S05.C.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "5C. (Uygun Ortalama) 12 Ay Sonrasının Bankalararası Döviz Piyasası ABD Dolar Kuru Beklentisi (TL)",
+    "candidate_unit": "TL",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "4ffac6fe757ec5f705c18a2eac554f71e5f19f85",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S05.C.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S05.C.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "5C.(Uygun Ortalama) 12 Ay Sonrasının Bankalararası Döviz Piyasası ABD Dolar Kuru Beklentisi (TL)",
+      "context_title": "5C.(Uygun Ortalama) 12 Ay Sonrasının Bankalararası Döviz Piyasası ABD Dolar Kuru Beklentisi (TL)",
+      "frequency": "monthly",
+      "unit": "TL",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S05.C.U",
+        "title": "5C. (Uygun Ortalama) 12 Ay Sonrasının Bankalararası Döviz Piyasası ABD Dolar Kuru Beklentisi (TL)",
+        "frequency": "monthly",
+        "unit": "TL",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S05.C.U', 'TP.BEK.S01.I.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S05.C.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S06_A_U:18cdbe80bcc4",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S06_A_U:18cdbe80bcc4",
+    "title": "Semantic proposal for TP.BEK.S06.A.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S06.A.U",
+    "ticker": "TP.BEK.S06.A.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "6A. (Uygun Ortalama) Cari Yılın Yıllık Cari İşlemler Dengesi Beklentisi",
+    "candidate_unit": "Milyon ABD Doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:usdtry-expectation-12m"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "heuristic",
+    "evidence_fingerprint": "18cdbe80bcc490b0087e7a2db92a66314c23a6e5",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S06.A.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S06.A.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "6A.(Uygun Ortalama) Cari Yılın Yıllık Cari İşlemler Dengesi Beklentisi (Milyon ABD Doları)",
+      "context_title": "6A.(Uygun Ortalama) Cari Yılın Yıllık Cari İşlemler Dengesi Beklentisi (Milyon ABD Doları)",
+      "frequency": "monthly",
+      "unit": "Milyon ABD Doları",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [
+        "derived:usdtry-expectation-12m"
+      ],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S06.A.U",
+        "title": "6A. (Uygun Ortalama) Cari Yılın Yıllık Cari İşlemler Dengesi Beklentisi",
+        "frequency": "monthly",
+        "unit": "unknown",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S04.B.U', 'TP.BEK.S04.D.U', 'TP.BEK.S04.E.U', 'TP.BEK.S06.A.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S06.A.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S06_B_U:830959f793f0",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S06_B_U:830959f793f0",
+    "title": "Semantic proposal for TP.BEK.S06.B.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S06.B.U",
+    "ticker": "TP.BEK.S06.B.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "6B. (Uygun Ortalama) Gelecek Yılın Yıllık Cari İşlemler Dengesi Beklentisi",
+    "candidate_unit": "Milyon ABD Doları",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.8,
+    "source": "heuristic",
+    "evidence_fingerprint": "830959f793f0b7ea2bf1fa835a56fb825bb49ec8",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S06.B.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S06.B.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "6B.(Uygun Ortalama) Gelecek Yılın Yıllık Cari İşlemler Dengesi Beklentisi (Milyon ABD Doları)",
+      "context_title": "6B.(Uygun Ortalama) Gelecek Yılın Yıllık Cari İşlemler Dengesi Beklentisi (Milyon ABD Doları)",
+      "frequency": "monthly",
+      "unit": "Milyon ABD Doları",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S06.B.U",
+        "title": "6B. (Uygun Ortalama) Gelecek Yılın Yıllık Cari İşlemler Dengesi Beklentisi",
+        "frequency": "monthly",
+        "unit": "unknown",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S06.B.U', 'TP.BEK.S07.A.U', 'TP.BEK.S07.B.U', 'TP.BEK.S05.B.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S06.B.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S07_A_U:46eb44eb724c",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S07_A_U:46eb44eb724c",
+    "title": "Semantic proposal for TP.BEK.S07.A.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S07.A.U",
+    "ticker": "TP.BEK.S07.A.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "7A. (Uygun Ortalama) Cari Yılın Yıllık GSYH Büyüme Beklentisi (%)",
+    "candidate_unit": "%",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [
+      "derived:current-account-expectation"
+    ],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "46eb44eb724c3d896446e23d7ecee11cdd0f1ade",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S07.A.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S07.A.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "7A.(Uygun Ortalama) Cari Yılın Yıllık GSYH Büyüme Beklentisi (%)",
+      "context_title": "7A.(Uygun Ortalama) Cari Yılın Yıllık GSYH Büyüme Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [
+        "derived:current-account-expectation"
+      ],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S07.A.U",
+        "title": "7A. (Uygun Ortalama) Cari Yılın Yıllık GSYH Büyüme Beklentisi (%)",
+        "frequency": "monthly",
+        "unit": "%",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S06.B.U', 'TP.BEK.S07.A.U', 'TP.BEK.S07.B.U', 'TP.BEK.S05.B.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S07.A.U"
+  },
+  {
+    "record_type": "proposal",
+    "id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S07_B_U:d3ee67646456",
+    "proposal_id": "proposal:pys-ktilmclr-v2:series:TP_BEK_S07_B_U:d3ee67646456",
+    "title": "Semantic proposal for TP.BEK.S07.B.U",
+    "status": "review_pending",
+    "target_type": "series",
+    "target_id": "evds:TP.BEK.S07.B.U",
+    "ticker": "TP.BEK.S07.B.U",
+    "notebook_slug": "pys-ktilmclr-v2",
+    "notebook_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\Telegram Bot\\notebooks\\Pys_Ktlmclr_V2.ipynb",
+    "candidate_title": "7B. (Uygun Ortalama) Gelecek Yılın Yıllık GSYH Büyüme Beklentisi (%)",
+    "candidate_unit": "%",
+    "candidate_frequency": "monthly",
+    "candidate_role": "commentary_driver",
+    "candidate_theme_ids": [
+      "theme:survey-expectations"
+    ],
+    "candidate_indicator_inputs": [],
+    "candidate_formula_hint": "",
+    "confidence": 0.9,
+    "source": "heuristic",
+    "evidence_fingerprint": "d3ee67646456baa3f2cfe0bc126ed87602ed47e3",
+    "catalog_record_id": "catalog:evds2:TP.BEK.S07.B.U",
+    "memory_rule_ids": [],
+    "evidence": {
+      "ticker": "TP.BEK.S07.B.U",
+      "notebook_slug": "pys-ktilmclr-v2",
+      "official_series_name": "7B.(Uygun Ortalama) Gelecek Yılın Yıllık GSYH Büyüme Beklentisi (%)",
+      "context_title": "7B.(Uygun Ortalama) Gelecek Yılın Yıllık GSYH Büyüme Beklentisi (%)",
+      "frequency": "monthly",
+      "unit": "%",
+      "role": "commentary_driver",
+      "status": "derived_input",
+      "theme_ids": [
+        "theme:survey-expectations"
+      ],
+      "indicator_ids": [],
+      "source_dependency_ids": [],
+      "catalog_record": {
+        "id": "catalog:evds2:TP.BEK.S07.B.U",
+        "title": "7B. (Uygun Ortalama) Gelecek Yılın Yıllık GSYH Büyüme Beklentisi (%)",
+        "frequency": "monthly",
+        "unit": "%",
+        "data_group": "bie_urbek",
+        "category": "PİYASA KATILIMCILARI ANKETİ (TCMB)"
+      },
+      "memory_rules": [],
+      "source_snippets": [
+        "'TP.BEK.S06.B.U', 'TP.BEK.S07.A.U', 'TP.BEK.S07.B.U', 'TP.BEK.S05.B.U',"
+      ],
+      "indicator_hints": [],
+      "notes": ""
+    },
+    "llm_provider": "",
+    "llm_model": "",
+    "promoted_record_id": "",
+    "promoted_memory_rule_id": "",
+    "notes": "Catalog source: catalog:evds2:TP.BEK.S07.B.U"
+  }
+]

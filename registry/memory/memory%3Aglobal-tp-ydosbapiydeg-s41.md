@@ -1,0 +1,146 @@
+---
+record_type: memory_rule
+id: memory:global-tp-ydosbapiydeg-s41
+title: Memory rule for TP.YDOSBAPIYDEG.S41
+status: approved
+scope: global
+match_pattern: TP.YDOSBAPIYDEG.S41
+target_type: series
+notebook_slug: yi-yrlsk-fnsl-vrlk-v1
+resolved_title: 1.C.1.2.Finansal Kuruluşlar (S.12) (Diğer Finansal Aracı İhraçları)
+resolved_unit: milyon ABD doları
+resolved_frequency: weekly
+resolved_role: ''
+resolved_theme_ids:
+- theme:resident-financial-assets
+- theme:resident-securities
+- theme:resident-deposits
+resolved_formula_hint: ''
+evidence_source: proposal:proposal:yi-yrlsk-fnsl-vrlk-v1:series:TP_YDOSBAPIYDEG_S41:b326b7858c54
+approved_by: bthkr
+approved_at: '2026-03-12T09:52:15.077987+00:00'
+notes: 'Catalog source: catalog:evds2:TP.YDOSBAPIYDEG.S41'
+body: '# Memory rule for TP.YDOSBAPIYDEG.S41
+
+
+  ## Scope
+
+  global
+
+
+  ## Match Pattern
+
+  TP.YDOSBAPIYDEG.S41
+
+
+  ## Target Type
+
+  series
+
+
+  ## Notebook Slug
+
+  yi-yrlsk-fnsl-vrlk-v1
+
+
+  ## Resolved Title
+
+  1.C.1.2.Finansal Kuruluşlar (S.12) (Diğer Finansal Aracı İhraçları)
+
+
+  ## Resolved Unit
+
+  milyon ABD doları
+
+
+  ## Resolved Frequency
+
+  weekly
+
+
+  ## Resolved Role
+
+  stock_component
+
+
+  ## Resolved Themes
+
+  - theme:resident-financial-assets
+
+  - theme:resident-securities
+
+  - theme:resident-deposits
+
+
+  ## Formula Hint
+
+  -
+
+
+  ## Evidence Source
+
+  proposal:proposal:yi-yrlsk-fnsl-vrlk-v1:series:TP_YDOSBAPIYDEG_S41:b326b7858c54
+
+
+  ## Approved By
+
+  bthkr
+
+
+  ## Approved At
+
+  2026-03-12T09:52:15.077987+00:00
+
+
+  ## Notes
+
+  Catalog source: catalog:evds2:TP.YDOSBAPIYDEG.S41
+
+  '
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\memory\memory%3Aglobal-tp-ydosbapiydeg-s41.md
+---
+# Memory rule for TP.YDOSBAPIYDEG.S41
+
+## Scope
+global
+
+## Match Pattern
+TP.YDOSBAPIYDEG.S41
+
+## Target Type
+series
+
+## Notebook Slug
+yi-yrlsk-fnsl-vrlk-v1
+
+## Resolved Title
+1.C.1.2.Finansal Kuruluşlar (S.12) (Diğer Finansal Aracı İhraçları)
+
+## Resolved Unit
+milyon ABD doları
+
+## Resolved Frequency
+weekly
+
+## Resolved Role
+-
+
+## Resolved Themes
+- theme:resident-financial-assets
+- theme:resident-securities
+- theme:resident-deposits
+
+## Formula Hint
+-
+
+## Evidence Source
+proposal:proposal:yi-yrlsk-fnsl-vrlk-v1:series:TP_YDOSBAPIYDEG_S41:b326b7858c54
+
+## Approved By
+bthkr
+
+## Approved At
+2026-03-12T09:52:15.077987+00:00
+
+## Notes
+Catalog source: catalog:evds2:TP.YDOSBAPIYDEG.S41

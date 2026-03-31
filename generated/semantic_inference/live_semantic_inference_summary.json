@@ -1,0 +1,102 @@
+{
+  "notebook_count": 7,
+  "analysis_counts": {
+    "DTH_Blg_V7.ipynb": 54,
+    "Eurobnd_Blg_V4.ipynb": 10,
+    "PrBnk_MnklKymt_V5.ipynb": 57,
+    "Pys_Ktlmclr_V2.ipynb": 14,
+    "Rzrv_Blg_V7.ipynb": 10,
+    "Tbl_Apko.ipynb": 40,
+    "Yi_Yrlsk_Fnsl_Vrlk_V1.ipynb": 84
+  },
+  "unique_ticker_count": 229,
+  "catalog_record_count": 227,
+  "catalog_sync_success_count": 227,
+  "catalog_sync_failure_count": 2,
+  "catalog_sync_failures": {
+    "TP.HPBITABLO4.14": "Ticker could not be hydrated from EVDS: TP.HPBITABLO4.14",
+    "TP.HPBITABLO4.15": "Ticker could not be hydrated from EVDS: TP.HPBITABLO4.15"
+  },
+  "notebooks": [
+    {
+      "notebook": "DTH_Blg_V7.ipynb",
+      "tickers": 54,
+      "proposals": 54,
+      "review_pending": 54,
+      "unresolved_proposals": 0,
+      "unresolved_tickers_after_enrichment": [
+        "TP.HPBITABLO4.14",
+        "TP.HPBITABLO4.15"
+      ],
+      "report_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\DTH_Blg_V7_semantic_inference_report.md",
+      "proposals_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\DTH_Blg_V7_semantic_proposals.json",
+      "drafts_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\DTH_Blg_V7_semantic_candidate_drafts.csv"
+    },
+    {
+      "notebook": "Eurobnd_Blg_V4.ipynb",
+      "tickers": 10,
+      "proposals": 10,
+      "review_pending": 10,
+      "unresolved_proposals": 0,
+      "unresolved_tickers_after_enrichment": [],
+      "report_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Eurobnd_Blg_V4_semantic_inference_report.md",
+      "proposals_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Eurobnd_Blg_V4_semantic_proposals.json",
+      "drafts_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Eurobnd_Blg_V4_semantic_candidate_drafts.csv"
+    },
+    {
+      "notebook": "PrBnk_MnklKymt_V5.ipynb",
+      "tickers": 57,
+      "proposals": 57,
+      "review_pending": 57,
+      "unresolved_proposals": 0,
+      "unresolved_tickers_after_enrichment": [],
+      "report_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\PrBnk_MnklKymt_V5_semantic_inference_report.md",
+      "proposals_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\PrBnk_MnklKymt_V5_semantic_proposals.json",
+      "drafts_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\PrBnk_MnklKymt_V5_semantic_candidate_drafts.csv"
+    },
+    {
+      "notebook": "Pys_Ktlmclr_V2.ipynb",
+      "tickers": 14,
+      "proposals": 14,
+      "review_pending": 14,
+      "unresolved_proposals": 0,
+      "unresolved_tickers_after_enrichment": [],
+      "report_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Pys_Ktlmclr_V2_semantic_inference_report.md",
+      "proposals_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Pys_Ktlmclr_V2_semantic_proposals.json",
+      "drafts_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Pys_Ktlmclr_V2_semantic_candidate_drafts.csv"
+    },
+    {
+      "notebook": "Rzrv_Blg_V7.ipynb",
+      "tickers": 10,
+      "proposals": 10,
+      "review_pending": 10,
+      "unresolved_proposals": 0,
+      "unresolved_tickers_after_enrichment": [],
+      "report_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Rzrv_Blg_V7_semantic_inference_report.md",
+      "proposals_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Rzrv_Blg_V7_semantic_proposals.json",
+      "drafts_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Rzrv_Blg_V7_semantic_candidate_drafts.csv"
+    },
+    {
+      "notebook": "Tbl_Apko.ipynb",
+      "tickers": 40,
+      "proposals": 40,
+      "review_pending": 40,
+      "unresolved_proposals": 0,
+      "unresolved_tickers_after_enrichment": [],
+      "report_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Tbl_Apko_semantic_inference_report.md",
+      "proposals_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Tbl_Apko_semantic_proposals.json",
+      "drafts_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Tbl_Apko_semantic_candidate_drafts.csv"
+    },
+    {
+      "notebook": "Yi_Yrlsk_Fnsl_Vrlk_V1.ipynb",
+      "tickers": 84,
+      "proposals": 84,
+      "review_pending": 84,
+      "unresolved_proposals": 0,
+      "unresolved_tickers_after_enrichment": [],
+      "report_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Yi_Yrlsk_Fnsl_Vrlk_V1_semantic_inference_report.md",
+      "proposals_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Yi_Yrlsk_Fnsl_Vrlk_V1_semantic_proposals.json",
+      "drafts_path": "C:\\Users\\bthkr\\OneDrive\\Masaüstü\\İş Kodlama\\İş Agentı\\generated\\semantic_inference\\Yi_Yrlsk_Fnsl_Vrlk_V1_semantic_candidate_drafts.csv"
+    }
+  ]
+}
