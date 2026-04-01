@@ -22,6 +22,7 @@ from .records import (
     split_list,
     validate_record,
 )
+from .report import generate_theme_report
 from .semantic_inference import (
     apply_catalog_and_memory,
     auto_approve_proposals,
@@ -32,6 +33,8 @@ from .semantic_inference import (
     generate_implied_proposals,
     ImpliedProposalSummary,
     infer_notebook_semantics,
+    learn_from_correction,
+    LearningSummary,
     promote_proposal,
     reject_proposal,
     review_proposals,
@@ -167,6 +170,22 @@ def build_parser() -> argparse.ArgumentParser:
     fetch.add_argument("--format", default="text", choices=["text", "json", "csv"], dest="out_format")
     fetch.add_argument("--out", default="", help="Write output to file")
 
+    report_cmd = subparsers.add_parser("report", help="Generate Markdown report for a theme with live data")
+    report_cmd.add_argument("--theme", required=True)
+    report_cmd.add_argument("--start", required=True)
+    report_cmd.add_argument("--end", default="")
+    report_cmd.add_argument("--out", default="")
+
+    learn_cmd = subparsers.add_parser("learn", help="Learn from a field correction and suggest for related series")
+    learn_cmd.add_argument("record_id", help="Record ID (e.g. evds:TP.AB.A01)")
+    learn_cmd.add_argument("--field", required=True, choices=["theme_ids", "role", "unit", "frequency"])
+    learn_cmd.add_argument("--value", required=True, help="New value (for theme_ids: comma-separated)")
+
+    watch_cmd = subparsers.add_parser("watch", help="Watch a directory for new/changed notebooks and auto-analyze")
+    watch_cmd.add_argument("directory", help="Directory to watch for .ipynb files")
+    watch_cmd.add_argument("--interval", type=int, default=60, help="Polling interval in seconds")
+    watch_cmd.add_argument("--auto-propose", action="store_true", help="Auto-generate semantic proposals")
+
     promote = subparsers.add_parser("promote-proposal", help="Promote a proposal into semantic memory and a draft record")
     promote.add_argument("proposal_id")
 
@@ -226,6 +245,12 @@ def main(argv: list[str] | None = None, out: TextIO | None = None, err: TextIO |
             handle_check_conflicts(args, paths, stdout)
         elif args.command == "fetch-series":
             handle_fetch_series(args, paths, stdout)
+        elif args.command == "report":
+            handle_report(args, paths, stdout)
+        elif args.command == "learn":
+            handle_learn(args, paths, stdout)
+        elif args.command == "watch":
+            handle_watch(args, paths, stdout)
         elif args.command == "audit":
             handle_audit(args, paths, stdout)
         elif args.command == "enrich-indicators":
@@ -606,6 +631,36 @@ def handle_audit(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) ->
         out.write(f"\n{len(issues)} issue(s) found.\n")
     else:
         out.write("No issues found.\n")
+
+
+def handle_report(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    adapter = EVDSAdapter.from_env()
+    content = generate_theme_report(paths, args.theme, adapter, args.start, args.end or args.start)
+    if args.out:
+        Path(args.out).write_text(content, encoding="utf-8")
+        out.write(f"Report written to {args.out}\n")
+    else:
+        out.write(content)
+
+
+def handle_learn(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    summary = learn_from_correction(paths, args.record_id, args.field, args.value)
+    if summary.record_updated:
+        out.write(f"Updated {args.record_id} {args.field} = {args.value}\n")
+    if summary.memory_rule_created:
+        out.write(f"Memory rule created: {summary.memory_rule_created}\n")
+    if summary.family_suggestions:
+        out.write(f"\nSuggestions for same family ({len(summary.family_suggestions)} series):\n")
+        for sid in summary.family_suggestions:
+            out.write(f"  {sid}\n")
+
+
+def handle_watch(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    from .watcher import watch_notebooks
+    watch_dir = Path(args.directory)
+    if not watch_dir.is_dir():
+        raise ValueError(f"Directory not found: {watch_dir}")
+    watch_notebooks(paths, watch_dir, interval_seconds=args.interval, auto_propose=args.auto_propose, out=out)
 
 
 def handle_fetch_series(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:

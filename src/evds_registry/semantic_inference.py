@@ -5,7 +5,7 @@ import csv
 import hashlib
 import json
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from fnmatch import fnmatch
 import getpass
@@ -843,6 +843,91 @@ def backfill_cross_references(paths: RegistryPaths) -> BackfillSummary:
         record["theme_ids"] = sorted(existing | new_ids)
         write_record(paths.canonical_dir(record["record_type"]), record)
         summary.source_deps_updated += 1
+
+    return summary
+
+
+@dataclass(slots=True)
+class LearningSummary:
+    record_updated: bool = False
+    memory_rule_created: str = ""
+    family_suggestions: list[str] = field(default_factory=list)
+
+
+def learn_from_correction(
+    paths: RegistryPaths,
+    record_id: str,
+    correction_field: str,
+    new_value: str,
+) -> LearningSummary:
+    """Apply a field correction, create a memory rule, and suggest for same-family series."""
+    from .notebook_analysis import family_of
+
+    registry = load_registry(paths)
+    record = registry.get(record_id)
+    if record is None:
+        raise ValueError(f"Record not found: {record_id}")
+
+    summary = LearningSummary()
+    ticker = str(record.get("ticker") or record["id"].split(":", 1)[-1])
+
+    if correction_field == "theme_ids":
+        record["theme_ids"] = [v.strip() for v in new_value.split(",") if v.strip()]
+    elif correction_field in ("role", "unit", "frequency"):
+        record[correction_field] = new_value.strip()
+    else:
+        raise ValueError(f"Unsupported correction field: {correction_field}")
+
+    write_record(paths.canonical_dir(record["record_type"]), record)
+    summary.record_updated = True
+
+    resolved_kwargs: dict[str, Any] = {
+        "resolved_title": "", "resolved_unit": "", "resolved_frequency": "",
+        "resolved_role": "", "resolved_theme_ids": [],
+    }
+    if correction_field == "theme_ids":
+        resolved_kwargs["resolved_theme_ids"] = split_list(record.get("theme_ids"))
+    elif correction_field == "unit":
+        resolved_kwargs["resolved_unit"] = new_value.strip()
+    elif correction_field == "frequency":
+        resolved_kwargs["resolved_frequency"] = new_value.strip()
+    elif correction_field == "role":
+        resolved_kwargs["resolved_role"] = new_value.strip()
+
+    from .records import slugify
+    rule_id = f"memory:correction-{slugify(ticker)}-{correction_field}"
+    memory_rule = normalize_memory_rule_input({
+        "id": rule_id,
+        "title": f"User correction for {ticker} ({correction_field})",
+        "scope": "global",
+        "match_pattern": ticker,
+        "target_type": record["record_type"],
+        "evidence_source": "user_correction",
+        "approved_by": getpass.getuser(),
+        "approved_at": datetime.now(timezone.utc).isoformat(),
+        "notes": f"Corrected {correction_field} to: {new_value}",
+        **resolved_kwargs,
+    })
+    write_record(paths.memory, memory_rule)
+    summary.memory_rule_created = rule_id
+
+    family = family_of(ticker)
+    for other in registry.values():
+        if other["record_type"] != record["record_type"]:
+            continue
+        if other["id"] == record_id:
+            continue
+        other_ticker = str(other.get("ticker") or other["id"].split(":", 1)[-1])
+        if family_of(other_ticker) != family:
+            continue
+        if correction_field == "theme_ids":
+            existing = set(split_list(other.get("theme_ids")))
+            new_set = set(split_list(record.get("theme_ids")))
+            if not new_set.issubset(existing):
+                summary.family_suggestions.append(other["id"])
+        elif correction_field in ("role", "unit", "frequency"):
+            if str(other.get(correction_field) or "") != new_value.strip():
+                summary.family_suggestions.append(other["id"])
 
     return summary
 

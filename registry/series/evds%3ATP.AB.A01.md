@@ -11,8 +11,23 @@ unit: Bin TL
 description: 'EVDS series from catalog: MERKEZ BANKASI ANALİTİK BİLANÇOSU'
 usage: Referenced as indicator input
 official_url: ''
-theme_ids: []
+theme_ids:
+- theme:reserves
 indicator_ids: []
+body: '# A.AKTİF
+
+
+  ## Aciklama
+
+  EVDS series from catalog: MERKEZ BANKASI ANALİTİK BİLANÇOSU
+
+
+  ## Kullanim
+
+  Referenced as indicator input
+
+  '
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\series\evds%3ATP.AB.A01.md
 ---
 # A.AKTİF
 
