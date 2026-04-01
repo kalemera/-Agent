@@ -9,7 +9,11 @@ source_uri: ''
 local_hint: ''
 description: BDDK haftalik bulteninden TL/YP kredi, YPNG ve yasal ozkaynak tablolari
 usage: Tbl_Apko notebook'unda banka bilanco metrikleri
-theme_ids: []
+theme_ids:
+- theme:apko-summary
+- theme:banking-balance-sheet
+- theme:external-financing
+- theme:reserves-and-liquidity
 indicator_ids: []
 validation_note: ''
 body: '# BDDK Haftalik Bulten Scrape
@@ -50,7 +54,7 @@ body: '# BDDK Haftalik Bulten Scrape
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Atblapko-bddk-weekly-bulletin.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Atblapko-bddk-weekly-bulletin.md
 ---
 # BDDK Haftalik Bulten Scrape
 

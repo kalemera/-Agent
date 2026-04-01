@@ -9,7 +9,9 @@ source_uri: ''
 local_hint: ''
 description: Bloomberg eurobond ihrac/vade tablolari upload
 usage: Eurobnd_Blg_V4 notebook'unda eurobond stok hesaplamalari
-theme_ids: []
+theme_ids:
+- theme:eurobond
+- theme:external-financing
 indicator_ids: []
 validation_note: ''
 body: '# Eurobond BBG Upload
@@ -50,7 +52,7 @@ body: '# Eurobond BBG Upload
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Aeurobnd-bbg-upload.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Aeurobnd-bbg-upload.md
 ---
 # Eurobond BBG Upload
 

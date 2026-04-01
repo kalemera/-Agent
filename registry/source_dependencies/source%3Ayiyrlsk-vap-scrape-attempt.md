@@ -10,7 +10,10 @@ local_hint: ''
 description: Playwright tabanli VAP/MKK iframe scrape denemesi; stabil uretim girdisi
   degil
 usage: Yi_Yrlsk notebook'unda manuel ledger yerine gelecek aday kaynak
-theme_ids: []
+theme_ids:
+- theme:resident-deposits
+- theme:resident-financial-assets
+- theme:resident-securities
 indicator_ids: []
 validation_note: ''
 body: '# VAP/MKK Scrape Denemesi
@@ -51,7 +54,7 @@ body: '# VAP/MKK Scrape Denemesi
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Ayiyrlsk-vap-scrape-attempt.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Ayiyrlsk-vap-scrape-attempt.md
 ---
 # VAP/MKK Scrape Denemesi
 

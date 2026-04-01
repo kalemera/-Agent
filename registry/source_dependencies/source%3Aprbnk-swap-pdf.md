@@ -9,7 +9,10 @@ source_uri: ''
 local_hint: ''
 description: TCMB swap islemleri tablo seviyesinde ayrisim PDF'i
 usage: PrBnk_MnklKymt_V5 notebook'unda swap stoku hesaplamalari
-theme_ids: []
+theme_ids:
+- theme:foreign-ownership
+- theme:portfolio-flows
+- theme:swap-and-securities
 indicator_ids: []
 validation_note: ''
 body: '# TCMB Swap PDF (PrBnk)
@@ -50,7 +53,7 @@ body: '# TCMB Swap PDF (PrBnk)
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Aprbnk-swap-pdf.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Aprbnk-swap-pdf.md
 ---
 # TCMB Swap PDF (PrBnk)
 

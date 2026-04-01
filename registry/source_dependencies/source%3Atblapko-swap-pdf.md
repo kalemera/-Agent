@@ -9,7 +9,11 @@ source_uri: ''
 local_hint: ''
 description: TCMB swap islemleri tablo seviyesinde ayrisim PDF'i
 usage: Tbl_Apko notebook'unda swap stoku hesaplamalari
-theme_ids: []
+theme_ids:
+- theme:apko-summary
+- theme:banking-balance-sheet
+- theme:external-financing
+- theme:reserves-and-liquidity
 indicator_ids: []
 validation_note: ''
 body: '# TCMB Swap Islemleri PDF
@@ -50,7 +54,7 @@ body: '# TCMB Swap Islemleri PDF
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Atblapko-swap-pdf.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Atblapko-swap-pdf.md
 ---
 # TCMB Swap Islemleri PDF
 

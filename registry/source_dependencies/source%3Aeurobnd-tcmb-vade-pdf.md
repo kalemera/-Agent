@@ -9,7 +9,9 @@ source_uri: ''
 local_hint: ''
 description: TCMB eurobond vade dagilimi PDF tablosu
 usage: Eurobnd_Blg_V4 notebook'unda eurobond vade profili analizi
-theme_ids: []
+theme_ids:
+- theme:eurobond
+- theme:external-financing
 indicator_ids: []
 validation_note: ''
 body: '# TCMB Eurobond Vade PDF
@@ -50,7 +52,7 @@ body: '# TCMB Eurobond Vade PDF
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Aeurobnd-tcmb-vade-pdf.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Aeurobnd-tcmb-vade-pdf.md
 ---
 # TCMB Eurobond Vade PDF
 

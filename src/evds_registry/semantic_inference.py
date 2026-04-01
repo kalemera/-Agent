@@ -754,6 +754,62 @@ def generate_implied_proposals(
     return summary
 
 
+@dataclass(slots=True)
+class BackfillSummary:
+    themes_updated: int = 0
+    source_deps_updated: int = 0
+
+
+def backfill_cross_references(paths: RegistryPaths) -> BackfillSummary:
+    """Scan approved proposals to populate theme↔source_dep linkage on registry records."""
+    all_proposals = load_proposals(paths)
+    registry = load_registry(paths)
+
+    theme_to_source_deps: dict[str, set[str]] = {}
+    source_dep_to_themes: dict[str, set[str]] = {}
+
+    for proposal in all_proposals.values():
+        if proposal.get("status") != "approved":
+            continue
+        theme_ids = split_list(proposal.get("candidate_theme_ids"))
+        evidence = proposal.get("evidence") or {}
+        src_dep_ids = split_list(evidence.get("source_dependency_ids"))
+        if not theme_ids or not src_dep_ids:
+            continue
+        for tid in theme_ids:
+            theme_to_source_deps.setdefault(tid, set()).update(src_dep_ids)
+        for sid in src_dep_ids:
+            source_dep_to_themes.setdefault(sid, set()).update(theme_ids)
+
+    summary = BackfillSummary()
+
+    for theme_id, src_ids in theme_to_source_deps.items():
+        record = registry.get(theme_id)
+        if not record or record["record_type"] != "theme":
+            continue
+        existing = set(split_list(record.get("source_dependency_ids")))
+        new_ids = src_ids - existing
+        if not new_ids:
+            continue
+        record["source_dependency_ids"] = sorted(existing | new_ids)
+        write_record(paths.canonical_dir(record["record_type"]), record)
+        summary.themes_updated += 1
+
+    for src_id, t_ids in source_dep_to_themes.items():
+        record = registry.get(src_id)
+        if not record or record["record_type"] != "source_dependency":
+            continue
+        existing = set(split_list(record.get("theme_ids")))
+        new_ids = t_ids - existing
+        if not new_ids:
+            continue
+        record["theme_ids"] = sorted(existing | new_ids)
+        write_record(paths.canonical_dir(record["record_type"]), record)
+        summary.source_deps_updated += 1
+
+    return summary
+
+
 def promote_proposal(paths: RegistryPaths, proposal_id: str) -> tuple[Record | None, Record]:
     proposal = load_record(paths.proposals, proposal_id)
     if proposal is None:

@@ -10,7 +10,11 @@ local_hint: ''
 description: Hazine ve Maliye Bakanligi Avrupa Birligi tanimli genel yonetim borc
   stoku tablosu
 usage: Tbl_Apko notebook'unda AB borc stok hesaplamalari
-theme_ids: []
+theme_ids:
+- theme:apko-summary
+- theme:banking-balance-sheet
+- theme:external-financing
+- theme:reserves-and-liquidity
 indicator_ids: []
 validation_note: ''
 body: '# HMB AB Borc Stok XLS
@@ -51,7 +55,7 @@ body: '# HMB AB Borc Stok XLS
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Atblapko-hmb-ab-borc-xls.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Atblapko-hmb-ab-borc-xls.md
 ---
 # HMB AB Borc Stok XLS
 

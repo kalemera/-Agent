@@ -10,7 +10,8 @@ local_hint: ''
 description: Eski DTH serilerini bugunku kolon adlariyla birlestirmek icin kullanilan
   Excel dosyasi
 usage: DTH_Blg_V7 notebook'unda legacy seri eslestirme
-theme_ids: []
+theme_ids:
+- theme:dth
 indicator_ids: []
 validation_note: ''
 body: '# DTH Eski Seri Excel Dosyasi
@@ -51,7 +52,7 @@ body: '# DTH Eski Seri Excel Dosyasi
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Adth-old-series-excel.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Adth-old-series-excel.md
 ---
 # DTH Eski Seri Excel Dosyasi
 

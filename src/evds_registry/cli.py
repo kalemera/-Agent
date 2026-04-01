@@ -23,6 +23,8 @@ from .records import (
 from .semantic_inference import (
     apply_catalog_and_memory,
     auto_approve_proposals,
+    backfill_cross_references,
+    BackfillSummary,
     generate_implied_proposals,
     ImpliedProposalSummary,
     infer_notebook_semantics,
@@ -146,6 +148,8 @@ def build_parser() -> argparse.ArgumentParser:
     gen_implied = subparsers.add_parser("generate-implied-proposals", help="Generate proposals for indicator/theme IDs referenced in approved proposals but lacking records")
     gen_implied.add_argument("--target-type", default="", choices=["", "indicator", "theme"], dest="target_type", help="Restrict to a single type (default: both)")
 
+    subparsers.add_parser("backfill-cross-references", help="Populate theme<->source_dependency linkage from proposal evidence")
+
     promote = subparsers.add_parser("promote-proposal", help="Promote a proposal into semantic memory and a draft record")
     promote.add_argument("proposal_id")
 
@@ -194,6 +198,8 @@ def main(argv: list[str] | None = None, out: TextIO | None = None, err: TextIO |
             handle_auto_approve_proposals(args, paths, stdout)
         elif args.command == "generate-implied-proposals":
             handle_generate_implied_proposals(args, paths, stdout)
+        elif args.command == "backfill-cross-references":
+            handle_backfill_cross_references(args, paths, stdout)
         elif args.command == "promote-proposal":
             handle_promote_proposal(args, paths, stdout)
         elif args.command == "reject-proposal":
@@ -463,6 +469,12 @@ def handle_generate_implied_proposals(args: argparse.Namespace, paths: RegistryP
     summary = generate_implied_proposals(paths, target_types=target_types)
     out.write(f"created: {summary.created}\n")
     out.write(f"skipped_existing: {summary.skipped_existing}\n")
+
+
+def handle_backfill_cross_references(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    summary = backfill_cross_references(paths)
+    out.write(f"themes_updated: {summary.themes_updated}\n")
+    out.write(f"source_deps_updated: {summary.source_deps_updated}\n")
 
 
 def handle_promote_proposal(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:

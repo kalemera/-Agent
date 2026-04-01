@@ -10,7 +10,10 @@ local_hint: mkk_fon_verisi dict olarak notebook icinde inline tanimli
 description: MKK tarafindan yayimlanan yatirim fonu portfoy degerleri ve gercek kisi
   kirilimi
 usage: Yi_Yrlsk notebook'unda yatirim fonu portfoy analizi
-theme_ids: []
+theme_ids:
+- theme:resident-deposits
+- theme:resident-financial-assets
+- theme:resident-securities
 indicator_ids: []
 validation_note: ''
 body: '# MKK Yatirim Fonu Verileri
@@ -51,7 +54,7 @@ body: '# MKK Yatirim Fonu Verileri
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Ayiyrlsk-mkk-fon-manual.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Ayiyrlsk-mkk-fon-manual.md
 ---
 # MKK Yatirim Fonu Verileri
 

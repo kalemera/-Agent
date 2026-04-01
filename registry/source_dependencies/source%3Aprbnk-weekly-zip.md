@@ -10,7 +10,10 @@ local_hint: ''
 description: TCMB haftalik para ve banka istatistiklerinden ek XLSX tablolar iceren
   ZIP arsiv
 usage: PrBnk_MnklKymt_V5 notebook'unda ek menkul kiymet ve mevduat verileri
-theme_ids: []
+theme_ids:
+- theme:foreign-ownership
+- theme:portfolio-flows
+- theme:swap-and-securities
 indicator_ids: []
 validation_note: ''
 body: '# TCMB Haftalik Para Banka ZIP
@@ -51,7 +54,7 @@ body: '# TCMB Haftalik Para Banka ZIP
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Aprbnk-weekly-zip.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Aprbnk-weekly-zip.md
 ---
 # TCMB Haftalik Para Banka ZIP
 

@@ -9,7 +9,9 @@ source_uri: ''
 local_hint: ''
 description: TCMB swap alis/satis/depoya donen swap tablosu PDF
 usage: Rzrv_Blg_V7 notebook'unda swap stoku ve net rezerv hesabi
-theme_ids: []
+theme_ids:
+- theme:net-reserve-estimate
+- theme:reserves
 indicator_ids: []
 validation_note: ''
 body: '# TCMB Swap PDF (Rezerv)
@@ -50,7 +52,7 @@ body: '# TCMB Swap PDF (Rezerv)
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Arzrv-swap-pdf.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Arzrv-swap-pdf.md
 ---
 # TCMB Swap PDF (Rezerv)
 

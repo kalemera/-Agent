@@ -9,7 +9,9 @@ source_uri: ''
 local_hint: ''
 description: Hazine ve Maliye Bakanligi eurobond odeme projeksiyon tablosu
 usage: Eurobnd_Blg_V4 notebook'unda gelecek odeme takvimi
-theme_ids: []
+theme_ids:
+- theme:eurobond
+- theme:external-financing
 indicator_ids: []
 validation_note: ''
 body: '# HMB Odeme Projeksiyonu
@@ -50,7 +52,7 @@ body: '# HMB Odeme Projeksiyonu
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Aeurobnd-hmb-odeme-projeksiyonu.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Aeurobnd-hmb-odeme-projeksiyonu.md
 ---
 # HMB Odeme Projeksiyonu
 

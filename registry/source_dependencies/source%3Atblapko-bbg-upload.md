@@ -9,7 +9,11 @@ source_uri: ''
 local_hint: ''
 description: Kullanici yuklemeli Bloomberg eurobond ihrac/vade tablolari
 usage: Tbl_Apko notebook'unda eurobond stok ve ihrac hesaplamalari
-theme_ids: []
+theme_ids:
+- theme:apko-summary
+- theme:banking-balance-sheet
+- theme:external-financing
+- theme:reserves-and-liquidity
 indicator_ids: []
 validation_note: ''
 body: '# BBG Eurobond Workbook
@@ -50,7 +54,7 @@ body: '# BBG Eurobond Workbook
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Atblapko-bbg-upload.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Atblapko-bbg-upload.md
 ---
 # BBG Eurobond Workbook
 

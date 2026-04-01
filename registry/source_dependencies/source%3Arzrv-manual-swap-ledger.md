@@ -9,7 +9,9 @@ source_uri: ''
 local_hint: notebook icinde dict olarak inline tanimli swap tutarlari
 description: Notebook icinde manuel girilen Diger Ulke MB Swap tutari tablosu
 usage: Rzrv_Blg_V7 notebook'unda tahmini net rezerv hesabinda Diger Ulke MB Swap kalemi
-theme_ids: []
+theme_ids:
+- theme:net-reserve-estimate
+- theme:reserves
 indicator_ids: []
 validation_note: ''
 body: '# Manuel Swap Ledger
@@ -50,7 +52,7 @@ body: '# Manuel Swap Ledger
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Arzrv-manual-swap-ledger.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Arzrv-manual-swap-ledger.md
 ---
 # Manuel Swap Ledger
 

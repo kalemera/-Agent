@@ -11,7 +11,10 @@ local_hint: mkk_hisse_verisi ve mkk_hisse_verisi_aylik dict olarak notebook icin
 description: MKK tarafindan yayimlanan hisse senedi yatirimci sayilari ve portfoy
   degerleri
 usage: Yi_Yrlsk notebook'unda yerli hisse portfoy degeri ve gercek kisi kirilimi
-theme_ids: []
+theme_ids:
+- theme:resident-deposits
+- theme:resident-financial-assets
+- theme:resident-securities
 indicator_ids: []
 validation_note: ''
 body: '# MKK Hisse Senedi Yatirimci Verileri
@@ -52,7 +55,7 @@ body: '# MKK Hisse Senedi Yatirimci Verileri
   -
 
   '
-path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\drafts\source%3Ayiyrlsk-mkk-hisse-manual.md
+path: C:\Users\bthkr\OneDrive\Masaüstü\İş Kodlama\İş Agentı\registry\source_dependencies\source%3Ayiyrlsk-mkk-hisse-manual.md
 ---
 # MKK Hisse Senedi Yatirimci Verileri
 
