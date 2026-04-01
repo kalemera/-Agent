@@ -1,68 +1,49 @@
 # Mevcut Durum ve Kararlar
 
-> Son güncelleme: 2026-03-31
+> Son güncelleme: 2026-04-01
 
-## Bu Oturumda Alınan Kararlar
+## Mimari Kararlar
 
-### Mimari: 2 Agent
+### 2 Agent Mimarisi
 
-evds-registry tek başına büyütülmeyecek. evds-mcp ile çift katmanlı çalışacak:
 - **evds-registry** = anlam/bilgi katmanı (bu proje)
 - **evds-mcp** = veri/analiz katmanı (https://github.com/orhoncan/evds-mcp)
 
 ### LLM: Qwen (Alibaba Cloud DashScope)
 
-Ollama Pro iptal edildi. Yeni LLM: Alibaba Cloud'un ücretsiz Qwen API'si.
-- `LLM_PROVIDER=qwen`
-- `QWEN_MODEL=qwen-turbo` (ücretsiz tier için)
+- `LLM_PROVIDER=qwen`, `QWEN_MODEL=qwen-turbo`
 - Endpoint: `https://dashscope.aliyuncs.com/compatible-mode/v1`
-- API key `.env` dosyasına yazılacak (git'e girmez)
 
 ### Öncelik Sırası
 
-1. Faz 1 (proposal backlog temizleme) — **şu an buradayız**
-2. Faz 2 (NotebookSpec genelleme)
+1. ~~Faz 1 (proposal backlog temizleme)~~ — **büyük ölçüde tamamlandı**
+2. Faz 2 (NotebookSpec genelleme) — **sıradaki**
 3. Faz 3 (evds-mcp entegrasyonu)
 4. Faz 4 (akıllı agent) — uzun vade
 
-## Bu Oturumda Yapılanlar
+## Tamamlanan İşler
 
-| İş | Dosya | Durum |
-|----|-------|-------|
-| Qwen LLM client | `src/evds_registry/llm.py` | ✅ |
-| .env.example | `.env.example` | ✅ |
-| add-source-dependency-draft | `src/evds_registry/cli.py` | ✅ |
-| Git repo başlatıldı | `.git/` | ✅ |
-| uv kuruldu | sistem | ✅ |
-| Yol haritası yazıldı | `docs/roadmap/` | ✅ |
+| İş | Durum |
+|----|-------|
+| Qwen LLM client, .env.example, Git repo, uv | ✅ oturum 1 |
+| Yol haritası yazıldı | ✅ oturum 1 |
+| Faz 1.1: generate-implied-proposals + auto-approve indicator/theme | ✅ oturum 2 |
+| Faz 1.2: 15 source dependency kaydı (5 notebook) | ✅ oturum 2 |
+| Faz 1.3: show-map source dep gösterimi + backfill-cross-references | ✅ oturum 2 |
 
 ## Sonraki Oturumda Nereden Başlanacak
 
-**Faz 1.1 — Proposal batch onayı:**
+**Faz 1.4 — import-drafts CSV template güncellemesi:**
 
-```bash
-# 1. Bekleyen indicator proposal'larını gör
-registry review-proposals --target-type indicator --status review_pending
+`examples/import_template.csv`'ye `source_dependency` satır desteği eklenmeli.
 
-# 2. LLM ile toplu onayla
-registry auto-approve-proposals --target-type indicator --min-confidence 0.75
+**46 indicator manual_review'da:**
 
-# 3. Theme'ler için aynısı
-registry auto-approve-proposals --target-type theme --min-confidence 0.70
+Formula'da `evds:` input'u olmayan indicator proposal'ları `manual_review`'da. Bunlara notebook'lardan formula bilgisi çıkarılmalı. `review-proposals --status manual_review --target-type indicator` ile incelenebilir.
 
-# 4. Kalan'ları manuel incele
-registry review-proposals --status review_pending
-```
+**Faz 2'ye geçiş:**
 
-**Faz 1.2 — Source dependency girişi:**
-
-```bash
-# Yi_Yrlsk ve Tbl_Apko notebook'larındaki dış kaynakları gir
-# (tasks/notebook_semantics/ dosyalarından bilgileri al)
-registry add-source-dependency-draft \
-  --title "..." --description "..." --usage "..." \
-  --source-kind manual_inline --requiredness required
-```
+Faz 1 başarı kriterleri büyük ölçüde karşılandı, Faz 2 (NotebookSpec genelleme) başlanabilir.
 
 ## Bilinen Teknik Borçlar
 
@@ -74,19 +55,18 @@ registry add-source-dependency-draft \
 | Yi_Yrlsk L1 ama dış kaynak içeriyor (L2 olmalı) | INDEX.md | Orta |
 | Frekans hizalama kuralları yok | SHARED_SPEC.md | Orta (Faz 2'de) |
 | StubEVDSAdapter sadece NotImplementedError | source_adapters.py | Orta (Faz 3'te) |
-| auto-approve sadece 'series' tipini destekliyor | semantic_inference.py | Yüksek (Faz 1'de) |
 
 ## Registry Sağlık Durumu
 
 ```
 Güçlü katmanlar:
-  ✅ Series     206 onaylı kayıt
-  ✅ Memory     224 semantik kural
-  ✅ Catalog    227 EVDS metadata
+  ✅ Series          206 onaylı kayıt
+  ✅ Memory          241 semantik kural
+  ✅ Catalog         227 EVDS metadata
+  ✅ Themes           17 onaylı (hedef: 10+ ✓)
+  ✅ Source deps      15 onaylı (hedef: 5+ ✓)
 
-Zayıf katmanlar (Faz 1 hedefi):
-  ⚠️ Proposals  269 bekliyor — işlenmemiş
-  ❌ Indicators  2 onaylı (hedef: 50+)
-  ❌ Themes      2 onaylı (hedef: 10+)
-  ❌ Source deps 0 onaylı (hedef: 5+)
+Devam eden:
+  ⚠️ Indicators       4 onaylı (hedef: 50+)
+  ⚠️ Proposals       46 manual_review (indicator, input_ids eksik)
 ```
