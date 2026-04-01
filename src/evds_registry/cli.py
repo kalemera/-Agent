@@ -612,25 +612,22 @@ def handle_fetch_series(args: argparse.Namespace, paths: RegistryPaths, out: Tex
     adapter = EVDSAdapter.from_env()
     if not adapter.is_configured():
         raise ValueError("EVDS_API_KEY must be set in .env for fetch-series.")
-    ticker = args.ticker.removeprefix("evds:").strip()
-    registry = load_registry(paths)
-    registry_record = registry.get(f"evds:{ticker}")
-    meta = adapter.hydrate_metadata(ticker)
-    if not meta and not registry_record:
-        raise ValueError(f"Ticker {ticker} not found in EVDS or registry.")
-    out.write(f"Ticker: {ticker}\n")
-    if meta:
-        out.write(f"EVDS Title: {meta.get('title', '-')}\n")
-        out.write(f"Frequency: {meta.get('frequency', '-')}\n")
-        out.write(f"Unit: {meta.get('unit', '-')}\n")
-        out.write(f"Data Group: {meta.get('data_group', '-')}\n")
-        out.write(f"Category: {meta.get('category', '-')}\n")
-    if registry_record:
-        out.write(f"Registry Title: {registry_record.get('title', '-')}\n")
-        out.write(f"Registry Status: {registry_record.get('status', '-')}\n")
-    if not meta:
-        out.write("WARNING: not found in EVDS (API may be unavailable)\n")
-    out.write("\nNote: live data fetch unavailable (TCMB evds2 API deprecated). Use evds-mcp when ready.\n")
+    raw = args.ticker.removeprefix("evds:").strip()
+    tickers = [t.strip().removeprefix("evds:") for t in raw.split(",")]
+    if not args.start:
+        raise ValueError("--start is required (e.g. --start 01-01-2025)")
+    df = adapter.fetch_observations(tickers, start=args.start, end=args.end or args.start)
+    if args.out_format == "json":
+        content = df.to_json(orient="records", force_ascii=False, indent=2, date_format="iso")
+    elif args.out_format == "csv":
+        content = df.to_csv(index=False)
+    else:
+        content = df.to_string(index=False) + "\n"
+    if args.out:
+        Path(args.out).write_text(content, encoding="utf-8")
+        out.write(f"Written {len(df)} rows to {args.out}\n")
+    else:
+        out.write(content)
 
 
 def handle_promote_proposal(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:

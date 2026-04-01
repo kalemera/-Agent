@@ -1,11 +1,8 @@
 from __future__ import annotations
 
-import json
 import os
 from dataclasses import dataclass
 from typing import Any, Protocol
-from urllib.parse import urlencode
-from urllib.request import Request, urlopen
 
 from .evds_catalog import TCMBEVDSCatalogClient, row_to_catalog_record, first_value
 
@@ -24,7 +21,6 @@ class SourceAdapter(Protocol):
 @dataclass(slots=True)
 class EVDSAdapter:
     api_key: str = ""
-    data_url: str = "https://evds2.tcmb.gov.tr/service/evds/"
     source_version: str = "evds2"
 
     @classmethod
@@ -76,21 +72,15 @@ class EVDSAdapter:
 
     def fetch_observations(
         self,
-        ticker: str,
-        start: str | None = None,
-        end: str | None = None,
-    ) -> list[dict[str, Any]]:
-        raise NotImplementedError(
-            "TCMB evds2 data API is no longer available. "
-            "Use evds-mcp or a direct TCMB data source when ready."
-        )
-
-
-def _to_evds_date(date_str: str) -> str:
-    """Convert YYYY-MM-DD or YYYY-MM to DD-MM-YYYY format."""
-    parts = date_str.strip().split("-")
-    if len(parts) == 3:
-        return f"{parts[2]}-{parts[1]}-{parts[0]}"
-    if len(parts) == 2:
-        return f"01-{parts[1]}-{parts[0]}"
-    return date_str
+        tickers: list[str],
+        start: str = "",
+        end: str = "",
+        frequency: str = "",
+    ) -> Any:
+        """Fetch live data using the evds library. Returns a pandas DataFrame."""
+        from evds import evdsAPI
+        evds = evdsAPI(self.api_key)
+        kwargs: dict[str, Any] = {}
+        if frequency:
+            kwargs["frequency"] = frequency
+        return evds.get_data(tickers, startdate=start, enddate=end, **kwargs)
