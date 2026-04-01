@@ -117,7 +117,6 @@ raw_metadata:
       seviye: 2
       ustCategoryId: 10
       ustCategoryKonuBaslik: null
-      source: null
       target:
         id: 693af10ad52a8a15de21ce3c
         code: 1004
@@ -131,7 +130,7 @@ raw_metadata:
         seviye: 2
         ustCategoryId: 10
         ustCategoryKonuBaslik: null
-    source: null
+      source: null
     target:
       id: 693af2bfb093f020fd4c7a0b
       dataGroupCode: bie_urbek
@@ -182,7 +181,6 @@ raw_metadata:
         seviye: 2
         ustCategoryId: 10
         ustCategoryKonuBaslik: null
-        source: null
         target:
           id: 693af10ad52a8a15de21ce3c
           code: 1004
@@ -196,6 +194,8 @@ raw_metadata:
           seviye: 2
           ustCategoryId: 10
           ustCategoryKonuBaslik: null
+        source: null
+    source: null
 ---
 # 6A. (Uygun Ortalama) Cari Yılın Yıllık Cari İşlemler Dengesi Beklentisi
 
@@ -325,7 +325,6 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egili
       "seviye": 2,
       "ustCategoryId": 10,
       "ustCategoryKonuBaslik": null,
-      "source": null,
       "target": {
         "id": "693af10ad52a8a15de21ce3c",
         "code": 1004,
@@ -339,9 +338,9 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egili
         "seviye": 2,
         "ustCategoryId": 10,
         "ustCategoryKonuBaslik": null
-      }
+      },
+      "source": null
     },
-    "source": null,
     "target": {
       "id": "693af2bfb093f020fd4c7a0b",
       "dataGroupCode": "bie_urbek",
@@ -392,7 +391,6 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egili
         "seviye": 2,
         "ustCategoryId": 10,
         "ustCategoryKonuBaslik": null,
-        "source": null,
         "target": {
           "id": "693af10ad52a8a15de21ce3c",
           "code": 1004,
@@ -406,8 +404,10 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egili
           "seviye": 2,
           "ustCategoryId": 10,
           "ustCategoryKonuBaslik": null
-        }
+        },
+        "source": null
       }
-    }
+    },
+    "source": null
   }
 }

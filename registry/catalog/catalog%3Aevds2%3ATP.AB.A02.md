@@ -7,7 +7,7 @@ source: evds
 source_version: evds2
 ticker: TP.AB.A02
 frequency: i̇ş günü
-unit: unknown
+unit: Bin TL
 category: MERKEZ BANKASI ANALİTİK BİLANÇOSU
 data_group: bie_abanlbil
 official_url: http://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+Analitik+Bilanco/Metaveri/
@@ -97,11 +97,11 @@ raw_metadata:
     responsibleDirector: FİNANSAL RAPORLAMA VE ANALİZ MÜDÜRLÜĞÜ
     zeroToNd: 0
     formula: TP.AB.m()
-    birimi: ''
-    birimiEn: ''
+    birimi: Bin TL
+    birimiEn: Thousand TRY
     categoryId: 3001
     dataGroupId: null
-    lastUpdated: 23-01-2026
+    lastUpdated: 23-03-2026
     category:
       id: 693af10ad52a8a15de21ce75
       code: 3001
@@ -161,11 +161,11 @@ raw_metadata:
       responsibleDirector: FİNANSAL RAPORLAMA VE ANALİZ MÜDÜRLÜĞÜ
       zeroToNd: 0
       formula: TP.AB.m()
-      birimi: ''
-      birimiEn: ''
+      birimi: Bin TL
+      birimiEn: Thousand TRY
       categoryId: 3001
       dataGroupId: null
-      lastUpdated: 23-01-2026
+      lastUpdated: 23-03-2026
       category:
         id: 693af10ad52a8a15de21ce75
         code: 3001
@@ -207,7 +207,7 @@ evds2
 i̇ş günü
 
 ## Unit
-unknown
+Bin TL
 
 ## Category
 MERKEZ BANKASI ANALİTİK BİLANÇOSU
@@ -305,11 +305,11 @@ http://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+A
     "responsibleDirector": "FİNANSAL RAPORLAMA VE ANALİZ MÜDÜRLÜĞÜ",
     "zeroToNd": 0,
     "formula": "TP.AB.m()",
-    "birimi": "",
-    "birimiEn": "",
+    "birimi": "Bin TL",
+    "birimiEn": "Thousand TRY",
     "categoryId": 3001,
     "dataGroupId": null,
-    "lastUpdated": "23-01-2026",
+    "lastUpdated": "23-03-2026",
     "category": {
       "id": "693af10ad52a8a15de21ce75",
       "code": 3001,
@@ -371,11 +371,11 @@ http://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+A
       "responsibleDirector": "FİNANSAL RAPORLAMA VE ANALİZ MÜDÜRLÜĞÜ",
       "zeroToNd": 0,
       "formula": "TP.AB.m()",
-      "birimi": "",
-      "birimiEn": "",
+      "birimi": "Bin TL",
+      "birimiEn": "Thousand TRY",
       "categoryId": 3001,
       "dataGroupId": null,
-      "lastUpdated": "23-01-2026",
+      "lastUpdated": "23-03-2026",
       "category": {
         "id": "693af10ad52a8a15de21ce75",
         "code": 3001,

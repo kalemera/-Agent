@@ -7,7 +7,7 @@ source: evds
 source_version: evds2
 ticker: TP.AB.N06
 frequency: weekly
-unit: unknown
+unit: Bin TL
 category: MERKEZ BANKASI HAFTALIK VAZİYET
 data_group: bie_abstc2
 official_url: https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+Analitik+Bilanco
@@ -98,11 +98,11 @@ raw_metadata:
     responsibleDirector: FİNANSAL RAPORLAMA VE ANALİZ MÜDÜRLÜĞÜ
     zeroToNd: 0
     formula: TP.AB.m()
-    birimi: ''
-    birimiEn: ''
+    birimi: Bin TL
+    birimiEn: Thousand TRY
     categoryId: 3004
     dataGroupId: null
-    lastUpdated: 23-01-2026
+    lastUpdated: 23-03-2026
     category:
       id: 6973953e5c47d024c4e6dfe4
       code: 3004
@@ -116,7 +116,6 @@ raw_metadata:
       seviye: 2
       ustCategoryId: 30
       ustCategoryKonuBaslik: null
-      source: null
       target:
         id: 6973953e5c47d024c4e6dfe4
         code: 3004
@@ -130,7 +129,7 @@ raw_metadata:
         seviye: 2
         ustCategoryId: 30
         ustCategoryKonuBaslik: null
-    source: null
+      source: null
     target:
       id: 693af2bfb093f020fd4c7988
       dataGroupCode: bie_abstc2
@@ -163,11 +162,11 @@ raw_metadata:
       responsibleDirector: FİNANSAL RAPORLAMA VE ANALİZ MÜDÜRLÜĞÜ
       zeroToNd: 0
       formula: TP.AB.m()
-      birimi: ''
-      birimiEn: ''
+      birimi: Bin TL
+      birimiEn: Thousand TRY
       categoryId: 3004
       dataGroupId: null
-      lastUpdated: 23-01-2026
+      lastUpdated: 23-03-2026
       category:
         id: 6973953e5c47d024c4e6dfe4
         code: 3004
@@ -181,7 +180,6 @@ raw_metadata:
         seviye: 2
         ustCategoryId: 30
         ustCategoryKonuBaslik: null
-        source: null
         target:
           id: 6973953e5c47d024c4e6dfe4
           code: 3004
@@ -195,6 +193,8 @@ raw_metadata:
           seviye: 2
           ustCategoryId: 30
           ustCategoryKonuBaslik: null
+        source: null
+    source: null
 ---
 # 2A Net Uluslararası Rezervler (1+2+3)
 
@@ -208,7 +208,7 @@ evds2
 weekly
 
 ## Unit
-unknown
+Bin TL
 
 ## Category
 MERKEZ BANKASI HAFTALIK VAZİYET
@@ -306,11 +306,11 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+
     "responsibleDirector": "FİNANSAL RAPORLAMA VE ANALİZ MÜDÜRLÜĞÜ",
     "zeroToNd": 0,
     "formula": "TP.AB.m()",
-    "birimi": "",
-    "birimiEn": "",
+    "birimi": "Bin TL",
+    "birimiEn": "Thousand TRY",
     "categoryId": 3004,
     "dataGroupId": null,
-    "lastUpdated": "23-01-2026",
+    "lastUpdated": "23-03-2026",
     "category": {
       "id": "6973953e5c47d024c4e6dfe4",
       "code": 3004,
@@ -324,7 +324,6 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+
       "seviye": 2,
       "ustCategoryId": 30,
       "ustCategoryKonuBaslik": null,
-      "source": null,
       "target": {
         "id": "6973953e5c47d024c4e6dfe4",
         "code": 3004,
@@ -338,9 +337,9 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+
         "seviye": 2,
         "ustCategoryId": 30,
         "ustCategoryKonuBaslik": null
-      }
+      },
+      "source": null
     },
-    "source": null,
     "target": {
       "id": "693af2bfb093f020fd4c7988",
       "dataGroupCode": "bie_abstc2",
@@ -373,11 +372,11 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+
       "responsibleDirector": "FİNANSAL RAPORLAMA VE ANALİZ MÜDÜRLÜĞÜ",
       "zeroToNd": 0,
       "formula": "TP.AB.m()",
-      "birimi": "",
-      "birimiEn": "",
+      "birimi": "Bin TL",
+      "birimiEn": "Thousand TRY",
       "categoryId": 3004,
       "dataGroupId": null,
-      "lastUpdated": "23-01-2026",
+      "lastUpdated": "23-03-2026",
       "category": {
         "id": "6973953e5c47d024c4e6dfe4",
         "code": 3004,
@@ -391,7 +390,6 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+
         "seviye": 2,
         "ustCategoryId": 30,
         "ustCategoryKonuBaslik": null,
-        "source": null,
         "target": {
           "id": "6973953e5c47d024c4e6dfe4",
           "code": 3004,
@@ -405,8 +403,10 @@ https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/TCMB+
           "seviye": 2,
           "ustCategoryId": 30,
           "ustCategoryKonuBaslik": null
-        }
+        },
+        "source": null
       }
-    }
+    },
+    "source": null
   }
 }
