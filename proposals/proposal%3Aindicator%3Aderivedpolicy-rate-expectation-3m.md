@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedpolicy-rate-expectation-3m
 proposal_id: proposal:indicator:derivedpolicy-rate-expectation-3m
 title: Implied indicator proposal for derived:policy-rate-expectation-3m
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:policy-rate-expectation-3m
 ticker: ''
@@ -13,8 +13,10 @@ candidate_title: Policy Rate Expectation 3m
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
+candidate_theme_ids:
+- theme:survey-expectations
+candidate_indicator_inputs:
+- evds:TP.BEK.S01.E.U
 candidate_formula_hint: ''
 confidence: 0.6
 source: heuristic
@@ -24,11 +26,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:policy-rate-expectation-3m
+promoted_memory_rule_id: memory:global-policy-rate-expectation-3m
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): pys-ktilmclr-v2'
 body: '# Implied indicator proposal for derived:policy-rate-expectation-3m
 
@@ -70,12 +71,12 @@ body: '# Implied indicator proposal for derived:policy-rate-expectation-3m
 
   ## Candidate Themes
 
-  -
+  - theme:survey-expectations
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.BEK.S01.E.U
 
 
   ## Formula Hint
@@ -134,10 +135,10 @@ Policy Rate Expectation 3m
 0.6
 
 ## Candidate Themes
--
+- theme:survey-expectations
 
 ## Candidate Indicator Inputs
--
+- evds:TP.BEK.S01.E.U
 
 ## Formula Hint
 -
@@ -146,10 +147,10 @@ Policy Rate Expectation 3m
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): pys-ktilmclr-v2

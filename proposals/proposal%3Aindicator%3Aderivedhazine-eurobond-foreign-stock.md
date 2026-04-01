@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedhazine-eurobond-foreign-stock
 proposal_id: proposal:indicator:derivedhazine-eurobond-foreign-stock
 title: Implied indicator proposal for derived:hazine-eurobond-foreign-stock
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:hazine-eurobond-foreign-stock
 ticker: ''
@@ -13,8 +13,10 @@ candidate_title: Hazine Eurobond Foreign Stock
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
+candidate_theme_ids:
+- theme:eurobond
+candidate_indicator_inputs:
+- evds:TP.EBONDYAZDEG.S2D
 candidate_formula_hint: ''
 confidence: 0.6
 source: heuristic
@@ -24,11 +26,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:hazine-eurobond-foreign-stock
+promoted_memory_rule_id: memory:global-hazine-eurobond-foreign-stock
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): eurobnd-blg-v4'
 body: '# Implied indicator proposal for derived:hazine-eurobond-foreign-stock
 
@@ -70,12 +71,12 @@ body: '# Implied indicator proposal for derived:hazine-eurobond-foreign-stock
 
   ## Candidate Themes
 
-  -
+  - theme:eurobond
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.EBONDYAZDEG.S2D
 
 
   ## Formula Hint
@@ -134,10 +135,10 @@ Hazine Eurobond Foreign Stock
 0.6
 
 ## Candidate Themes
--
+- theme:eurobond
 
 ## Candidate Indicator Inputs
--
+- evds:TP.EBONDYAZDEG.S2D
 
 ## Formula Hint
 -
@@ -146,10 +147,10 @@ Hazine Eurobond Foreign Stock
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): eurobnd-blg-v4

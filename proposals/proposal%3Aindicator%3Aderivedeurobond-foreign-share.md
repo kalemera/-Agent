@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedeurobond-foreign-share
 proposal_id: proposal:indicator:derivedeurobond-foreign-share
 title: Implied indicator proposal for derived:eurobond-foreign-share
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:eurobond-foreign-share
 ticker: ''
@@ -13,10 +13,14 @@ candidate_title: Eurobond Foreign Share
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: 'derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci
-  stoklarinin toplam stoga orani.'
+candidate_theme_ids:
+- theme:eurobond
+candidate_indicator_inputs:
+- evds:TP.EBONDYAZDEG.ST
+- evds:TP.EBONDYAZDEG.S2D
+- evds:TP.YDOSBAYAZDEG.S11T
+- evds:TP.YDOSBAYAZDEG.S19
+candidate_formula_hint: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.
 confidence: 0.7
 source: heuristic
 evidence_fingerprint: ''
@@ -25,11 +29,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:eurobond-foreign-share
+promoted_memory_rule_id: memory:global-eurobond-foreign-share
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): eurobnd-blg-v4'
 body: '# Implied indicator proposal for derived:eurobond-foreign-share
 
@@ -71,18 +74,23 @@ body: '# Implied indicator proposal for derived:eurobond-foreign-share
 
   ## Candidate Themes
 
-  -
+  - theme:eurobond
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.EBONDYAZDEG.ST
+
+  - evds:TP.EBONDYAZDEG.S2D
+
+  - evds:TP.YDOSBAYAZDEG.S11T
+
+  - evds:TP.YDOSBAYAZDEG.S19
 
 
   ## Formula Hint
 
-  derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam
-  stoga orani.
+  Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.
 
 
   ## Source
@@ -136,22 +144,25 @@ Eurobond Foreign Share
 0.7
 
 ## Candidate Themes
--
+- theme:eurobond
 
 ## Candidate Indicator Inputs
--
+- evds:TP.EBONDYAZDEG.ST
+- evds:TP.EBONDYAZDEG.S2D
+- evds:TP.YDOSBAYAZDEG.S11T
+- evds:TP.YDOSBAYAZDEG.S19
 
 ## Formula Hint
-derived:eurobond-foreign-share: Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.
+Hazine ve ozel sektor yabanci stoklarinin toplam stoga orani.
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): eurobnd-blg-v4

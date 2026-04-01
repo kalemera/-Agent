@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedresident-financial-assets-total
 proposal_id: proposal:indicator:derivedresident-financial-assets-total
 title: Implied indicator proposal for derived:resident-financial-assets-total
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:resident-financial-assets-total
 ticker: ''
@@ -13,10 +13,13 @@ candidate_title: Resident Financial Assets Total
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: 'derived:resident-financial-assets-total: Mevduat, menkul
-  kiymet ve MKK kaynakli varlik bloklarini birlestirir.'
+candidate_theme_ids:
+- theme:resident-financial-assets
+candidate_indicator_inputs:
+- evds:TP.HPBITABLO2.2
+- source:yiyrlsk-mkk-hisse-manual
+- source:yiyrlsk-mkk-fon-manual
+candidate_formula_hint: Mevduat, menkul kiymet ve MKK kaynakli varlik bloklarini birlestirir.
 confidence: 0.7
 source: heuristic
 evidence_fingerprint: ''
@@ -25,11 +28,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:resident-financial-assets-total
+promoted_memory_rule_id: memory:global-resident-financial-assets-total
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): yi-yrlsk-fnsl-vrlk-v1'
 body: '# Implied indicator proposal for derived:resident-financial-assets-total
 
@@ -71,18 +73,21 @@ body: '# Implied indicator proposal for derived:resident-financial-assets-total
 
   ## Candidate Themes
 
-  -
+  - theme:resident-financial-assets
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.HPBITABLO2.2
+
+  - source:yiyrlsk-mkk-hisse-manual
+
+  - source:yiyrlsk-mkk-fon-manual
 
 
   ## Formula Hint
 
-  derived:resident-financial-assets-total: Mevduat, menkul kiymet ve MKK kaynakli
-  varlik bloklarini birlestirir.
+  Mevduat, menkul kiymet ve MKK kaynakli varlik bloklarini birlestirir.
 
 
   ## Source
@@ -136,22 +141,24 @@ Resident Financial Assets Total
 0.7
 
 ## Candidate Themes
--
+- theme:resident-financial-assets
 
 ## Candidate Indicator Inputs
--
+- evds:TP.HPBITABLO2.2
+- source:yiyrlsk-mkk-hisse-manual
+- source:yiyrlsk-mkk-fon-manual
 
 ## Formula Hint
-derived:resident-financial-assets-total: Mevduat, menkul kiymet ve MKK kaynakli varlik bloklarini birlestirir.
+Mevduat, menkul kiymet ve MKK kaynakli varlik bloklarini birlestirir.
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): yi-yrlsk-fnsl-vrlk-v1

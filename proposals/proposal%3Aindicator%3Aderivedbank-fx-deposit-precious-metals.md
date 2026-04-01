@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedbank-fx-deposit-precious-metals
 proposal_id: proposal:indicator:derivedbank-fx-deposit-precious-metals
 title: Implied indicator proposal for derived:bank-fx-deposit-precious-metals
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:bank-fx-deposit-precious-metals
 ticker: ''
@@ -13,8 +13,11 @@ candidate_title: Bank Fx Deposit Precious Metals
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
+candidate_theme_ids:
+- theme:banking-balance-sheet
+candidate_indicator_inputs:
+- evds:TP.HPBITABLO4.7
+- evds:TP.HPBITABLO4.20
 candidate_formula_hint: ''
 confidence: 0.6
 source: heuristic
@@ -24,11 +27,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:bank-fx-deposit-precious-metals
+promoted_memory_rule_id: memory:global-bank-fx-deposit-precious-metals
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): tbl-apko'
 body: '# Implied indicator proposal for derived:bank-fx-deposit-precious-metals
 
@@ -70,12 +72,14 @@ body: '# Implied indicator proposal for derived:bank-fx-deposit-precious-metals
 
   ## Candidate Themes
 
-  -
+  - theme:banking-balance-sheet
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.HPBITABLO4.7
+
+  - evds:TP.HPBITABLO4.20
 
 
   ## Formula Hint
@@ -134,10 +138,11 @@ Bank Fx Deposit Precious Metals
 0.6
 
 ## Candidate Themes
--
+- theme:banking-balance-sheet
 
 ## Candidate Indicator Inputs
--
+- evds:TP.HPBITABLO4.7
+- evds:TP.HPBITABLO4.20
 
 ## Formula Hint
 -
@@ -146,10 +151,10 @@ Bank Fx Deposit Precious Metals
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): tbl-apko

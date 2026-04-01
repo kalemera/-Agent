@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedprivate-sector-bond-total
 proposal_id: proposal:indicator:derivedprivate-sector-bond-total
 title: Implied indicator proposal for derived:private-sector-bond-total
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:private-sector-bond-total
 ticker: ''
@@ -13,8 +13,10 @@ candidate_title: Private Sector Bond Total
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
+candidate_theme_ids:
+- theme:resident-securities
+candidate_indicator_inputs:
+- evds:TP.DIBSPIYDEG.S15
 candidate_formula_hint: ''
 confidence: 0.6
 source: heuristic
@@ -24,11 +26,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:private-sector-bond-total
+promoted_memory_rule_id: memory:global-private-sector-bond-total
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): yi-yrlsk-fnsl-vrlk-v1'
 body: '# Implied indicator proposal for derived:private-sector-bond-total
 
@@ -70,12 +71,12 @@ body: '# Implied indicator proposal for derived:private-sector-bond-total
 
   ## Candidate Themes
 
-  -
+  - theme:resident-securities
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.DIBSPIYDEG.S15
 
 
   ## Formula Hint
@@ -134,10 +135,10 @@ Private Sector Bond Total
 0.6
 
 ## Candidate Themes
--
+- theme:resident-securities
 
 ## Candidate Indicator Inputs
--
+- evds:TP.DIBSPIYDEG.S15
 
 ## Formula Hint
 -
@@ -146,10 +147,10 @@ Private Sector Bond Total
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): yi-yrlsk-fnsl-vrlk-v1

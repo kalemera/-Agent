@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedequity-plus-dibs-flow
 proposal_id: proposal:indicator:derivedequity-plus-dibs-flow
 title: Implied indicator proposal for derived:equity-plus-dibs-flow
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:equity-plus-dibs-flow
 ticker: ''
@@ -13,10 +13,12 @@ candidate_title: Equity Plus Dibs Flow
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: 'derived:equity-plus-dibs-flow: Hisse ve DIBS akimlarinin
-  birlestirilmis net degisimi.'
+candidate_theme_ids:
+- theme:portfolio-flows
+candidate_indicator_inputs:
+- evds:TP.MKNETHAR.M20
+- evds:TP.DIBSPIYDEG.ST
+candidate_formula_hint: Hisse ve DIBS akimlarinin birlestirilmis net degisimi.
 confidence: 0.7
 source: heuristic
 evidence_fingerprint: ''
@@ -25,11 +27,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:equity-plus-dibs-flow
+promoted_memory_rule_id: memory:global-equity-plus-dibs-flow
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): prbnk-mnklkymt-v5'
 body: '# Implied indicator proposal for derived:equity-plus-dibs-flow
 
@@ -71,17 +72,19 @@ body: '# Implied indicator proposal for derived:equity-plus-dibs-flow
 
   ## Candidate Themes
 
-  -
+  - theme:portfolio-flows
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.MKNETHAR.M20
+
+  - evds:TP.DIBSPIYDEG.ST
 
 
   ## Formula Hint
 
-  derived:equity-plus-dibs-flow: Hisse ve DIBS akimlarinin birlestirilmis net degisimi.
+  Hisse ve DIBS akimlarinin birlestirilmis net degisimi.
 
 
   ## Source
@@ -135,22 +138,23 @@ Equity Plus Dibs Flow
 0.7
 
 ## Candidate Themes
--
+- theme:portfolio-flows
 
 ## Candidate Indicator Inputs
--
+- evds:TP.MKNETHAR.M20
+- evds:TP.DIBSPIYDEG.ST
 
 ## Formula Hint
-derived:equity-plus-dibs-flow: Hisse ve DIBS akimlarinin birlestirilmis net degisimi.
+Hisse ve DIBS akimlarinin birlestirilmis net degisimi.
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): prbnk-mnklkymt-v5

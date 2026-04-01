@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedhazine-eurobond-foreign-share
 proposal_id: proposal:indicator:derivedhazine-eurobond-foreign-share
 title: Implied indicator proposal for derived:hazine-eurobond-foreign-share
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:hazine-eurobond-foreign-share
 ticker: ''
@@ -13,9 +13,12 @@ candidate_title: Hazine Eurobond Foreign Share
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: ''
+candidate_theme_ids:
+- theme:eurobond
+candidate_indicator_inputs:
+- evds:TP.EBONDYAZDEG.ST
+- evds:TP.EBONDYAZDEG.S2D
+candidate_formula_hint: evds:TP.EBONDYAZDEG.S2D / evds:TP.EBONDYAZDEG.ST
 confidence: 0.6
 source: heuristic
 evidence_fingerprint: ''
@@ -24,11 +27,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:hazine-eurobond-foreign-share
+promoted_memory_rule_id: memory:global-hazine-eurobond-foreign-share
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): eurobnd-blg-v4'
 body: '# Implied indicator proposal for derived:hazine-eurobond-foreign-share
 
@@ -70,17 +72,19 @@ body: '# Implied indicator proposal for derived:hazine-eurobond-foreign-share
 
   ## Candidate Themes
 
-  -
+  - theme:eurobond
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.EBONDYAZDEG.ST
+
+  - evds:TP.EBONDYAZDEG.S2D
 
 
   ## Formula Hint
 
-  -
+  evds:TP.EBONDYAZDEG.S2D / evds:TP.EBONDYAZDEG.ST
 
 
   ## Source
@@ -134,22 +138,23 @@ Hazine Eurobond Foreign Share
 0.6
 
 ## Candidate Themes
--
+- theme:eurobond
 
 ## Candidate Indicator Inputs
--
+- evds:TP.EBONDYAZDEG.ST
+- evds:TP.EBONDYAZDEG.S2D
 
 ## Formula Hint
--
+evds:TP.EBONDYAZDEG.S2D / evds:TP.EBONDYAZDEG.ST
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): eurobnd-blg-v4

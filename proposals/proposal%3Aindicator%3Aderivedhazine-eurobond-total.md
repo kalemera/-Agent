@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedhazine-eurobond-total
 proposal_id: proposal:indicator:derivedhazine-eurobond-total
 title: Implied indicator proposal for derived:hazine-eurobond-total
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:hazine-eurobond-total
 ticker: ''
@@ -13,8 +13,12 @@ candidate_title: Hazine Eurobond Total
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
+candidate_theme_ids:
+- theme:eurobond
+- theme:external-financing
+candidate_indicator_inputs:
+- evds:TP.EBONDYAZDEG.ST
+- source:eurobnd-hmb-odeme-projeksiyonu
 candidate_formula_hint: ''
 confidence: 0.6
 source: heuristic
@@ -24,11 +28,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:hazine-eurobond-total
+promoted_memory_rule_id: memory:global-hazine-eurobond-total
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): eurobnd-blg-v4'
 body: '# Implied indicator proposal for derived:hazine-eurobond-total
 
@@ -70,12 +73,16 @@ body: '# Implied indicator proposal for derived:hazine-eurobond-total
 
   ## Candidate Themes
 
-  -
+  - theme:eurobond
+
+  - theme:external-financing
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.EBONDYAZDEG.ST
+
+  - source:eurobnd-hmb-odeme-projeksiyonu
 
 
   ## Formula Hint
@@ -134,10 +141,12 @@ Hazine Eurobond Total
 0.6
 
 ## Candidate Themes
--
+- theme:eurobond
+- theme:external-financing
 
 ## Candidate Indicator Inputs
--
+- evds:TP.EBONDYAZDEG.ST
+- source:eurobnd-hmb-odeme-projeksiyonu
 
 ## Formula Hint
 -
@@ -146,10 +155,10 @@ Hazine Eurobond Total
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): eurobnd-blg-v4

@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedbank-tl-loans
 proposal_id: proposal:indicator:derivedbank-tl-loans
 title: Implied indicator proposal for derived:bank-tl-loans
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:bank-tl-loans
 ticker: ''
@@ -13,10 +13,12 @@ candidate_title: Bank Tl Loans
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: 'derived:bank-tl-loans: BDDK bulteni ve EVDS ceyreklik bloklari
-  ile eslenir.'
+candidate_theme_ids:
+- theme:banking-balance-sheet
+candidate_indicator_inputs:
+- evds:TP.DB.B01
+- source:tblapko-bddk-weekly-bulletin
+candidate_formula_hint: BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir.
 confidence: 0.7
 source: heuristic
 evidence_fingerprint: ''
@@ -25,11 +27,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:bank-tl-loans
+promoted_memory_rule_id: memory:global-bank-tl-loans
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): tbl-apko'
 body: '# Implied indicator proposal for derived:bank-tl-loans
 
@@ -71,17 +72,19 @@ body: '# Implied indicator proposal for derived:bank-tl-loans
 
   ## Candidate Themes
 
-  -
+  - theme:banking-balance-sheet
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.DB.B01
+
+  - source:tblapko-bddk-weekly-bulletin
 
 
   ## Formula Hint
 
-  derived:bank-tl-loans: BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir.
+  BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir.
 
 
   ## Source
@@ -135,22 +138,23 @@ Bank Tl Loans
 0.7
 
 ## Candidate Themes
--
+- theme:banking-balance-sheet
 
 ## Candidate Indicator Inputs
--
+- evds:TP.DB.B01
+- source:tblapko-bddk-weekly-bulletin
 
 ## Formula Hint
-derived:bank-tl-loans: BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir.
+BDDK bulteni ve EVDS ceyreklik bloklari ile eslenir.
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): tbl-apko

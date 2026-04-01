@@ -27,6 +27,8 @@ from .semantic_inference import (
     auto_approve_proposals,
     backfill_cross_references,
     BackfillSummary,
+    enrich_indicator_proposals_from_specs,
+    EnrichIndicatorSummary,
     generate_implied_proposals,
     ImpliedProposalSummary,
     infer_notebook_semantics,
@@ -156,6 +158,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     subparsers.add_parser("audit", help="Check registry for inconsistencies: missing refs, orphaned themes, dangling input_ids")
 
+    subparsers.add_parser("enrich-indicators", help="Enrich manual_review indicator proposals with input_ids from NotebookSpec templates")
+
     fetch = subparsers.add_parser("fetch-series", help="Fetch live observations from EVDS for a ticker")
     fetch.add_argument("ticker", help="EVDS ticker (e.g. TP.DK.USD.A or evds:TP.DK.USD.A)")
     fetch.add_argument("--start", default="", help="Start date (YYYY-MM-DD or YYYY-MM)")
@@ -224,6 +228,8 @@ def main(argv: list[str] | None = None, out: TextIO | None = None, err: TextIO |
             handle_fetch_series(args, paths, stdout)
         elif args.command == "audit":
             handle_audit(args, paths, stdout)
+        elif args.command == "enrich-indicators":
+            handle_enrich_indicators(args, paths, stdout)
         elif args.command == "promote-proposal":
             handle_promote_proposal(args, paths, stdout)
         elif args.command == "reject-proposal":
@@ -549,6 +555,12 @@ def handle_check_conflicts(args: argparse.Namespace, paths: RegistryPaths, out: 
         out.write("No conflicts found.\n")
     else:
         out.write(f"\n{conflict_count} conflict(s) found.\n")
+
+
+def handle_enrich_indicators(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    summary = enrich_indicator_proposals_from_specs(paths)
+    out.write(f"enriched: {summary.enriched}\n")
+    out.write(f"skipped: {summary.skipped}\n")
 
 
 def handle_audit(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:

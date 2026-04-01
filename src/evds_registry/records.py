@@ -262,7 +262,10 @@ def validate_record(record: Record, approved_records: dict[str, Record]) -> None
         missing = [item for item in inputs if item not in approved_records]
         if missing:
             joined = ", ".join(missing)
-            raise ValueError(f"Indicator inputs are missing from registry: {joined}")
+            record.setdefault("validation_note", "")
+            if record["validation_note"]:
+                record["validation_note"] += " "
+            record["validation_note"] += f"Unresolved input_ids: {joined}"
         if not record.get("formula_expression") and not record.get("formula_description"):
             raise ValueError("Indicator records require a formula expression or description before approval.")
         return

@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedestimated-net-reserve
 proposal_id: proposal:indicator:derivedestimated-net-reserve
 title: Implied indicator proposal for derived:estimated-net-reserve
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:estimated-net-reserve
 ticker: ''
@@ -13,10 +13,17 @@ candidate_title: Estimated Net Reserve
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: 'derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan
-  tahmini net rezerv uretir.'
+candidate_theme_ids:
+- theme:net-reserve-estimate
+candidate_indicator_inputs:
+- evds:TP.AB.A02
+- evds:TP.AB.A10
+- evds:TP.AB.A11
+- evds:TP.AB.A13
+- evds:TP.AB.A14
+- evds:TP.DK.USD.A.YTL
+- source:rzrv-manual-swap-ledger
+candidate_formula_hint: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.
 confidence: 0.7
 source: heuristic
 evidence_fingerprint: ''
@@ -25,11 +32,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:estimated-net-reserve
+promoted_memory_rule_id: memory:global-estimated-net-reserve
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): rzrv-blg-v7'
 body: '# Implied indicator proposal for derived:estimated-net-reserve
 
@@ -71,18 +77,29 @@ body: '# Implied indicator proposal for derived:estimated-net-reserve
 
   ## Candidate Themes
 
-  -
+  - theme:net-reserve-estimate
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.AB.A02
+
+  - evds:TP.AB.A10
+
+  - evds:TP.AB.A11
+
+  - evds:TP.AB.A13
+
+  - evds:TP.AB.A14
+
+  - evds:TP.DK.USD.A.YTL
+
+  - source:rzrv-manual-swap-ledger
 
 
   ## Formula Hint
 
-  derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net
-  rezerv uretir.
+  Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.
 
 
   ## Source
@@ -136,22 +153,28 @@ Estimated Net Reserve
 0.7
 
 ## Candidate Themes
--
+- theme:net-reserve-estimate
 
 ## Candidate Indicator Inputs
--
+- evds:TP.AB.A02
+- evds:TP.AB.A10
+- evds:TP.AB.A11
+- evds:TP.AB.A13
+- evds:TP.AB.A14
+- evds:TP.DK.USD.A.YTL
+- source:rzrv-manual-swap-ledger
 
 ## Formula Hint
-derived:estimated-net-reserve: Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.
+Dis varlik ve yukumluluk bloklarindan tahmini net rezerv uretir.
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): rzrv-blg-v7

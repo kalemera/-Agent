@@ -760,6 +760,43 @@ class BackfillSummary:
     source_deps_updated: int = 0
 
 
+@dataclass(slots=True)
+class EnrichIndicatorSummary:
+    enriched: int = 0
+    skipped: int = 0
+
+
+def enrich_indicator_proposals_from_specs(paths: RegistryPaths) -> EnrichIndicatorSummary:
+    """Update manual_review indicator proposals with input_ids from NotebookSpec templates."""
+    from .notebook_analysis import ALL_SPECS
+    spec_indicators = {}
+    for spec in ALL_SPECS:
+        for ind in spec.indicators:
+            spec_indicators[ind.id] = ind
+    all_proposals = load_proposals(paths)
+    summary = EnrichIndicatorSummary()
+    for proposal in all_proposals.values():
+        if proposal.get("status") != "manual_review":
+            continue
+        if proposal.get("target_type") != "indicator":
+            continue
+        target_id = str(proposal.get("target_id") or "")
+        template = spec_indicators.get(target_id)
+        if template is None:
+            summary.skipped += 1
+            continue
+        updated = dict(proposal)
+        updated["candidate_indicator_inputs"] = list(template.input_ids)
+        updated["candidate_formula_hint"] = template.formula_expression or template.formula_description
+        updated["status"] = "review_pending"
+        updated["approval_reason"] = ""
+        if template.theme_ids:
+            updated["candidate_theme_ids"] = list(template.theme_ids)
+        write_record(paths.proposals, updated)
+        summary.enriched += 1
+    return summary
+
+
 def backfill_cross_references(paths: RegistryPaths) -> BackfillSummary:
     """Scan approved proposals to populate theme↔source_dep linkage on registry records."""
     all_proposals = load_proposals(paths)

@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedozel-sektor-eurobond-foreign-share
 proposal_id: proposal:indicator:derivedozel-sektor-eurobond-foreign-share
 title: Implied indicator proposal for derived:ozel-sektor-eurobond-foreign-share
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:ozel-sektor-eurobond-foreign-share
 ticker: ''
@@ -13,9 +13,12 @@ candidate_title: Ozel Sektor Eurobond Foreign Share
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: ''
+candidate_theme_ids:
+- theme:eurobond
+candidate_indicator_inputs:
+- evds:TP.YDOSBAYAZDEG.S11T
+- evds:TP.YDOSBAYAZDEG.S19
+candidate_formula_hint: evds:TP.YDOSBAYAZDEG.S19 / evds:TP.YDOSBAYAZDEG.S11T
 confidence: 0.6
 source: heuristic
 evidence_fingerprint: ''
@@ -24,11 +27,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:ozel-sektor-eurobond-foreign-share
+promoted_memory_rule_id: memory:global-ozel-sektor-eurobond-foreign-share
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): eurobnd-blg-v4'
 body: '# Implied indicator proposal for derived:ozel-sektor-eurobond-foreign-share
 
@@ -70,17 +72,19 @@ body: '# Implied indicator proposal for derived:ozel-sektor-eurobond-foreign-sha
 
   ## Candidate Themes
 
-  -
+  - theme:eurobond
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.YDOSBAYAZDEG.S11T
+
+  - evds:TP.YDOSBAYAZDEG.S19
 
 
   ## Formula Hint
 
-  -
+  evds:TP.YDOSBAYAZDEG.S19 / evds:TP.YDOSBAYAZDEG.S11T
 
 
   ## Source
@@ -134,22 +138,23 @@ Ozel Sektor Eurobond Foreign Share
 0.6
 
 ## Candidate Themes
--
+- theme:eurobond
 
 ## Candidate Indicator Inputs
--
+- evds:TP.YDOSBAYAZDEG.S11T
+- evds:TP.YDOSBAYAZDEG.S19
 
 ## Formula Hint
--
+evds:TP.YDOSBAYAZDEG.S19 / evds:TP.YDOSBAYAZDEG.S11T
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): eurobnd-blg-v4

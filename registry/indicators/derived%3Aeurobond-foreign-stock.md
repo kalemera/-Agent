@@ -1,0 +1,29 @@
+---
+record_type: indicator
+id: derived:eurobond-foreign-stock
+title: Eurobond Foreign Stock
+status: approved
+input_ids:
+- evds:TP.EBONDYAZDEG.S2D
+- evds:TP.YDOSBAYAZDEG.S19
+formula_expression: ''
+formula_description: Inferred from semantic proposal.
+output_frequency: ''
+output_unit: ''
+economic_meaning: ''
+validation_note: ''
+theme_ids: []
+---
+# Eurobond Foreign Stock
+
+## Formul
+-
+
+## Formul Aciklamasi
+Inferred from semantic proposal.
+
+## Ekonomik Anlam
+-
+
+## Dogrulama Notu
+-

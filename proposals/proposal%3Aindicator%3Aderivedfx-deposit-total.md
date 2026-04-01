@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedfx-deposit-total
 proposal_id: proposal:indicator:derivedfx-deposit-total
 title: Implied indicator proposal for derived:fx-deposit-total
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:fx-deposit-total
 ticker: ''
@@ -13,8 +13,11 @@ candidate_title: Fx Deposit Total
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
+candidate_theme_ids:
+- theme:resident-deposits
+candidate_indicator_inputs:
+- evds:TP.HPBITABLO2.15
+- evds:TP.HPBITABLO2.28
 candidate_formula_hint: ''
 confidence: 0.6
 source: heuristic
@@ -24,11 +27,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:fx-deposit-total
+promoted_memory_rule_id: memory:global-fx-deposit-total
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): yi-yrlsk-fnsl-vrlk-v1'
 body: '# Implied indicator proposal for derived:fx-deposit-total
 
@@ -70,12 +72,14 @@ body: '# Implied indicator proposal for derived:fx-deposit-total
 
   ## Candidate Themes
 
-  -
+  - theme:resident-deposits
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.HPBITABLO2.15
+
+  - evds:TP.HPBITABLO2.28
 
 
   ## Formula Hint
@@ -134,10 +138,11 @@ Fx Deposit Total
 0.6
 
 ## Candidate Themes
--
+- theme:resident-deposits
 
 ## Candidate Indicator Inputs
--
+- evds:TP.HPBITABLO2.15
+- evds:TP.HPBITABLO2.28
 
 ## Formula Hint
 -
@@ -146,10 +151,10 @@ Fx Deposit Total
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): yi-yrlsk-fnsl-vrlk-v1

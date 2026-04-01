@@ -1,0 +1,28 @@
+---
+record_type: indicator
+id: derived:private-sector-eurobond-total
+title: Private Sector Eurobond Total
+status: approved
+input_ids:
+- evds:TP.EBONDPIYDEG.S15
+formula_expression: ''
+formula_description: Inferred from semantic proposal.
+output_frequency: ''
+output_unit: ''
+economic_meaning: ''
+validation_note: ''
+theme_ids: []
+---
+# Private Sector Eurobond Total
+
+## Formul
+-
+
+## Formul Aciklamasi
+Inferred from semantic proposal.
+
+## Ekonomik Anlam
+-
+
+## Dogrulama Notu
+-

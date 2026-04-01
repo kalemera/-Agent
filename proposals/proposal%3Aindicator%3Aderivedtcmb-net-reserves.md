@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedtcmb-net-reserves
 proposal_id: proposal:indicator:derivedtcmb-net-reserves
 title: Implied indicator proposal for derived:tcmb-net-reserves
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:tcmb-net-reserves
 ticker: ''
@@ -13,10 +13,13 @@ candidate_title: Tcmb Net Reserves
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: 'derived:tcmb-net-reserves: Net rezerv ve swap duzeltme bloklarindan
-  uretilir.'
+candidate_theme_ids:
+- theme:reserves-and-liquidity
+- theme:apko-summary
+candidate_indicator_inputs:
+- evds:TP.AB.N06
+- source:tblapko-swap-pdf
+candidate_formula_hint: Net rezerv ve swap duzeltme bloklarindan uretilir.
 confidence: 0.7
 source: heuristic
 evidence_fingerprint: ''
@@ -25,11 +28,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:tcmb-net-reserves
+promoted_memory_rule_id: memory:global-tcmb-net-reserves
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): tbl-apko'
 body: '# Implied indicator proposal for derived:tcmb-net-reserves
 
@@ -71,17 +73,21 @@ body: '# Implied indicator proposal for derived:tcmb-net-reserves
 
   ## Candidate Themes
 
-  -
+  - theme:reserves-and-liquidity
+
+  - theme:apko-summary
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.AB.N06
+
+  - source:tblapko-swap-pdf
 
 
   ## Formula Hint
 
-  derived:tcmb-net-reserves: Net rezerv ve swap duzeltme bloklarindan uretilir.
+  Net rezerv ve swap duzeltme bloklarindan uretilir.
 
 
   ## Source
@@ -135,22 +141,24 @@ Tcmb Net Reserves
 0.7
 
 ## Candidate Themes
--
+- theme:reserves-and-liquidity
+- theme:apko-summary
 
 ## Candidate Indicator Inputs
--
+- evds:TP.AB.N06
+- source:tblapko-swap-pdf
 
 ## Formula Hint
-derived:tcmb-net-reserves: Net rezerv ve swap duzeltme bloklarindan uretilir.
+Net rezerv ve swap duzeltme bloklarindan uretilir.
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): tbl-apko

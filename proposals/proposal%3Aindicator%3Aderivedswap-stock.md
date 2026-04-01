@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedswap-stock
 proposal_id: proposal:indicator:derivedswap-stock
 title: Implied indicator proposal for derived:swap-stock
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:swap-stock
 ticker: ''
@@ -13,10 +13,12 @@ candidate_title: Swap Stock
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: 'derived:swap-stock: Swap PDF ve analitik bilanco destek serilerinden
-  uretilir.'
+candidate_theme_ids:
+- theme:swap-and-securities
+candidate_indicator_inputs:
+- source:prbnk-swap-pdf
+- evds:TP.AB.A01
+candidate_formula_hint: Swap PDF ve analitik bilanco destek serilerinden uretilir.
 confidence: 0.7
 source: heuristic
 evidence_fingerprint: ''
@@ -25,11 +27,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:swap-stock
+promoted_memory_rule_id: memory:global-swap-stock
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): prbnk-mnklkymt-v5'
 body: '# Implied indicator proposal for derived:swap-stock
 
@@ -71,17 +72,19 @@ body: '# Implied indicator proposal for derived:swap-stock
 
   ## Candidate Themes
 
-  -
+  - theme:swap-and-securities
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - source:prbnk-swap-pdf
+
+  - evds:TP.AB.A01
 
 
   ## Formula Hint
 
-  derived:swap-stock: Swap PDF ve analitik bilanco destek serilerinden uretilir.
+  Swap PDF ve analitik bilanco destek serilerinden uretilir.
 
 
   ## Source
@@ -135,22 +138,23 @@ Swap Stock
 0.7
 
 ## Candidate Themes
--
+- theme:swap-and-securities
 
 ## Candidate Indicator Inputs
--
+- source:prbnk-swap-pdf
+- evds:TP.AB.A01
 
 ## Formula Hint
-derived:swap-stock: Swap PDF ve analitik bilanco destek serilerinden uretilir.
+Swap PDF ve analitik bilanco destek serilerinden uretilir.
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): prbnk-mnklkymt-v5

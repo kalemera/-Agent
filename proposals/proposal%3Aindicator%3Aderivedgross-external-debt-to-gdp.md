@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedgross-external-debt-to-gdp
 proposal_id: proposal:indicator:derivedgross-external-debt-to-gdp
 title: Implied indicator proposal for derived:gross-external-debt-to-gdp
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:gross-external-debt-to-gdp
 ticker: ''
@@ -13,10 +13,14 @@ candidate_title: Gross External Debt To Gdp
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
-candidate_formula_hint: 'derived:gross-external-debt-to-gdp: Dis borc stoku ve GSYH
-  yardimci serisinden uretilir.'
+candidate_theme_ids:
+- theme:external-financing
+- theme:apko-summary
+candidate_indicator_inputs:
+- evds:TP.DB.B37
+- evds:TP.FDVY37
+- source:tblapko-hmb-ab-borc-xls
+candidate_formula_hint: Dis borc stoku ve GSYH yardimci serisinden uretilir.
 confidence: 0.7
 source: heuristic
 evidence_fingerprint: ''
@@ -25,11 +29,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:gross-external-debt-to-gdp
+promoted_memory_rule_id: memory:global-gross-external-debt-to-gdp
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): tbl-apko'
 body: '# Implied indicator proposal for derived:gross-external-debt-to-gdp
 
@@ -71,17 +74,23 @@ body: '# Implied indicator proposal for derived:gross-external-debt-to-gdp
 
   ## Candidate Themes
 
-  -
+  - theme:external-financing
+
+  - theme:apko-summary
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.DB.B37
+
+  - evds:TP.FDVY37
+
+  - source:tblapko-hmb-ab-borc-xls
 
 
   ## Formula Hint
 
-  derived:gross-external-debt-to-gdp: Dis borc stoku ve GSYH yardimci serisinden uretilir.
+  Dis borc stoku ve GSYH yardimci serisinden uretilir.
 
 
   ## Source
@@ -135,22 +144,25 @@ Gross External Debt To Gdp
 0.7
 
 ## Candidate Themes
--
+- theme:external-financing
+- theme:apko-summary
 
 ## Candidate Indicator Inputs
--
+- evds:TP.DB.B37
+- evds:TP.FDVY37
+- source:tblapko-hmb-ab-borc-xls
 
 ## Formula Hint
-derived:gross-external-debt-to-gdp: Dis borc stoku ve GSYH yardimci serisinden uretilir.
+Dis borc stoku ve GSYH yardimci serisinden uretilir.
 
 ## Source
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): tbl-apko

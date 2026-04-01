@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedreserve-fx
 proposal_id: proposal:indicator:derivedreserve-fx
 title: Implied indicator proposal for derived:reserve-fx
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:reserve-fx
 ticker: ''
@@ -13,8 +13,10 @@ candidate_title: Reserve Fx
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
+candidate_theme_ids:
+- theme:reserves
+candidate_indicator_inputs:
+- evds:TP.AB.C2
 candidate_formula_hint: ''
 confidence: 0.6
 source: heuristic
@@ -24,11 +26,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:reserve-fx
+promoted_memory_rule_id: memory:global-reserve-fx
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): rzrv-blg-v7'
 body: '# Implied indicator proposal for derived:reserve-fx
 
@@ -70,12 +71,12 @@ body: '# Implied indicator proposal for derived:reserve-fx
 
   ## Candidate Themes
 
-  -
+  - theme:reserves
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.AB.C2
 
 
   ## Formula Hint
@@ -134,10 +135,10 @@ Reserve Fx
 0.6
 
 ## Candidate Themes
--
+- theme:reserves
 
 ## Candidate Indicator Inputs
--
+- evds:TP.AB.C2
 
 ## Formula Hint
 -
@@ -146,10 +147,10 @@ Reserve Fx
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): rzrv-blg-v7

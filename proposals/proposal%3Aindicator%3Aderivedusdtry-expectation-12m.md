@@ -3,7 +3,7 @@ record_type: proposal
 id: proposal:indicator:derivedusdtry-expectation-12m
 proposal_id: proposal:indicator:derivedusdtry-expectation-12m
 title: Implied indicator proposal for derived:usdtry-expectation-12m
-status: manual_review
+status: approved
 target_type: indicator
 target_id: derived:usdtry-expectation-12m
 ticker: ''
@@ -13,8 +13,10 @@ candidate_title: Usdtry Expectation 12m
 candidate_unit: ''
 candidate_frequency: ''
 candidate_role: ''
-candidate_theme_ids: []
-candidate_indicator_inputs: []
+candidate_theme_ids:
+- theme:survey-expectations
+candidate_indicator_inputs:
+- evds:TP.BEK.S06.A.U
 candidate_formula_hint: ''
 confidence: 0.6
 source: heuristic
@@ -24,11 +26,10 @@ memory_rule_ids: []
 evidence: {}
 llm_provider: ''
 llm_model: ''
-promoted_record_id: ''
-promoted_memory_rule_id: ''
-approval_mode: ''
-approval_reason: Indicator has no input_ids; manual review required to define formula
-  inputs.
+promoted_record_id: derived:usdtry-expectation-12m
+promoted_memory_rule_id: memory:global-usdtry-expectation-12m
+approval_mode: auto_heuristic
+approval_reason: Implied proposal passed deterministic safety checks.
 notes: 'Implied from 1 notebook(s): pys-ktilmclr-v2'
 body: '# Implied indicator proposal for derived:usdtry-expectation-12m
 
@@ -70,12 +71,12 @@ body: '# Implied indicator proposal for derived:usdtry-expectation-12m
 
   ## Candidate Themes
 
-  -
+  - theme:survey-expectations
 
 
   ## Candidate Indicator Inputs
 
-  -
+  - evds:TP.BEK.S06.A.U
 
 
   ## Formula Hint
@@ -134,10 +135,10 @@ Usdtry Expectation 12m
 0.6
 
 ## Candidate Themes
--
+- theme:survey-expectations
 
 ## Candidate Indicator Inputs
--
+- evds:TP.BEK.S06.A.U
 
 ## Formula Hint
 -
@@ -146,10 +147,10 @@ Usdtry Expectation 12m
 heuristic
 
 ## Approval Mode
--
+auto_heuristic
 
 ## Approval Reason
-Indicator has no input_ids; manual review required to define formula inputs.
+Implied proposal passed deterministic safety checks.
 
 ## Notes
 Implied from 1 notebook(s): pys-ktilmclr-v2
