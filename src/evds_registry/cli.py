@@ -3,10 +3,12 @@ from __future__ import annotations
 import argparse
 import csv
 import io
+import json
 from pathlib import Path
 from typing import Iterable, TextIO
 
 from .evds_catalog import sync_evds_catalog
+from .source_adapters import EVDSAdapter
 from .llm import build_llm_client_from_env
 from .notebook_analysis import build_dth_notebook_analysis, build_notebook_analysis, write_import_csv, write_markdown_report
 from .records import (
@@ -152,6 +154,13 @@ def build_parser() -> argparse.ArgumentParser:
 
     subparsers.add_parser("check-conflicts", help="Report tickers with conflicting role/frequency/unit across notebooks")
 
+    fetch = subparsers.add_parser("fetch-series", help="Fetch live observations from EVDS for a ticker")
+    fetch.add_argument("ticker", help="EVDS ticker (e.g. TP.DK.USD.A or evds:TP.DK.USD.A)")
+    fetch.add_argument("--start", default="", help="Start date (YYYY-MM-DD or YYYY-MM)")
+    fetch.add_argument("--end", default="", help="End date (YYYY-MM-DD or YYYY-MM)")
+    fetch.add_argument("--format", default="text", choices=["text", "json", "csv"], dest="out_format")
+    fetch.add_argument("--out", default="", help="Write output to file")
+
     promote = subparsers.add_parser("promote-proposal", help="Promote a proposal into semantic memory and a draft record")
     promote.add_argument("proposal_id")
 
@@ -162,6 +171,11 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None, out: TextIO | None = None, err: TextIO | None = None, cwd: str | Path | None = None) -> int:
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+    except ImportError:
+        pass
     parser = build_parser()
     args = parser.parse_args(argv)
     stdout = out or io.StringIO()
@@ -204,6 +218,8 @@ def main(argv: list[str] | None = None, out: TextIO | None = None, err: TextIO |
             handle_backfill_cross_references(args, paths, stdout)
         elif args.command == "check-conflicts":
             handle_check_conflicts(args, paths, stdout)
+        elif args.command == "fetch-series":
+            handle_fetch_series(args, paths, stdout)
         elif args.command == "promote-proposal":
             handle_promote_proposal(args, paths, stdout)
         elif args.command == "reject-proposal":
@@ -351,6 +367,14 @@ def handle_approve_draft(args: argparse.Namespace, paths: RegistryPaths, out: Te
         raise ValueError(f"Draft not found: {args.record_id}")
     registry = load_registry(paths)
     validate_record(draft, registry)
+    if draft.get("record_type") == "series":
+        ticker = str(draft.get("ticker") or "").strip()
+        if ticker:
+            adapter = EVDSAdapter.from_env()
+            if adapter.is_configured():
+                meta = adapter.hydrate_metadata(ticker)
+                if not meta:
+                    out.write(f"WARNING: ticker {ticker} not found in EVDS. Proceeding anyway.\n")
     approved = canonical_record(draft)
     approved["status"] = "approved"
     write_record(paths.canonical_dir(approved["record_type"]), approved)
@@ -521,6 +545,31 @@ def handle_check_conflicts(args: argparse.Namespace, paths: RegistryPaths, out: 
         out.write("No conflicts found.\n")
     else:
         out.write(f"\n{conflict_count} conflict(s) found.\n")
+
+
+def handle_fetch_series(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    adapter = EVDSAdapter.from_env()
+    if not adapter.is_configured():
+        raise ValueError("EVDS_API_KEY must be set in .env for fetch-series.")
+    ticker = args.ticker.removeprefix("evds:").strip()
+    registry = load_registry(paths)
+    registry_record = registry.get(f"evds:{ticker}")
+    meta = adapter.hydrate_metadata(ticker)
+    if not meta and not registry_record:
+        raise ValueError(f"Ticker {ticker} not found in EVDS or registry.")
+    out.write(f"Ticker: {ticker}\n")
+    if meta:
+        out.write(f"EVDS Title: {meta.get('title', '-')}\n")
+        out.write(f"Frequency: {meta.get('frequency', '-')}\n")
+        out.write(f"Unit: {meta.get('unit', '-')}\n")
+        out.write(f"Data Group: {meta.get('data_group', '-')}\n")
+        out.write(f"Category: {meta.get('category', '-')}\n")
+    if registry_record:
+        out.write(f"Registry Title: {registry_record.get('title', '-')}\n")
+        out.write(f"Registry Status: {registry_record.get('status', '-')}\n")
+    if not meta:
+        out.write("WARNING: not found in EVDS (API may be unavailable)\n")
+    out.write("\nNote: live data fetch unavailable (TCMB evds2 API deprecated). Use evds-mcp when ready.\n")
 
 
 def handle_promote_proposal(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
