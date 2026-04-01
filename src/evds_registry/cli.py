@@ -150,6 +150,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     subparsers.add_parser("backfill-cross-references", help="Populate theme<->source_dependency linkage from proposal evidence")
 
+    subparsers.add_parser("check-conflicts", help="Report tickers with conflicting role/frequency/unit across notebooks")
+
     promote = subparsers.add_parser("promote-proposal", help="Promote a proposal into semantic memory and a draft record")
     promote.add_argument("proposal_id")
 
@@ -200,6 +202,8 @@ def main(argv: list[str] | None = None, out: TextIO | None = None, err: TextIO |
             handle_generate_implied_proposals(args, paths, stdout)
         elif args.command == "backfill-cross-references":
             handle_backfill_cross_references(args, paths, stdout)
+        elif args.command == "check-conflicts":
+            handle_check_conflicts(args, paths, stdout)
         elif args.command == "promote-proposal":
             handle_promote_proposal(args, paths, stdout)
         elif args.command == "reject-proposal":
@@ -475,6 +479,48 @@ def handle_backfill_cross_references(args: argparse.Namespace, paths: RegistryPa
     summary = backfill_cross_references(paths)
     out.write(f"themes_updated: {summary.themes_updated}\n")
     out.write(f"source_deps_updated: {summary.source_deps_updated}\n")
+
+
+def handle_check_conflicts(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    proposals = load_proposals(paths)
+    ticker_notebooks: dict[str, list[dict[str, str]]] = {}
+    for p in proposals.values():
+        if p.get("status") != "approved" or p.get("target_type") != "series":
+            continue
+        ticker = str(p.get("ticker") or "").strip()
+        if not ticker:
+            continue
+        ticker_notebooks.setdefault(ticker, []).append({
+            "notebook": str(p.get("notebook_slug") or "-"),
+            "role": str(p.get("candidate_role") or "-"),
+            "frequency": str(p.get("candidate_frequency") or "-"),
+            "unit": str(p.get("candidate_unit") or "-"),
+        })
+    conflict_count = 0
+    for ticker in sorted(ticker_notebooks):
+        entries = ticker_notebooks[ticker]
+        if len(entries) < 2:
+            continue
+        roles = {e["role"] for e in entries}
+        freqs = {e["frequency"] for e in entries}
+        units = {e["unit"] for e in entries}
+        diffs = []
+        if len(roles) > 1:
+            diffs.append(f"role: {', '.join(sorted(roles))}")
+        if len(freqs) > 1:
+            diffs.append(f"frequency: {', '.join(sorted(freqs))}")
+        if len(units) > 1:
+            diffs.append(f"unit: {', '.join(sorted(units))}")
+        if diffs:
+            conflict_count += 1
+            notebooks = ", ".join(e["notebook"] for e in entries)
+            out.write(f"CONFLICT {ticker} [{notebooks}]\n")
+            for d in diffs:
+                out.write(f"  {d}\n")
+    if conflict_count == 0:
+        out.write("No conflicts found.\n")
+    else:
+        out.write(f"\n{conflict_count} conflict(s) found.\n")
 
 
 def handle_promote_proposal(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
