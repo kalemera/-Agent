@@ -4,6 +4,7 @@ import copy
 import csv
 import hashlib
 import json
+import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from fnmatch import fnmatch
@@ -45,6 +46,12 @@ class AutoApproveSummary:
     approved: int = 0
     manual_review: int = 0
     skipped: int = 0
+
+
+@dataclass(slots=True)
+class ImpliedProposalSummary:
+    created: int = 0
+    skipped_existing: int = 0
 
 
 def apply_catalog_and_memory(
@@ -582,12 +589,16 @@ def auto_approve_proposals(
     llm_client: LLMClient,
     *,
     notebook_slug: str = "",
+    target_type: str = "",
     min_confidence: float = 0.9,
     limit: int = 0,
 ) -> AutoApproveSummary:
-    if llm_client is None or not llm_client.is_enabled():
-        raise ValueError("LLM client must be enabled for auto-approve.")
     candidates = review_proposals(paths, status="review_pending", notebook_slug=notebook_slug, min_confidence=0.0)
+    if target_type:
+        candidates = [p for p in candidates if p.get("target_type") == target_type]
+    needs_llm = any(str(p.get("target_type") or "series") == "series" for p in candidates)
+    if needs_llm and (llm_client is None or not llm_client.is_enabled()):
+        raise ValueError("LLM client must be enabled for auto-approve of series proposals.")
     if limit > 0:
         candidates = candidates[:limit]
     proposal_index = build_series_proposal_index(load_proposals(paths).values())
@@ -596,9 +607,7 @@ def auto_approve_proposals(
     summary = AutoApproveSummary()
 
     for proposal in candidates:
-        if proposal.get("target_type") != "series":
-            summary.skipped += 1
-            continue
+        proposal_target_type = str(proposal.get("target_type") or "series")
         manual_reason = assess_auto_approval_risk(
             proposal,
             proposal_index=proposal_index,
@@ -610,28 +619,138 @@ def auto_approve_proposals(
             mark_proposal_manual_review(paths, proposal, manual_reason)
             summary.manual_review += 1
             continue
-        decision, reason = request_llm_auto_approval_decision(
-            proposal,
-            llm_client=llm_client,
-            proposal_index=proposal_index,
-            approved_registry=approved_registry,
-            memory_rules=memory_rules,
-        )
-        if decision != "approve":
-            mark_proposal_manual_review(paths, proposal, reason)
-            summary.manual_review += 1
-            continue
+
+        if proposal_target_type == "series":
+            decision, reason = request_llm_auto_approval_decision(
+                proposal,
+                llm_client=llm_client,
+                proposal_index=proposal_index,
+                approved_registry=approved_registry,
+                memory_rules=memory_rules,
+            )
+            if decision != "approve":
+                mark_proposal_manual_review(paths, proposal, reason)
+                summary.manual_review += 1
+                continue
+            approval_mode = "auto_llm"
+        else:
+            reason = "Implied proposal passed deterministic safety checks."
+            approval_mode = "auto_heuristic"
+
         _, _, updated_proposal = apply_proposal_approval(
             paths,
             proposal,
             destination="canonical",
-            approval_mode="auto_llm",
+            approval_mode=approval_mode,
             approval_reason=reason,
         )
-        proposal_index = update_series_proposal_index(proposal_index, updated_proposal)
+        if proposal_target_type == "series":
+            proposal_index = update_series_proposal_index(proposal_index, updated_proposal)
         approved_registry = load_registry(paths)
         memory_rules = load_memory_rules(paths)
         summary.approved += 1
+    return summary
+
+
+def _score_implied_confidence(
+    target_type: str,
+    *,
+    ref_count: int,
+    has_formula: bool = False,
+) -> float:
+    base = min(0.5 + ref_count * 0.1, 0.85)  # 1 ref→0.60, 3 ref→0.80, 5+→0.85
+    if has_formula:
+        base = min(base + 0.10, 0.90)
+    return round(base, 2)
+
+
+def generate_implied_proposals(
+    paths: RegistryPaths,
+    *,
+    target_types: list[str] | None = None,
+) -> ImpliedProposalSummary:
+    """Generate review_pending proposals for theme/indicator IDs referenced in approved proposals but lacking records."""
+    if target_types is None:
+        target_types = ["indicator", "theme"]
+
+    registry = load_registry(paths)
+    all_proposals = load_proposals(paths)
+    existing_proposal_targets = {p["target_id"] for p in all_proposals.values()}
+
+    theme_refs: dict[str, set[str]] = {}
+    indicator_refs: dict[str, dict[str, Any]] = {}
+
+    for proposal in all_proposals.values():
+        if proposal.get("status") not in ("approved", "review_pending"):
+            continue
+        nb = str(proposal.get("notebook_slug") or "")
+
+        for theme_id in split_list(proposal.get("candidate_theme_ids")):
+            theme_refs.setdefault(theme_id, set()).add(nb)
+
+        formula_block = str(proposal.get("candidate_formula_hint") or "")
+        for ind_id in split_list(proposal.get("candidate_indicator_inputs")):
+            entry = indicator_refs.setdefault(ind_id, {"formula_hints": [], "input_ids": [], "notebooks": set()})
+            entry["notebooks"].add(nb)
+            for line in formula_block.splitlines():
+                stripped = line.strip()
+                if stripped.startswith(ind_id + ":") and stripped not in entry["formula_hints"]:
+                    entry["formula_hints"].append(stripped)
+                    formula_part = stripped[len(ind_id) + 1:].strip()
+                    entry["input_ids"].extend(re.findall(r"evds:[A-Za-z0-9_.]+", formula_part))
+
+    summary = ImpliedProposalSummary()
+
+    if "theme" in target_types:
+        for theme_id, notebooks in theme_refs.items():
+            if theme_id in registry or theme_id in existing_proposal_targets:
+                summary.skipped_existing += 1
+                continue
+            slug = theme_id.split(":", 1)[-1]
+            title = " ".join(w.capitalize() for w in slug.replace("-", " ").split())
+            confidence = _score_implied_confidence("theme", ref_count=len(notebooks))
+            proposal = normalize_proposal_input({
+                "target_id": theme_id,
+                "target_type": "theme",
+                "title": f"Implied theme proposal for {theme_id}",
+                "candidate_title": title,
+                "confidence": confidence,
+                "source": "heuristic",
+                "notes": f"Implied from {len(notebooks)} notebook(s): {', '.join(sorted(notebooks))}",
+            })
+            write_record(paths.proposals, proposal)
+            existing_proposal_targets.add(theme_id)
+            summary.created += 1
+
+    if "indicator" in target_types:
+        for ind_id, data in indicator_refs.items():
+            if ind_id in registry or ind_id in existing_proposal_targets:
+                summary.skipped_existing += 1
+                continue
+            slug = ind_id.split(":", 1)[-1]
+            title = " ".join(w.capitalize() for w in slug.replace("-", " ").split())
+            input_ids = list(dict.fromkeys(data["input_ids"]))
+            formula_hint = "\n".join(data["formula_hints"])
+            confidence = _score_implied_confidence(
+                "indicator",
+                ref_count=len(data["notebooks"]),
+                has_formula=bool(data["formula_hints"]),
+            )
+            proposal = normalize_proposal_input({
+                "target_id": ind_id,
+                "target_type": "indicator",
+                "title": f"Implied indicator proposal for {ind_id}",
+                "candidate_title": title,
+                "candidate_formula_hint": formula_hint,
+                "candidate_indicator_inputs": input_ids,
+                "confidence": confidence,
+                "source": "heuristic",
+                "notes": f"Implied from {len(data['notebooks'])} notebook(s): {', '.join(sorted(data['notebooks']))}",
+            })
+            write_record(paths.proposals, proposal)
+            existing_proposal_targets.add(ind_id)
+            summary.created += 1
+
     return summary
 
 
@@ -804,22 +923,34 @@ def assess_auto_approval_risk(
         reasons.append(f"Proposal source is {proposal.get('source') or '-'}; heuristic-only auto-approve is required.")
     if float(proposal.get("confidence") or 0.0) < min_confidence:
         reasons.append(f"Confidence {proposal.get('confidence')} is below the auto-approve threshold {min_confidence}.")
-    missing = []
-    for field_name, label in (
-        ("candidate_title", "candidate_title"),
-        ("candidate_unit", "candidate_unit"),
-        ("candidate_frequency", "candidate_frequency"),
-        ("candidate_role", "candidate_role"),
-    ):
-        if not str(proposal.get(field_name) or "").strip():
-            missing.append(label)
-    if missing:
-        reasons.append(f"Missing required series fields: {', '.join(missing)}.")
-    title_unit_conflict = detect_title_unit_conflict(proposal)
-    if title_unit_conflict:
-        reasons.append(title_unit_conflict)
-    reasons.extend(find_conflicting_proposals_for_ticker(proposal, proposal_index))
-    reasons.extend(find_existing_registry_conflicts(proposal, approved_registry, memory_rules))
+
+    target_type = str(proposal.get("target_type") or "series")
+    if target_type == "series":
+        missing = []
+        for field_name, label in (
+            ("candidate_title", "candidate_title"),
+            ("candidate_unit", "candidate_unit"),
+            ("candidate_frequency", "candidate_frequency"),
+            ("candidate_role", "candidate_role"),
+        ):
+            if not str(proposal.get(field_name) or "").strip():
+                missing.append(label)
+        if missing:
+            reasons.append(f"Missing required series fields: {', '.join(missing)}.")
+        title_unit_conflict = detect_title_unit_conflict(proposal)
+        if title_unit_conflict:
+            reasons.append(title_unit_conflict)
+        reasons.extend(find_conflicting_proposals_for_ticker(proposal, proposal_index))
+        reasons.extend(find_existing_registry_conflicts(proposal, approved_registry, memory_rules))
+    elif target_type == "indicator":
+        if not str(proposal.get("candidate_title") or "").strip():
+            reasons.append("Missing required field: candidate_title.")
+        if not split_list(proposal.get("candidate_indicator_inputs")):
+            reasons.append("Indicator has no input_ids; manual review required to define formula inputs.")
+    else:
+        if not str(proposal.get("candidate_title") or "").strip():
+            reasons.append("Missing required field: candidate_title.")
+
     return " ".join(reasons).strip()
 
 

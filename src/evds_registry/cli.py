@@ -23,6 +23,8 @@ from .records import (
 from .semantic_inference import (
     apply_catalog_and_memory,
     auto_approve_proposals,
+    generate_implied_proposals,
+    ImpliedProposalSummary,
     infer_notebook_semantics,
     promote_proposal,
     reject_proposal,
@@ -137,8 +139,12 @@ def build_parser() -> argparse.ArgumentParser:
 
     auto_approve = subparsers.add_parser("auto-approve-proposals", help="LLM-gated auto-approve for safe series proposals")
     auto_approve.add_argument("--notebook", default="")
+    auto_approve.add_argument("--target-type", default="", choices=["", "series", "indicator", "theme"], dest="target_type")
     auto_approve.add_argument("--min-confidence", type=float, default=0.90)
     auto_approve.add_argument("--limit", type=int, default=0)
+
+    gen_implied = subparsers.add_parser("generate-implied-proposals", help="Generate proposals for indicator/theme IDs referenced in approved proposals but lacking records")
+    gen_implied.add_argument("--target-type", default="", choices=["", "indicator", "theme"], dest="target_type", help="Restrict to a single type (default: both)")
 
     promote = subparsers.add_parser("promote-proposal", help="Promote a proposal into semantic memory and a draft record")
     promote.add_argument("proposal_id")
@@ -186,6 +192,8 @@ def main(argv: list[str] | None = None, out: TextIO | None = None, err: TextIO |
             handle_review_proposals(args, paths, stdout)
         elif args.command == "auto-approve-proposals":
             handle_auto_approve_proposals(args, paths, stdout)
+        elif args.command == "generate-implied-proposals":
+            handle_generate_implied_proposals(args, paths, stdout)
         elif args.command == "promote-proposal":
             handle_promote_proposal(args, paths, stdout)
         elif args.command == "reject-proposal":
@@ -434,18 +442,27 @@ def handle_review_proposals(args: argparse.Namespace, paths: RegistryPaths, out:
 
 def handle_auto_approve_proposals(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
     llm_client = build_llm_client_from_env()
-    if not llm_client.is_enabled():
-        raise ValueError("LLM client must be enabled for auto-approve-proposals.")
+    series_only = args.target_type == "series" or not args.target_type
+    if series_only and not llm_client.is_enabled():
+        raise ValueError("LLM client must be enabled for auto-approve of series proposals.")
     summary = auto_approve_proposals(
         paths,
         llm_client,
         notebook_slug=args.notebook,
+        target_type=args.target_type,
         min_confidence=args.min_confidence,
         limit=args.limit,
     )
     out.write(f"approved: {summary.approved}\n")
     out.write(f"manual_review: {summary.manual_review}\n")
     out.write(f"skipped: {summary.skipped}\n")
+
+
+def handle_generate_implied_proposals(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    target_types = [args.target_type] if args.target_type else None
+    summary = generate_implied_proposals(paths, target_types=target_types)
+    out.write(f"created: {summary.created}\n")
+    out.write(f"skipped_existing: {summary.skipped_existing}\n")
 
 
 def handle_promote_proposal(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
