@@ -154,6 +154,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     subparsers.add_parser("check-conflicts", help="Report tickers with conflicting role/frequency/unit across notebooks")
 
+    subparsers.add_parser("audit", help="Check registry for inconsistencies: missing refs, orphaned themes, dangling input_ids")
+
     fetch = subparsers.add_parser("fetch-series", help="Fetch live observations from EVDS for a ticker")
     fetch.add_argument("ticker", help="EVDS ticker (e.g. TP.DK.USD.A or evds:TP.DK.USD.A)")
     fetch.add_argument("--start", default="", help="Start date (YYYY-MM-DD or YYYY-MM)")
@@ -220,6 +222,8 @@ def main(argv: list[str] | None = None, out: TextIO | None = None, err: TextIO |
             handle_check_conflicts(args, paths, stdout)
         elif args.command == "fetch-series":
             handle_fetch_series(args, paths, stdout)
+        elif args.command == "audit":
+            handle_audit(args, paths, stdout)
         elif args.command == "promote-proposal":
             handle_promote_proposal(args, paths, stdout)
         elif args.command == "reject-proposal":
@@ -545,6 +549,51 @@ def handle_check_conflicts(args: argparse.Namespace, paths: RegistryPaths, out: 
         out.write("No conflicts found.\n")
     else:
         out.write(f"\n{conflict_count} conflict(s) found.\n")
+
+
+def handle_audit(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
+    registry = load_registry(paths)
+    issues: list[str] = []
+
+    for record in registry.values():
+        rt = record.get("record_type")
+        rid = record["id"]
+        if rt == "indicator":
+            for input_id in split_list(record.get("input_ids")):
+                if input_id not in registry:
+                    issues.append(f"MISSING_REF: {rid} input_id {input_id} not in registry")
+            for theme_id in split_list(record.get("theme_ids")):
+                if theme_id not in registry:
+                    issues.append(f"MISSING_REF: {rid} theme_id {theme_id} not in registry")
+        elif rt == "theme":
+            series_ids = split_list(record.get("series_ids"))
+            indicator_ids = split_list(record.get("indicator_ids"))
+            has_linked_series = any(
+                item.get("record_type") == "series" and rid in split_list(item.get("theme_ids"))
+                for item in registry.values()
+            )
+            if not series_ids and not indicator_ids and not has_linked_series:
+                issues.append(f"ORPHAN: {rid} has no linked series or indicators")
+            for sd_id in split_list(record.get("source_dependency_ids")):
+                if sd_id not in registry:
+                    issues.append(f"MISSING_REF: {rid} source_dep {sd_id} not in registry")
+        elif rt == "source_dependency":
+            for theme_id in split_list(record.get("theme_ids")):
+                if theme_id not in registry:
+                    issues.append(f"MISSING_REF: {rid} theme_id {theme_id} not in registry")
+
+    series_count = sum(1 for r in registry.values() if r.get("record_type") == "series")
+    indicator_count = sum(1 for r in registry.values() if r.get("record_type") == "indicator")
+    theme_count = sum(1 for r in registry.values() if r.get("record_type") == "theme")
+    sd_count = sum(1 for r in registry.values() if r.get("record_type") == "source_dependency")
+
+    out.write(f"Registry: {series_count} series, {indicator_count} indicators, {theme_count} themes, {sd_count} source deps\n\n")
+    if issues:
+        for issue in issues:
+            out.write(f"  {issue}\n")
+        out.write(f"\n{len(issues)} issue(s) found.\n")
+    else:
+        out.write("No issues found.\n")
 
 
 def handle_fetch_series(args: argparse.Namespace, paths: RegistryPaths, out: TextIO) -> None:
