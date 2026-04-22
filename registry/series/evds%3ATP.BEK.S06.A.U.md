@@ -11,7 +11,9 @@ unit: unknown
 description: 'EVDS series from catalog: PİYASA KATILIMCILARI ANKETİ (TCMB)'
 usage: Referenced as indicator input
 official_url: ''
-theme_ids: []
+theme_ids:
+- theme:survey-expectations
+- theme:cari-denge
 indicator_ids: []
 ---
 # 6A. (Uygun Ortalama) Cari Yılın Yıllık Cari İşlemler Dengesi Beklentisi

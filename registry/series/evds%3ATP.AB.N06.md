@@ -11,7 +11,9 @@ unit: Bin TL
 description: 'EVDS series from catalog: MERKEZ BANKASI HAFTALIK VAZİYET'
 usage: Referenced as indicator input
 official_url: ''
-theme_ids: []
+theme_ids:
+- theme:reserves
+- theme:net-reserve-estimate
 indicator_ids: []
 ---
 # 2A Net Uluslararası Rezervler (1+2+3)

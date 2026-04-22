@@ -11,7 +11,9 @@ unit: Bin TL
 description: 'EVDS series from catalog: MERKEZ BANKASI ANALİTİK BİLANÇOSU'
 usage: Referenced as indicator input
 official_url: ''
-theme_ids: []
+theme_ids:
+- theme:reserves
+- theme:banking-balance-sheet
 indicator_ids: []
 ---
 # A.1 DIŞ VARLIKLAR

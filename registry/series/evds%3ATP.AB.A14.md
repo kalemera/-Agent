@@ -11,7 +11,8 @@ unit: Bin TL
 description: 'EVDS series from catalog: MERKEZ BANKASI ANALİTİK BİLANÇOSU'
 usage: Referenced as indicator input
 official_url: ''
-theme_ids: []
+theme_ids:
+- theme:banking-balance-sheet
 indicator_ids: []
 ---
 # P.1bb Bankalar Döviz Mevduatı

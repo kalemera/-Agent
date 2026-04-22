@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "evds-registry": {
+      "command": "python",
+      "args": ["-m", "src.evds_registry.mcp_server"]
+    }
+  }
+}
