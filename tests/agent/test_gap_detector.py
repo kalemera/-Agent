@@ -1,5 +1,3 @@
-from pathlib import Path
-import pytest
 from evds_registry.agent.gap_detector import GapDetector
 
 
