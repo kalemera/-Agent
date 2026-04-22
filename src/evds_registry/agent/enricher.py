@@ -79,7 +79,7 @@ class Enricher:
                 record["title"] = str(catalog_entry.get("title") or ticker).strip()
                 record["frequency"] = str(catalog_entry.get("frequency") or "").strip()
                 record["unit"] = str(catalog_entry.get("unit") or "").strip()
-                record["description"] = str(catalog_entry.get("title") or "").strip()
+                record["description"] = str(catalog_entry.get("description") or catalog_entry.get("title") or "").strip()
                 confidence = CONFIDENCE_CATALOG_HIT
             else:
                 flags.append(EnrichmentFlag(

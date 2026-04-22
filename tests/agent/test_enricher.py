@@ -1,5 +1,5 @@
-import pytest
-from evds_registry.agent.enricher import detect_source_type
+from evds_registry.agent.enricher import detect_source_type, Enricher
+from evds_registry.llm import DisabledLLMClient
 
 
 def test_evds_tp_prefix():
@@ -20,10 +20,6 @@ def test_derived_indicator():
 
 def test_unknown_falls_back():
     assert detect_source_type("bilinmeyen:xyz") == "unknown"
-
-
-from evds_registry.agent.enricher import Enricher, EnrichmentResult
-from evds_registry.llm import DisabledLLMClient
 
 
 def _make_catalog(tickers: dict[str, dict]) -> dict:
