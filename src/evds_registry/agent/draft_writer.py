@@ -5,7 +5,7 @@ from pathlib import Path
 
 import yaml
 
-from ..records import Record, split_list
+from ..records import Record, split_list, render_body
 from ..storage import RegistryPaths, load_documents, id_to_filename
 from .enricher import EnrichmentResult
 
@@ -17,7 +17,7 @@ def _dump_draft(record: Record) -> str:
     for key in ("theme_ids", "indicator_ids", "input_ids", "series_ids"):
         if key in fm:
             fm[key] = split_list(fm[key])
-    body = f"# {fm['title']}\n\n_Taslak kayıt — onay bekleniyor._\n"
+    body = render_body(fm)
     yaml_text = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True).strip()
     return f"---\n{yaml_text}\n---\n{body}"
 
