@@ -185,25 +185,59 @@ def registry_map(record_id: str) -> dict:
 @mcp.tool()
 def registry_fetch(tickers: str, start: str, end: str) -> dict:
     """EVDS API'den canli veri ceker.
+    Bilinmeyen ticker tespit edilirse otomatik taslak olusturur.
     tickers: virgul-ayirmali ticker listesi (ornek: 'TP.DK.USD.A,TP.DK.EUR.A').
     start/end: tarih formati 'DD-MM-YYYY'.
     """
+    from .agent.gap_detector import GapDetector
+    from .agent.enricher import Enricher
+    from .agent.draft_writer import DraftWriter
+    from .llm import build_llm_client_from_env
+    from .storage import load_catalog
+
+    ticker_list = [t.strip() for t in tickers.split(",") if t.strip()]
+    if not ticker_list:
+        return {"error": "En az bir ticker gerekli."}
+
+    # Gap detection: bilinmeyen ticker varsa taslak olustur
+    registry = _load_all()
+    detector = GapDetector(registry=registry)
+    evds_ids = [f"evds:{t}" for t in ticker_list]
+    gaps = detector.find_gaps(evds_ids)
+
+    gap_drafts: list[dict] = []
+    if gaps:
+        catalog = load_catalog(PATHS)
+        known_themes = [k for k, v in registry.items() if v["record_type"] == "theme"]
+        llm = build_llm_client_from_env()
+        enricher = Enricher(llm=llm, catalog=catalog, known_themes=known_themes)
+        writer = DraftWriter(paths=PATHS)
+        for gap_id in gaps:
+            result = enricher.enrich(gap_id)
+            writer.write_draft(result)
+            gap_drafts.append({
+                "id": gap_id,
+                "confidence": result.confidence,
+                "flag_count": len(result.flags),
+                "message": "Taslak olusturuldu — /api/registry/drafts uzerinden onayin",
+            })
+
     from .source_adapters import EVDSAdapter
 
     adapter = EVDSAdapter.from_env()
     if not adapter.is_configured():
-        return {"error": "EVDS_API_KEY ortam degiskeni ayarlanmamis."}
-    ticker_list = [t.strip() for t in tickers.split(",") if t.strip()]
-    if not ticker_list:
-        return {"error": "En az bir ticker gerekli."}
+        return {"error": "EVDS_API_KEY ortam degiskeni ayarlanmamis.", "gap_drafts": gap_drafts}
     df = adapter.fetch_observations(ticker_list, start=start, end=end)
-    return {
+    result_dict: dict = {
         "tickers": ticker_list,
         "start": start,
         "end": end,
         "row_count": len(df),
         "data": df.to_dict(orient="records"),
     }
+    if gap_drafts:
+        result_dict["gap_drafts"] = gap_drafts
+    return result_dict
 
 
 # ---------------------------------------------------------------------------
