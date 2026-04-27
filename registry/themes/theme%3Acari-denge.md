@@ -10,6 +10,8 @@ series_ids:
 - evds:TP.HARICCARIACIK.K10
 - evds:TP.ODANA6.Q01
 - evds:TP.ODANA6.Q13
+- evds:TP.ODEAYRSUNUM6.Q32
+- evds:TP.ODEAYRSUNUM6.Q41
 indicator_ids:
 - derived:altin-net
 - derived:enerji-net
@@ -20,6 +22,7 @@ indicator_ids:
 - derived:dogrudan-yatirim-net
 - derived:portfoy-yatirim-net
 - derived:diger-yatirim-net
+- derived:yolcu-seyahat-net
 chart_ids:
 - chart:cari-denge-altin-enerji-haric
 - chart:cari-denge-karsilastirma
@@ -31,6 +34,8 @@ questions:
 - Enerji ve altin haric cari denge ne durumda?
 - Finans hesaplari nasil?
 - Hizmetler dengesi ne durumda?
+- Yolcu ve seyahat dengesi ne kadar?
+- Turizm geliri cari dengeye ne kadar katki yapiyor?
 - Yilliklandirilmis cari denge trendi nasil?
 - Dogrudan yatirimlar net pozisyonu nedir?
 - Portfoy yatirimlari nasil seyrediyor?
@@ -96,7 +101,7 @@ Cikti: `Cari Denge Tablo/outputs/tables/sunum_tablosu.json` + `.html`
 1. Cari Islemler Hesabi (toplam — TP.ODANA6.Q01)
 2. Mal Dengesi (TP.ODANA6.Q04)
 3. Hizmetler Dengesi (Q05 - Q06)
-4. Yolcu ve Seyahat (bie_odeayrsunum6'dan)
+4. Yolcu ve Seyahat (Q32+Q41 — TP.ODEAYRSUNUM6.Q32 + TP.ODEAYRSUNUM6.Q41)
 5. Gelir Dengesi (Q08 - Q09 + Q11)
 6. Finans Hesaplari (TP.ODANA6.Q13)
 7. Dogrudan Yatirimlar (Q15 - Q14)
@@ -121,6 +126,8 @@ Cikti: `Cari Denge Tablo/outputs/tables/sunum_tablosu.json` + `.html`
 - evds:TP.HARICCARIACIK.K10 — Enerji+Altin Haric Cari (aylik, milyon USD)
 - evds:TP.ODANA6.Q01 — 1.Cari Islemler Hesabi (analitik sunum toplamı)
 - evds:TP.ODANA6.Q13 — 3.Finans Hesabi (analitik sunum toplamı)
+- evds:TP.ODEAYRSUNUM6.Q32 — 1.2.3.1.Yolcu (tasimaci yolcu, bie_odeayrsunum6)
+- evds:TP.ODEAYRSUNUM6.Q41 — 1.2.4.Seyahat (turizm/seyahat, bie_odeayrsunum6)
 
 ## Indikatorler
 
@@ -128,6 +135,7 @@ Cikti: `Cari Denge Tablo/outputs/tables/sunum_tablosu.json` + `.html`
 - derived:enerji-net — Enerjinin cari dengeye net etkisi
 - derived:cari-denge-hizmet-net — Hizmet ve gelir dengesi
 - derived:yilliklandirilmis-cari — 12 aylik kumulatif cari denge
+- derived:yolcu-seyahat-net — Yolcu+Seyahat turizm_sum (Q32+Q41)
 
 ## Pipeline Notlari
 
@@ -146,6 +154,8 @@ Cikti: `Cari Denge Tablo/outputs/tables/sunum_tablosu.json` + `.html`
 - Enerji ve altin haric cari denge ne durumda?
 - Finans hesaplari nasil?
 - Hizmetler dengesi ne durumda?
+- Yolcu ve seyahat dengesi ne kadar? (TP.ODEAYRSUNUM6.Q32 + Q41)
+- Turizm geliri cari dengeye ne kadar katki yapiyor?
 - Yilliklandirilmis cari denge trendi nasil?
 - Dogrudan yatirimlar net pozisyonu nedir?
 - Portfoy yatirimlari nasil seyrediyor?
