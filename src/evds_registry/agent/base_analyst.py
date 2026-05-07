@@ -115,8 +115,13 @@ def normalize_tr(text: str) -> str:
 
     Klasik karakterleri ASCII karşılıklarına çevirir, lowercase yapar.
     Intent eşleşme öncesi her iki tarafta uygulanır.
+
+    NOT: Türkçe büyük İ (U+0130) Python'da `.lower()` ile `i + U+0307` (combining
+    dot above) üretir. Bu durumda `'islem' in 'i̇slemleri'` False döner.
+    Bu yüzden combining dot above (̇) açıkça kaldırılır.
     """
     s = (text or "").lower()
+    s = s.replace("̇", "")  # Combining dot above (Turkish İ artifact)
     for tr, en in _TR_REPLACEMENTS:
         s = s.replace(tr, en)
     return s

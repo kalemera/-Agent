@@ -257,7 +257,10 @@ def fetch_urdl_zip(
                            max_bytes=10 * 1024 * 1024)  # 10MB sayfa için fazla
     html_text = page_bytes.decode("utf-8", errors="replace")
 
-    # 2) ZIP linki bul (a tag, title='Haftalık Uluslararası Rezervler...', href .zip)
+    # 2) ZIP linki bul: title 'Haftalık Uluslararası Rezervler...' VE href .zip
+    # NOT: TCMB sayfasında aynı başlıkla hem PDF hem ZIP linki var. Sadece
+    # title eşleşmesi yetmez — `.zip` uzantı kontrolü zorunlu, aksi halde PDF
+    # alınır ve ZIP magic check fail olur.
     soup = BeautifulSoup(html_text, "html.parser")
     zip_link = None
     for a in soup.find_all("a"):
@@ -266,12 +269,11 @@ def fetch_urdl_zip(
         text = (a.get_text() or "").strip()
         if not href:
             continue
-        if not (
-            title.lower().startswith(URDL_ZIP_TITLE_PREFIX.lower())
-            or "ZIP" in text.upper()
-        ):
-            continue
-        if title.lower().startswith(URDL_ZIP_TITLE_PREFIX.lower()):
+        title_match = title.lower().startswith(URDL_ZIP_TITLE_PREFIX.lower())
+        text_zip = "ZIP" in text.upper()
+        href_zip = ".zip" in href.lower()
+        # Title VE (href .zip içerir VEYA text 'ZIP' içerir)
+        if title_match and (href_zip or text_zip):
             zip_link = href
             break
 
@@ -376,6 +378,8 @@ def urdl_extract_kalem_series(
     """
     def _normalize_tr(s: str) -> str:
         s = (s or "").lower()
+        # Turkish capital İ lowercases to i + U+0307 (combining dot); strip it.
+        s = s.replace("̇", "")
         for tr, en in [("ı", "i"), ("ş", "s"), ("ğ", "g"), ("ç", "c"), ("ö", "o"), ("ü", "u")]:
             s = s.replace(tr, en)
         return s
@@ -442,28 +446,31 @@ def fetch_tarafli_swap_pdf(
 
     def _normalize_tr(s: str) -> str:
         s = (s or "").lower()
+        # Turkish capital İ lowercases to i + U+0307 (combining dot); strip it.
+        s = s.replace("̇", "")
         for tr, en in [("ı", "i"), ("ş", "s"), ("ğ", "g"), ("ç", "c"), ("ö", "o"), ("ü", "u")]:
             s = s.replace(tr, en)
         return s
 
+    # PDF linki bul: keyword match yeterli — TCMB CMS URL'lerinde .pdf uzantısı
+    # olmayabilir (örn /wps/wcm/connect/a6ffdb2f-.../TCMB+Tarafli+Swap...).
+    # Magic check (%PDF) zaten _safe_get sonrası yapılır.
     pdf_link = None
     for a in soup.find_all("a"):
         href = (a.get("href") or "").strip()
         title = (a.get("title") or "").strip()
-        cls = " ".join(a.get("class") or [])
         text_inner = a.get_text() or ""
         if not href:
             continue
 
-        href_lower = href.lower()
-        is_pdf = href_lower.endswith(".pdf") or "pdf" in cls.lower()
-        if not is_pdf:
-            continue
-
+        # Şüpheli olmayan linklere bak: ya .pdf uzantısı ya da gövde/title'da
+        # PDF anahtar kelimelerinin tümü geçsin (TCMB CMS pattern)
         text_all = _normalize_tr(text_inner) + " " + _normalize_tr(title)
-        if all(k in text_all for k in PDF_KEYWORDS):
-            pdf_link = href
-            break
+        keywords_match = all(k in text_all for k in PDF_KEYWORDS)
+        if not keywords_match:
+            continue
+        pdf_link = href
+        break
 
     if not pdf_link:
         raise RuntimeError(
@@ -640,6 +647,8 @@ def _find_col(df: pd.DataFrame, keywords: list[str]) -> str | None:
     """Sütunlardan tüm anahtar kelimeleri içereni bul (TR-normalize)."""
     def _normalize_tr(s: str) -> str:
         s = (s or "").lower()
+        # Turkish capital İ lowercases to i + U+0307 (combining dot); strip it.
+        s = s.replace("̇", "")
         for tr, en in [("ı", "i"), ("ş", "s"), ("ğ", "g"), ("ç", "c"), ("ö", "o"), ("ü", "u")]:
             s = s.replace(tr, en)
         return s
