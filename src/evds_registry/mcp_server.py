@@ -322,5 +322,110 @@ def registry_audit() -> dict:
     }
 
 
+# ---------------------------------------------------------------------------
+# Tool 7: chat_with_agent (Orchestrator routing)
+# ---------------------------------------------------------------------------
+@mcp.tool()
+def chat_with_agent(query: str) -> dict:
+    """TCMB rezerv veya TÜFE konularında doğal dilde soru sor.
+
+    Soru otomatik olarak domain'e (rezerv | tufe) yönlendirilir ve ilgili
+    AnalystAgent intent'i sınıflandırır.
+
+    SNAPSHOT YÜKLEME:
+        Mevcut MCP context'inde RezervSnapshot/TUFESnapshot yüklü değildir.
+        Bu yüzden tool'un dönüşü:
+        - Domain + intent doğru tespit edilir
+        - Agent help/template metin döndürür
+        - Gerçek sayısal veri için pipeline.run_pipeline() önceden çağrılmalı
+          ve snapshot serialize edilip MCP server'a iletilmeli (sonraki sprint).
+
+    Args:
+        query: Türkçe soru (örn "Brüt rezerv ne kadar?", "Yıllık enflasyon")
+
+    Returns:
+        {
+          "domain":          "rezerv" | "tufe" | null,
+          "intent":          str | null,
+          "text":            str (kullanıcıya gösterilecek metin),
+          "data":            dict (yapılandırılmış veriler, snapshot varsa dolu),
+          "snapshot_date":   ISO date | null,
+          "snapshot_loaded": bool (False — MCP context'inde snapshot yok)
+        }
+    """
+    from .agent.orchestrator import Orchestrator
+
+    # MCP context'inde snapshot yok — orchestrator gracefully help text döner
+    snapshots: dict[str, object] = {}
+    orch = Orchestrator(snapshots)
+
+    response = orch.response(query)
+
+    # Snapshot date'i ISO string'e çevir (JSON serializable)
+    snap_date = response.get("snapshot_date")
+    if snap_date is not None:
+        response["snapshot_date"] = snap_date.isoformat() if hasattr(snap_date, "isoformat") else str(snap_date)
+
+    # MCP istemcisine snapshot durumunu bildir
+    response["snapshot_loaded"] = False
+    response["note"] = (
+        "Snapshot şu an MCP context'inde yüklü değil — domain ve intent doğru "
+        "tespit edilir ama gerçek değerler için pipeline.run_pipeline() çıktısı "
+        "gerekli. (Sonraki sprint: snapshot caching mekanizması)"
+    )
+
+    return response
+
+
+# ---------------------------------------------------------------------------
+# Tool 8: list_agent_domains
+# ---------------------------------------------------------------------------
+@mcp.tool()
+def list_agent_domains() -> dict:
+    """Mevcut analist agent domain'lerini ve intent'lerini listeler.
+
+    chat_with_agent tool'unu kullanmadan önce hangi konulardan soru
+    sorabileceğinizi görmek için.
+
+    Returns:
+        {
+          "domains": [
+            {
+              "name": "rezerv",
+              "agent_class": "RezervAnalystAgent",
+              "description": "...",
+              "intents": [
+                {"name": "brut_rezerv_durum", "description": "..."},
+                ...
+              ]
+            },
+            ...
+          ]
+        }
+    """
+    from .agent.orchestrator import AGENT_REGISTRY
+
+    domains = []
+    for domain_name, agent_cls in AGENT_REGISTRY.items():
+        # Boş snapshot ile dummy instance — sadece INTENTS okumak için
+        try:
+            instance = agent_cls(snapshot=None)
+            intents = [
+                {"name": d.name, "description": d.description}
+                for d in instance.list_intents()
+            ]
+        except Exception:
+            intents = []
+
+        domains.append({
+            "name": domain_name,
+            "agent_class": agent_cls.__name__,
+            "description": getattr(agent_cls, "AGENT_DESCRIPTION", ""),
+            "intents": intents,
+        })
+
+    return {"domains": domains}
+
+
 if __name__ == "__main__":
     mcp.run()

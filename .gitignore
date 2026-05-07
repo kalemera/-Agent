@@ -13,6 +13,10 @@ tmp_import_verify/
 # Environment
 .env
 
+# Claude Code (lokal user state)
+.claude/cache/
+.claude/settings.local.json
+
 # Editor
 .vscode/
 .idea/
@@ -20,3 +24,6 @@ tmp_import_verify/
 # OS
 .DS_Store
 Thumbs.db
+
+# Excel kaynak dosyaları (büyük binary, lokal referans için)
+Excels/

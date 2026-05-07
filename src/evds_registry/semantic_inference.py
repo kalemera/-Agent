@@ -608,6 +608,15 @@ def auto_approve_proposals(
 
     for proposal in candidates:
         proposal_target_type = str(proposal.get("target_type") or "series")
+
+        # Non-series proposal'lar (indicator, theme, source_dependency) auto-approve
+        # akışına DAHİL EDİLMEZ — review_pending statüsünde kalırlar, summary.skipped artar.
+        # Bu, assess_auto_approval_risk çağrısından ÖNCE yapılır ki indicator'a "missing
+        # candidate_indicator_inputs" gibi sebeplerle manual_review damgası vurulmasın.
+        if proposal_target_type != "series":
+            summary.skipped += 1
+            continue
+
         manual_reason = assess_auto_approval_risk(
             proposal,
             proposal_index=proposal_index,
@@ -620,22 +629,18 @@ def auto_approve_proposals(
             summary.manual_review += 1
             continue
 
-        if proposal_target_type == "series":
-            decision, reason = request_llm_auto_approval_decision(
-                proposal,
-                llm_client=llm_client,
-                proposal_index=proposal_index,
-                approved_registry=approved_registry,
-                memory_rules=memory_rules,
-            )
-            if decision != "approve":
-                mark_proposal_manual_review(paths, proposal, reason)
-                summary.manual_review += 1
-                continue
-            approval_mode = "auto_llm"
-        else:
-            reason = "Implied proposal passed deterministic safety checks."
-            approval_mode = "auto_heuristic"
+        decision, reason = request_llm_auto_approval_decision(
+            proposal,
+            llm_client=llm_client,
+            proposal_index=proposal_index,
+            approved_registry=approved_registry,
+            memory_rules=memory_rules,
+        )
+        if decision != "approve":
+            mark_proposal_manual_review(paths, proposal, reason)
+            summary.manual_review += 1
+            continue
+        approval_mode = "auto_llm"
 
         _, _, updated_proposal = apply_proposal_approval(
             paths,
