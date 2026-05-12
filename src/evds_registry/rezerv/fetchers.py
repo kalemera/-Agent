@@ -311,51 +311,102 @@ def fetch_urdl_zip(
 
     excel_bytes = zf.read(excel_name)
 
-    # 5) Workbook'tan ilk sheet'i al
+    # 5) Workbook'u oku — header satırını dinamik tespit etmek için raw rows
+    # (pd.read_excel doğrudan header=N istemiyor; önce raw oku, header tespit
+    # et, sonra DataFrame oluştur)
     wb = load_workbook(io.BytesIO(excel_bytes), data_only=True)
     ws = wb.active
-    raw_rows = list(ws.iter_rows(values_only=True))
-    raw_rows = [r for r in raw_rows if any(c is not None for c in r)]
+    raw_rows: list[list] = []
+    for row in ws.iter_rows(values_only=True):
+        # Tuple → list, None olmayan en az 1 hücre varsa kabul et
+        row_list = list(row)
+        if any(c is not None for c in row_list):
+            raw_rows.append(row_list)
 
-    # 6) Başlık satırı = en çok tarih içeren satır
-    def _count_dates(row: tuple) -> int:
-        n = 0
-        for v in row:
-            if isinstance(v, (_dt.date, _dt.datetime)):
-                n += 1
-        return n
+    if not raw_rows:
+        raise RuntimeError("URDL ZIP içindeki Excel boş.")
+
+    # 6) Başlık satırı = en çok tarih hücresi içeren satır
+    def _count_dates(row: list) -> int:
+        return sum(1 for v in row if isinstance(v, (_dt.date, _dt.datetime)))
 
     header_idx = max(range(len(raw_rows)), key=lambda i: _count_dates(raw_rows[i]))
-
-    headers_row = raw_rows[header_idx]
+    headers_raw = raw_rows[header_idx]
     data_rows = raw_rows[header_idx + 1 :]
 
-    # İlk sütun = "Kalem", diğerleri tarih
-    df = pd.DataFrame(data_rows, columns=headers_row)
-    first_col = df.columns[0]
-    df = df.rename(columns={first_col: "Kalem"})
-
-    # Tarih kolonlarını datetime'a çevir
-    new_cols: dict = {}
-    for col in df.columns:
-        if col == "Kalem":
-            continue
-        if isinstance(col, (_dt.date, _dt.datetime)):
-            new_cols[col] = pd.Timestamp(col)
+    # 7) Sütun adlarını string'e çevir (None → boş, date → ISO)
+    column_names: list[str] = []
+    seen: dict[str, int] = {}
+    for idx, h in enumerate(headers_raw):
+        if isinstance(h, (_dt.date, _dt.datetime)):
+            base = pd.Timestamp(h).strftime("%Y-%m-%d")
+        elif h is None:
+            base = f"col_{idx}"
         else:
-            try:
-                new_cols[col] = pd.to_datetime(col, errors="coerce")
-            except Exception:
-                new_cols[col] = col
-    df = df.rename(columns=new_cols)
+            base = str(h).strip() or f"col_{idx}"
+        # Aynı isim varsa suffix ekle
+        if base in seen:
+            seen[base] += 1
+            base = f"{base}__{seen[base]}"
+        else:
+            seen[base] = 0
+        column_names.append(base)
 
-    # Sayısal sütunları çevir + Milyon USD → Milyar USD (÷1000)
+    # 8) Data rows'u uniform uzunluğa getir (truncate/pad)
+    ncols = len(column_names)
+    normalized_data: list[list] = []
+    for row in data_rows:
+        if len(row) >= ncols:
+            normalized_data.append(list(row[:ncols]))
+        else:
+            normalized_data.append(list(row) + [None] * (ncols - len(row)))
+
+    df = pd.DataFrame(normalized_data, columns=column_names)
+
+    # 9) URDL Excel formatında ilk sütun(lar) genelde boş — kaldır.
+    # Boş kolonu tespit: tüm değerleri None/NaN olan sütunlar + header'ı boş
+    # olan veya '' olan sütunlar
+    def _is_empty_col(name: str) -> bool:
+        ser = df[name]
+        return ser.isna().all() or str(name).startswith("col_") and ser.isna().all()
+
+    cols_to_drop = [c for c in df.columns if df[c].isna().all()]
+    if cols_to_drop:
+        df = df.drop(columns=cols_to_drop)
+
+    # 10) İlk kalan sütunu "Kalem" olarak adlandır
+    if df.shape[1] == 0:
+        raise RuntimeError("URDL ZIP Excel'inde geçerli sütun bulunamadı.")
+    first_col = df.columns[0]
+    if first_col != "Kalem":
+        df = df.rename(columns={first_col: "Kalem"})
+
+    # 10) Tarih-string sütunları pd.Timestamp'e çevir (header zaten tarih
+    # olarak okunduysa "YYYY-MM-DD" formatında string)
+    new_cols: dict[str, pd.Timestamp | str] = {}
     for col in df.columns:
         if col == "Kalem":
             continue
-        df[col] = pd.to_numeric(df[col], errors="coerce") / 1000.0
+        # Yalnızca "YYYY-MM-DD" pattern'i Timestamp'e çevrilir
+        try:
+            ts = pd.to_datetime(col, format="%Y-%m-%d", errors="raise")
+            new_cols[col] = ts
+        except (ValueError, TypeError):
+            # Tarih değil — string olarak bırak (örn rename collision suffix'leri)
+            pass
+    if new_cols:
+        df = df.rename(columns=new_cols)
 
-    # Boş Kalem satırlarını sil
+    # 11) Sayısal sütunlar (tarih kolonları) Milyon USD → Milyar USD (÷1000)
+    for col in df.columns:
+        if col == "Kalem":
+            continue
+        # Sütun değerleri Excel'den int/float/None olarak gelmiş — pd.to_numeric
+        # ile pandas Series'e zorla, dtype coerce et.
+        numeric_series = pd.to_numeric(df[col], errors="coerce")
+        df[col] = numeric_series / 1000.0
+
+    # 12) Boş Kalem satırlarını sil
     df = df[df["Kalem"].notna()].reset_index(drop=True)
 
     return df
@@ -489,56 +540,87 @@ def fetch_tarafli_swap_pdf(
     if not pdf_bytes[:4] == b"%PDF":
         raise RuntimeError("İndirilen dosya PDF değil (magic check fail)")
 
-    # 3) pdfplumber ile tabloları çıkar
-    all_tables: list[pd.DataFrame] = []
+    # 3) pdfplumber ile tüm satırları topla — header'ı şimdi ayırmıyoruz.
+    # M kodunda olduğu gibi, tüm raw satırlar bir havuza alınır, sonra
+    # "Valör/Value" pattern'i ile header satırı dinamik tespit edilir.
+    all_rows: list[list] = []
     with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
         for page in pdf.pages:
             tables = page.extract_tables() or []
             for tbl in tables:
-                if not tbl or len(tbl) < 2:
+                if not tbl:
                     continue
-                df = pd.DataFrame(tbl[1:], columns=tbl[0])
-                all_tables.append(df)
+                for row in tbl:
+                    if row and any(c for c in row):
+                        all_rows.append(list(row))
 
-    if not all_tables:
+    if not all_rows:
         raise RuntimeError("PDF içinde tablo bulunamadı")
 
-    # 4) En geniş + tarih içeren tabloları seç ve birleştir
-    def _has_date_col(df: pd.DataFrame) -> bool:
-        if df.empty:
-            return False
-        first_col = df.iloc[:, 0]
-        for v in first_col.head(20):
-            try:
-                pd.to_datetime(v, dayfirst=True, errors="raise")
-                return True
-            except Exception:
-                continue
-        return False
+    # 4) En geniş tabloları al (max sütun sayısı)
+    max_cols = max(len(r) for r in all_rows)
+    if max_cols < 5:
+        raise RuntimeError(
+            f"PDF tablolarının max sütun sayısı {max_cols}, beklenen >=5."
+        )
+    wide_rows = [r for r in all_rows if len(r) == max_cols]
 
-    candidates = [t for t in all_tables if _has_date_col(t) and t.shape[1] >= 5]
-    if not candidates:
-        raise RuntimeError("PDF'te tarih sütunlu tablo bulunamadı")
-
-    max_cols = max(t.shape[1] for t in candidates)
-    best_parts = [t for t in candidates if t.shape[1] == max_cols]
-    combined = pd.concat(best_parts, ignore_index=True)
-
-    # Sütun adlarını temizle (newline, tab, dipnot)
+    # 5) Sütun temizleyici (newline/tab/dipnot)
     def _clean_col(c: Any) -> str:
         s = str(c) if c is not None else ""
         s = s.replace("\n", " ").replace("\r", " ").replace("\t", " ").strip()
         if "{" in s:
             s = s.split("{", 1)[0].strip()
-        # Çoklu boşlukları tekleştir
         s = " ".join(s.split())
         return s
 
-    combined.columns = [_clean_col(c) for c in combined.columns]
+    # 6) Header satırını bul — "Valör"/"Value" pattern'i ilk hücrede
+    def _is_header_row(row: list) -> bool:
+        if not row or row[0] is None:
+            return False
+        first = _normalize_tr(str(row[0]))
+        return "valor" in first or "value" in first or "tarih" in first
 
-    # İlk sütunu Tarih olarak adlandır
+    header_row_idx: int | None = None
+    for i, row in enumerate(wide_rows):
+        if _is_header_row(row):
+            header_row_idx = i
+            break
+
+    if header_row_idx is None:
+        # Fallback: ilk satırı header say (pdfplumber zaten ayırmış olabilir)
+        header_row_idx = 0
+
+    headers_raw = wide_rows[header_row_idx]
+    data_rows = wide_rows[header_row_idx + 1 :]
+
+    # 7) Sütun adlarını temizle ve dedupe et
+    seen: dict[str, int] = {}
+    column_names: list[str] = []
+    for idx, h in enumerate(headers_raw):
+        base = _clean_col(h) or f"col_{idx}"
+        if base in seen:
+            seen[base] += 1
+            base = f"{base}__{seen[base]}"
+        else:
+            seen[base] = 0
+        column_names.append(base)
+
+    # 8) DataFrame oluştur — data satırlarını uniform uzunluğa getir
+    ncols = len(column_names)
+    normalized_data: list[list] = []
+    for row in data_rows:
+        if len(row) >= ncols:
+            normalized_data.append(list(row[:ncols]))
+        else:
+            normalized_data.append(list(row) + [None] * (ncols - len(row)))
+    combined = pd.DataFrame(normalized_data, columns=column_names)
+
+    # 9) İlk sütunu Tarih olarak adlandır
     first_col_name = combined.columns[0]
-    combined = combined.rename(columns={first_col_name: "Tarih"})
+    if first_col_name != "Tarih":
+        combined = combined.rename(columns={first_col_name: "Tarih"})
+
     combined["Tarih"] = pd.to_datetime(
         combined["Tarih"], dayfirst=True, errors="coerce"
     )

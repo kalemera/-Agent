@@ -420,6 +420,17 @@ def run_pipeline(
         else:
             validation["TeyitFlag"] = pd.Series(index=transformed.index, dtype="object")
 
+    # Anchor sütun(lar) — NetAltinUSD veya NetDovizUSD dolu olan satırlar
+    # "gerçek haftalık vaziyet verisi" olduğunu gösterir. patch_missing_dates()
+    # sentetik tarihlerinde bunlar NaN — calculated'dan elenmesi gerek ki
+    # agent latest='son anlamlı tarih' olsun.
+    anchor_cols = [c for c in ("NetAltinUSD", "NetDovizUSD") if c in calculated.columns]
+    if anchor_cols and not calculated.empty:
+        valid_mask = calculated[anchor_cols].notna().any(axis=1)
+        calculated = calculated[valid_mask]
+    if not validation.empty:
+        validation = validation.loc[validation.index.intersection(calculated.index)]
+
     return RezervSnapshot(
         raw=raw_evds,
         transformed=transformed,

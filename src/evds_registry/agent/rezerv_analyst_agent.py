@@ -176,13 +176,30 @@ class RezervAnalystAgent(BaseAnalystAgent):
     # ------------------------------------------------------------------
 
     def _latest_date(self) -> _dt.date | None:
+        """Son **anlamlı** tarihi bulur.
+
+        Pipeline patch_missing_dates() sentetik tarihler ekleyebildiği için
+        son satır tamamen NaN olabilir. Bu durumda son non-NaN Net Altın/Döviz
+        satırı kullanılır, yoksa son satır fallback.
+        """
         if self.snapshot is None:
             return None
         c = getattr(self.snapshot, "calculated", None)
-        if isinstance(c, pd.DataFrame) and not c.empty:
-            idx = c.index[-1]
-            if isinstance(idx, pd.Timestamp):
-                return idx.date()
+        if not (isinstance(c, pd.DataFrame) and not c.empty):
+            return None
+
+        anchor_cols = [self.COL_NET_ALTIN, self.COL_NET_DOVIZ]
+        available = [col for col in anchor_cols if col in c.columns]
+        if available:
+            mask = c[available].notna().any(axis=1)
+            if mask.any():
+                idx = c.index[mask][-1]
+                if isinstance(idx, pd.Timestamp):
+                    return idx.date()
+
+        idx = c.index[-1]
+        if isinstance(idx, pd.Timestamp):
+            return idx.date()
         return None
 
     # ------------------------------------------------------------------
