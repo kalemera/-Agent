@@ -133,6 +133,11 @@ def fetch_evds_series(
             'TP_DOVVARNC_K18' → 'DOVVARNC.K18'
     """
     from evds import evdsAPI
+    from .config import (
+        DAILY_BILANCO_TICKERS,
+        WEEKLY_VAZIYET_TICKERS,
+        MONTHLY_URDL_TICKERS,
+    )
 
     if tickers is None:
         tickers = list(ALL_TICKERS)
@@ -152,36 +157,59 @@ def fetch_evds_series(
 
     client = evdsAPI(api_key)
 
-    # Chunk'lı çekme (URL uzunluğu ve rate limit korunur)
+    # KRİTİK: Farklı frekanslı ticker'ları AYNI chunk'a koymak — EVDS'nin
+    # chunk başına farklı tarih formatı döndürmesine ('2025-1' haftalık vs
+    # '2025-01-15' günlük) ve merge'in fail olmasına yol açar. O yüzden
+    # önce frekans gruplarına ayır, sonra her grubu kendi chunk_size'ında çek.
+    requested = set(tickers)
+    groups: list[tuple[str, list[str]]] = []
+    for label, group_tickers in (
+        ("daily", DAILY_BILANCO_TICKERS),
+        ("weekly", WEEKLY_VAZIYET_TICKERS),
+        ("monthly", MONTHLY_URDL_TICKERS),
+    ):
+        filtered = [t for t in group_tickers if t in requested]
+        if filtered:
+            groups.append((label, filtered))
+
+    # Bilinmeyen ticker'lar (config dışı) → ayrı bir "unknown" grubu
+    classified = set()
+    for _, lst in groups:
+        classified.update(lst)
+    unknown = [t for t in tickers if t not in classified]
+    if unknown:
+        groups.append(("unknown", unknown))
+
     chunks: list[pd.DataFrame] = []
-    for i in range(0, len(tickers), chunk_size):
-        chunk = tickers[i : i + chunk_size]
-        try:
-            kwargs: dict[str, Any] = {}
-            if frequency:
-                kwargs["frequency"] = frequency
-            df = client.get_data(chunk, startdate=start_date, enddate=end_date, **kwargs)
-        except Exception as e:
-            warnings.warn(f"EVDS chunk {i}-{i+chunk_size} fail: {e}", stacklevel=2)
-            continue
-        if df is None or df.empty:
-            continue
-        chunks.append(df)
+    for group_label, group_tickers in groups:
+        for i in range(0, len(group_tickers), chunk_size):
+            chunk = group_tickers[i : i + chunk_size]
+            try:
+                kwargs: dict[str, Any] = {}
+                if frequency:
+                    kwargs["frequency"] = frequency
+                df = client.get_data(chunk, startdate=start_date, enddate=end_date, **kwargs)
+            except Exception as e:
+                warnings.warn(
+                    f"EVDS group={group_label} chunk {i}-{i+chunk_size} fail: {e}",
+                    stacklevel=2,
+                )
+                continue
+            if df is None or df.empty:
+                continue
+            # Tarih kolonunu normalize et — chunk birleştirme öncesi her chunk
+            # DatetimeIndex'e oturtulur, böylece farklı frekans gruplarındaki
+            # tarih formatları join'de bozulmaz.
+            df_norm = _normalize_date_column(df)
+            chunks.append(df_norm)
 
     if not chunks:
         return pd.DataFrame()
 
-    # Tüm chunk'ları Tarih üzerinden join
+    # Tüm chunk'ları index (DatetimeIndex) üzerinden outer join
     merged = chunks[0]
     for df in chunks[1:]:
-        if "Tarih" in merged.columns and "Tarih" in df.columns:
-            merged = merged.merge(df, on="Tarih", how="outer")
-        else:
-            # Index bazlı concat (fallback)
-            merged = pd.concat([merged, df], axis=1)
-
-    # Tarih kolonu → DatetimeIndex
-    merged = _normalize_date_column(merged)
+        merged = merged.join(df, how="outer")
 
     # Sütun adlarını kısalt (TP_ prefix kaldır, _ → .)
     merged = _shorten_evds_column_names(merged)
