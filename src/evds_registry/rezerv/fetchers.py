@@ -484,6 +484,61 @@ def urdl_extract_kalem_series(
     return out
 
 
+def urdl_extract_kalem_sum(
+    urdl_df: pd.DataFrame,
+    keyword_groups: list[list[str]],
+    output_name: str = "value",
+) -> pd.DataFrame:
+    """URDL'den birden fazla kalemi topla — Excel ExtractWeeklyKalemSeriesSum muadili.
+
+    Args:
+        urdl_df: fetch_urdl_zip() çıktısı
+        keyword_groups: Her grup AND match'li ayrı bir kalem arar.
+                        Bulunan kalemler tarih bazında toplanır.
+                        Örn [["II.2.a.iii"], ["II.2.b.iii"]] →
+                        İki ayrı kalemin değerlerini toplar.
+        output_name: Çıktı sütun adı
+
+    Returns:
+        DataFrame[index=Tarih, columns={output_name}]
+    """
+    def _normalize_tr(s: str) -> str:
+        s = (s or "").lower()
+        s = s.replace("̇", "")
+        for tr, en in [("ı", "i"), ("ş", "s"), ("ğ", "g"), ("ç", "c"), ("ö", "o"), ("ü", "u")]:
+            s = s.replace(tr, en)
+        return s
+
+    combined: pd.Series | None = None
+    for keywords in keyword_groups:
+        keywords_n = [_normalize_tr(k) for k in keywords]
+
+        def _matches(kalem: str, kws=keywords_n) -> bool:
+            n = _normalize_tr(str(kalem))
+            return all(k in n for k in kws)
+
+        matches = urdl_df[urdl_df["Kalem"].apply(_matches)]
+        if matches.empty:
+            continue
+        row = matches.iloc[0]
+        date_cols = [c for c in urdl_df.columns if c != "Kalem"]
+        series = row[date_cols]
+        series.index = pd.to_datetime(series.index, errors="coerce")
+        series = series[series.index.notna()]
+        series = pd.to_numeric(series, errors="coerce")
+
+        if combined is None:
+            combined = series
+        else:
+            combined = combined.add(series, fill_value=0)
+
+    if combined is None:
+        return pd.DataFrame(columns=[output_name])
+    out = pd.DataFrame({output_name: combined.values}, index=combined.index)
+    out.index.name = "Tarih"
+    return out
+
+
 # =============================================================================
 # 3) Taraflı Swap PDF Fetcher
 # =============================================================================

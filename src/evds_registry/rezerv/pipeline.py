@@ -308,20 +308,43 @@ def run_pipeline(
         calculated["MBSwapToplam"] = _empty_series(idx)
 
     # ---- URDL Swap Kalemleri (raw_urdl varsa) ----
+    # Excel M kodu (TcmbHaftalikRezerv satır 1707-1755) ile birebir uyumlu:
+    #   MBSwap   = II.2.a.iii (Açık, 4ay-1yıl)   + II.2.b.iii (Fazla, 4ay-1yıl)
+    #   SwapTot  = II.2 (Forward future swap toplam) — exact match prefer
+    #   DigerSwap = II.3 ana satır (Diğer)
     urdl_series: dict[str, pd.Series] = {}
     if raw_urdl is not None and not raw_urdl.empty:
         try:
-            from .fetchers import urdl_extract_kalem_series
-            urdl_series = _align_optional(
+            from .fetchers import urdl_extract_kalem_series, urdl_extract_kalem_sum
+
+            # MBSwapURDL — II.2.a.iii + II.2.b.iii toplamı (M kod satır 1707-1712)
+            mb_df = urdl_extract_kalem_sum(
                 raw_urdl,
-                idx,
-                {
-                    "MBSwapURDL": ["m.b", "swap"],
-                    "DigerSwapURDL": ["diger", "swap"],
-                    "SwapTotURDL": ["toplam", "swap"],
-                },
-                urdl_extract_kalem_series,
+                [["II.2.a.iii"], ["II.2.b.iii"]],
+                output_name="MBSwapURDL",
             )
+            if not mb_df.empty:
+                urdl_series["MBSwapURDL"] = (
+                    mb_df["MBSwapURDL"].reindex(idx, method="ffill")
+                )
+
+            # SwapTotURDL — "II.2." satırı (toplam forward/future/swap)
+            tot_df = urdl_extract_kalem_series(
+                raw_urdl, ["II.2."], output_name="SwapTotURDL"
+            )
+            if not tot_df.empty:
+                urdl_series["SwapTotURDL"] = (
+                    tot_df["SwapTotURDL"].reindex(idx, method="ffill")
+                )
+
+            # DigerSwapURDL — "II.3" ana satırı (Diğer)
+            diger_df = urdl_extract_kalem_series(
+                raw_urdl, ["II.3 "], output_name="DigerSwapURDL"
+            )
+            if not diger_df.empty:
+                urdl_series["DigerSwapURDL"] = (
+                    diger_df["DigerSwapURDL"].reindex(idx, method="ffill")
+                )
         except Exception:
             urdl_series = {}
     calculated["MBSwapURDL"] = urdl_series.get("MBSwapURDL", _empty_series(idx))
