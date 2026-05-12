@@ -235,7 +235,17 @@ class RezervAnalystAgent(BaseAnalystAgent):
     def _handle_brut_rezerv_durum(self, snapshot_date: _dt.date | None) -> AnalystResponse:
         """Brüt Rezerv durumu — TP.AB.TOPLAM bazlı."""
         raw = self._raw()
-        latest = self.safe_get(raw, self.COL_BRUT_TOPLAM)  # Milyon USD
+        # TP.AB.TOPLAM raw'da haftalık veridir; son geçerli değeri bul (son satır
+        # sentetik patch tarihinde NaN olabilir).
+        latest = None
+        if self.COL_BRUT_TOPLAM in raw.columns:
+            last_valid_idx = raw[self.COL_BRUT_TOPLAM].last_valid_index()
+            if last_valid_idx is not None:
+                v = raw.loc[last_valid_idx, self.COL_BRUT_TOPLAM]
+                latest = float(v) if pd.notna(v) else None
+                # snapshot_date'i de bu tarihe güncelle (UX için)
+                if isinstance(last_valid_idx, pd.Timestamp):
+                    snapshot_date = last_valid_idx.date()
 
         if latest is None:
             latest_mr = self.safe_get(self._calc(), self.COL_BRUT_TL_URDL)
